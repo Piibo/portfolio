@@ -7,7 +7,7 @@
 | Kontext | Vierköpfiges Teamprojekt, LMU München (2024) |
 | Ergebnis | **92 % Raum-Vorhersagegenauigkeit** (XGBoost, 5-fach-Kreuzvalidierung) |
 | Rolle | Android-App: Dashboard mit Gebäudeplan (Marker, Stockwerk-Wechsel) und WLAN-Scan-Ansicht |
-| Bericht | Wissenschaftliches Paper im ACM-Format ([Repo](https://github.com/Piibo/IntelliTrackLatex)) |
+| Bericht | **[Paper als PDF](intelliTrack-paper.pdf)** (ACM-Format) |
 
 ## Ansatz
 
@@ -27,4 +27,4 @@ Das Nutzer-Frontend des Systems ist eine Android-App (Kotlin), an der ich einen 
 
 Android (Kotlin) · Python · Machine Learning (XGBoost, Random Forest, Decision Trees) · Feature Engineering · Kreuzvalidierung, GridSearch · wissenschaftliches Schreiben (ACM-Paper, LaTeX)
 
-<!-- TODO: Kursname; Code-Repos (Forks unter Piibo/intellitrack, Piibo/IntellitrackEnv) verlinken, sobald öffentlich -->
+<!-- TODO: Kursname nachtragen -->
