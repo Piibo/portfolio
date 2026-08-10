@@ -10,6 +10,7 @@ M.Sc. Medieninformatik (LMU München, 2026), Schwerpunkt Mensch-Computer-Interak
 | [SpiceDispenser](projekte/spice-dispenser/) | KI-gesteuerter Gewürzautomat: Gericht nennen (Sprache/Text), lokales LLM bestimmt Gewürze + Mengen, ESP32-Maschine dosiert ([Video](https://youtu.be/Efl0KOGhpKA)) | C++ (ESP32), PlatformIO, Python, Ollama, faster-whisper |
 | [Sendlingers Escape](projekte/sendlingers-escape/) | Escape-Game rund um das Sendlinger Tor München, Teamprojekt im LMU-Game-Development-Praktikum — meine Rolle: 3D-Objekt-Arbeit + erstes Rätsel ([Video](https://youtu.be/RlHncoayMY8)) | Unreal Engine, 3D-Modellierung |
 | [Bloomie](projekte/bloomie/) | Gestengesteuerte Schreibtischlampe an einem Roboterarm (HRI-Teamprojekt) — meine Rolle: Lichtsystem mit verstellbarem Lichtkegel über bewegliche Linse + LED-Hardware | Robotik, Gestensteuerung, Hardware-Prototyping |
+| [IntelliTrack](projekte/intellitrack/) | Indoor-Ortung per WiFi-Fingerprinting: ML-Modell sagt den Raum im Gebäude aus WLAN-Signalstärken vorher — 92 % Genauigkeit (Teamprojekt, LMU) | Python, XGBoost, Machine Learning, Android |
 
 *(Weitere Projekte folgen.)*
 
