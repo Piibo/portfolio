@@ -7,7 +7,8 @@
 | | |
 |---|---|
 | Kontext | sustAInability-Seminar, Hochschule München + TU München, 2025 · 4-köpfiges Team |
-| Rolle | Co-Autor; verantwortlich für zwei der sechs Projektteile |
+| Rolle | Datenpipeline: OSM→SUMO-Netzkonvertierung · Co-Autor (zwei der sechs Report-Teile) |
+| Code | [fio-la/Sustainable_Mobility](https://github.com/fio-la/Sustainable_Mobility) (öffentlich) |
 | Bericht | **[Paper als PDF](kemptainability-paper.pdf)** |
 
 ## Die Idee
@@ -21,6 +22,11 @@ Professionelle Verkehrssimulationen (SUMO, Vissim) sind für Laien unzugänglich
 3. **Frontend:** SUMO-Daten als GeoJSON in einer React/Vite-App — animierte Verkehrssimulation mit Zeitsteuerung, interaktiver Barrieren-Platzierung, Heatmap-Overlays und Echtzeit-Metriken
 
 ![Barrieren-Platzierung im Straßennetz](bilder/Barriers.png)
+
+## Mein Beitrag
+
+- **OSM→SUMO-Netzkonvertierung:** Umwandlung des bereinigten OpenStreetMap-Netzes in ein valides SUMO-Verkehrsnetz (`netconvert`-Workflow, `map.net.xml`-Generierung) samt Dokumentation des Konvertierungs-Workflows im Repo
+- **Co-Autor des Reports:** verantwortlich für zwei der sechs Projektteile
 
 ## Technologien
 
