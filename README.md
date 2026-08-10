@@ -7,6 +7,7 @@ M.Sc. Medieninformatik (LMU München, 2026), Schwerpunkt Mensch-Computer-Interak
 | Projekt | Was es ist | Technologien |
 |---|---|---|
 | [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: chatbasierter KI-Assistent mit Human-in-the-Loop-Werkzeugen, evaluiert in einer Nutzerstudie (n = 8) | React, TypeScript, Python, FastAPI, WebSockets, SQLite, Anthropic API |
+| [SpiceDispenser](projekte/spice-dispenser/) | KI-gesteuerter Gewürzautomat: Gericht nennen (Sprache/Text), lokales LLM bestimmt Gewürze + Mengen, ESP32-Maschine dosiert ([Video](https://youtu.be/Efl0KOGhpKA)) | C++ (ESP32), PlatformIO, Python, Ollama, faster-whisper |
 
 *(Weitere Projekte folgen.)*
 
