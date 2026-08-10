@@ -6,7 +6,7 @@
 |---|---|
 | Kontext | Kurs Human-Robot Interaction (HRI), LMU München, 2025 · 4-köpfiges Team |
 | Rolle | Lampenkopf mit verstellbarem Lichtkegel (Linsenmechanik nach dem Zoom-Objektiv-Prinzip) + LED-Hardware |
-| Projektbericht | [Piibo/HRI-Bloomie-Report](https://github.com/Piibo/HRI-Bloomie-Report) (ACM-Format) |
+| Projektbericht | **[Paper als PDF](bloomie-paper.pdf)** (ACM-Format) |
 
 ## Das System
 
