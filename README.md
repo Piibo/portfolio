@@ -11,6 +11,7 @@ M.Sc. Medieninformatik (LMU München, 2026), Schwerpunkt Mensch-Computer-Interak
 | [Sendlingers Escape](projekte/sendlingers-escape/) | Escape-Game rund um das Sendlinger Tor München, Teamprojekt im LMU-Game-Development-Praktikum — meine Rolle: 3D-Objekt-Arbeit + erstes Rätsel ([Video](https://youtu.be/RlHncoayMY8)) | Unreal Engine, 3D-Modellierung |
 | [Bloomie](projekte/bloomie/) | Gestengesteuerte Schreibtischlampe an einem Roboterarm (HRI-Teamprojekt) — meine Rolle: Lichtsystem mit verstellbarem Lichtkegel über bewegliche Linse + LED-Hardware | Robotik, Gestensteuerung, Hardware-Prototyping |
 | [IntelliTrack](projekte/intellitrack/) | Indoor-Ortung per WiFi-Fingerprinting: ML-Modell sagt den Raum im Gebäude aus WLAN-Signalstärken vorher — 92 % Genauigkeit (Teamprojekt, LMU) | Python, XGBoost, Machine Learning, Android |
+| [Nüslify](projekte/nueslify/) | Persönliches KI-Radio: KI-kuratierte News gemischt mit der eigenen Spotify-Musik, als PWA mit Live-Deployment (Teamprojekt) | Next.js, TypeScript, tRPC, Spotify-API |
 
 *(Weitere Projekte folgen.)*
 
