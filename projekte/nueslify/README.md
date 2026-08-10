@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| Kontext | Fünfköpfiges Teamprojekt (2023/24) |
+| Kontext | Kurs Intelligent User Interfaces (IUI), LMU München, WiSe 2023/24 · 5-köpfiges Team |
 | Rolle | Frontend: Interessen-Feature (UI bis Datenbank) und Teile des Player-Dashboards |
 | Code | [NoelHuibers/nueslify](https://github.com/NoelHuibers/nueslify) (öffentlich, GPL-3.0) |
 | Demo | [nueslify.vercel.app](https://nueslify.vercel.app) |
@@ -30,4 +30,4 @@ Ich war mit 32 Commits der zweitaktivste Entwickler im fünfköpfigen Team, Schw
 | Integrationen | Spotify-API · KI-gestütztes News-Fetching |
 | Betrieb | Vercel (Live-Deployment) |
 
-<!-- TODO nachtragen: Kontext (Uni-Kurs? Jahr?), welche KI/News-Quellen genau -->
+<!-- TODO: welche KI/News-Quellen genau -->
