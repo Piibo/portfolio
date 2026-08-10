@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| Kontext | Vierköpfiges Teamprojekt, LMU München (2024) |
+| Kontext | Praktikum Intelligent Interactive Systems (PIIS), LMU München, WiSe 2023/24 · 4-köpfiges Team |
 | Ergebnis | **92 % Raum-Vorhersagegenauigkeit** (XGBoost, 5-fach-Kreuzvalidierung) |
 | Rolle | Android-App: Dashboard mit Gebäudeplan (Marker, Stockwerk-Wechsel) und WLAN-Scan-Ansicht |
 | Bericht | **[Paper als PDF](intelliTrack-paper.pdf)** (ACM-Format) |
@@ -27,4 +27,4 @@ Das Nutzer-Frontend des Systems ist eine Android-App (Kotlin), an der ich einen 
 
 Android (Kotlin) · Python · Machine Learning (XGBoost, Random Forest, Decision Trees) · Feature Engineering · Kreuzvalidierung, GridSearch · wissenschaftliches Schreiben (ACM-Paper, LaTeX)
 
-<!-- TODO: Kursname nachtragen -->
+
