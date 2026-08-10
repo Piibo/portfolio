@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | Kontext | sustAInability-Seminar, Hochschule München + TU München, 2025 · 4-köpfiges Team |
-| Rolle | Datenpipeline: OSM→SUMO-Netzkonvertierung · Co-Autor (zwei der sechs Report-Teile) |
+| Rolle | Die komplette Datenpipeline: OSM-Extraktion → Bereinigung → SUMO-Netz → GeoJSON · Co-Autor des Reports |
 | Code | [fio-la/Sustainable_Mobility](https://github.com/fio-la/Sustainable_Mobility) (öffentlich) |
 | Bericht | **[Paper als PDF](kemptainability-paper.pdf)** |
 
@@ -23,10 +23,16 @@ Professionelle Verkehrssimulationen (SUMO, Vissim) sind für Laien unzugänglich
 
 ![Barrieren-Platzierung im Straßennetz](bilder/Barriers.png)
 
-## Mein Beitrag
+## Mein Beitrag: die Datenpipeline
 
-- **OSM→SUMO-Netzkonvertierung:** Umwandlung des bereinigten OpenStreetMap-Netzes in ein valides SUMO-Verkehrsnetz (`netconvert`-Workflow, `map.net.xml`-Generierung) samt Dokumentation des Konvertierungs-Workflows im Repo
-- **Co-Autor des Reports:** verantwortlich für zwei der sechs Projektteile
+Der Weg von der rohen Karte zur simulierbaren Stadt — alle vier Stufen der Datenaufbereitung:
+
+- **OSM-Extraktion:** Overpass-Turbo-Queries, die gezielt das relevante Straßennetz von Kempten aus OpenStreetMap ziehen
+- **Bereinigung:** manuelle Prüfung in JOSM plus Python-Skripte, die Fußwege, Radwege, Ampeln und überflüssige Knoten entfernen
+- **SUMO-Netzkonvertierung:** Umwandlung in ein valides SUMO-Verkehrsnetz (`netconvert`, `map.net.xml`) mit Nacharbeit in `netedit`, samt Dokumentation des Workflows im Repo
+- **GeoJSON-Aufbereitung:** Konvertierung der SUMO-Netzdaten in das GeoJSON-Format, das das React-Frontend rendert (angepasste `net2geojson`-Skripte, Waypoints-Konvertierung)
+
+Dazu Co-Autor des Projektreports.
 
 ## Technologien
 
