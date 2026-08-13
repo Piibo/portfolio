@@ -15,6 +15,10 @@ Radio lebt von der Mischung aus Information und Musik — aber das Programm best
 
 ## Mein Beitrag
 
+<img src="bilder/interests-feature.png" alt="Das Interessen-Feature: Profil, News-Musik-Balance-Slider, KI-Auswahl, Radio-Host-Stil, Musik-Favoriten und News-Genre-Kacheln" width="480">
+
+*Das Interessen-Feature — mein Hauptbeitrag: Profil, News↔Musik-Balance, KI- und Host-Auswahl, Musik-Favoriten und die Genre-Kacheln für die News-Personalisierung.*
+
 Ich war mit 32 Commits der zweitaktivste Entwickler im fünfköpfigen Team, Schwerpunkt Frontend:
 
 - **Das Interessen-Feature von UI bis Datenbank:** die Seiten und Formulare, mit denen Nutzer:innen ihre Themeninteressen auswählen (React/Next.js), samt Styling, tRPC-API-Router und Anbindung an das Drizzle-Datenbankschema — die Grundlage für die personalisierte News-Auswahl
@@ -27,7 +31,5 @@ Ich war mit 32 Commits der zweitaktivste Entwickler im fünfköpfigen Team, Schw
 |---|---|
 | Web-App | Next.js · TypeScript · tRPC · Tailwind CSS (T3-Stack), als PWA |
 | Daten | Drizzle ORM · SQL (PlanetScale) |
-| Integrationen | Spotify-API · KI-gestütztes News-Fetching |
+| Integrationen | Spotify-API (Login via NextAuth) · LangChain mit wählbarem Modell (OpenAI GPT / Google Gemini) für die News-Aufbereitung · AWS S3 |
 | Betrieb | Vercel (Live-Deployment) |
-
-<!-- TODO: welche KI/News-Quellen genau -->
