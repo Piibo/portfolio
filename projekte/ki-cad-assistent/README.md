@@ -33,6 +33,10 @@ Dazu eine vollständige **Studieninfrastruktur**: zwei Experimentalbedingungen (
 
 ## Nutzerstudie & Ergebnis
 
+<img src="bilder/abb-ui-basis.png" alt="Das Chat-Panel in der Basis-Bedingung: reiner Textdialog ohne Interaktionswerkzeuge" width="330">
+
+*Zum Vergleich die `basis`-Bedingung der Studie: gleiche CAD-Kompetenz des Assistenten, aber nur Chat — Absichten müssen rein sprachlich vermittelt werden. Der Kontrast zwischen beiden Bedienformen ist der Kern des Studiendesigns.*
+
 Within-subjects-Studie mit **8 Teilnehmenden (16 Sitzungen)**: Jede Person löste Möbelentwurfsaufgaben in beiden Bedingungen. Die Auswertung (codebuchgestützte thematische Analyse: 124 Episoden, 76 Codes, fünf Themen) mündete in ein **empirisch begründetes Interaktions- und Werkzeugmodell** für chatbasierte KI-CAD-Unterstützung — der wissenschaftliche Beitrag der Arbeit.
 
 Zur Studieninfrastruktur gehörten außerdem Counterbalancing-Logik, Consent-Flow und Fragebogen-Instrumente (u. a. Creativity Support Index) im Plugin selbst sowie eine lokale, datenschutzkonforme Transkriptionspipeline (faster-whisper, offline) und ~4.600 Zeilen Auswertungsskripte.
