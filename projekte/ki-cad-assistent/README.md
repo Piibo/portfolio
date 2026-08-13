@@ -9,8 +9,9 @@
 | Rolle | Eigenständige Konzeption, Entwicklung, Studiendurchführung und Auswertung (Solo-Projekt) |
 | Code | Privat (das Repository enthält Studiendaten); Einblick in den Code gebe ich auf Anfrage gern |
 
-<!-- TODO: Screenshots/Demo-GIF in bilder/ ablegen und hier einbinden, z. B.: -->
-<!-- ![Chat-Panel mit Parameter-Slidern](bilder/chat-panel.png) -->
+<img src="bilder/abb-ui-werkzeug.png" alt="Chat-Panel des Plugins mit Skizze auf Viewport-Aufnahme, KI-Rückfrage mit Auswahl-Dialog und Objekt-Referenz-Chip" width="420">
+
+*Das Chat-Panel: Eine Skizze auf der Viewport-Aufnahme markiert, wo die Rückenlehne hin soll; die KI stellt eine Rückfrage mit Auswahl-Dialog; im Eingabefeld referenziert ein Chip die zuvor angeklickte Fläche.*
 
 ## Problem
 
@@ -48,10 +49,10 @@ Zur Studieninfrastruktur gehörten außerdem Counterbalancing-Logik, Consent-Flo
 
 Zusätzlich entstand in der explorativen Phase ein **MCP-Server** (68 CAD-Tools in 8 Modulen, inkl. SubD-Bearbeitung), der Claude mit Rhino und Grasshopper verband — Basis: zwei MIT-lizenzierte Open-Source-Projekte, dokumentiert nachgenutzt und deutlich erweitert.
 
-## Bilder
+## Mit dem Assistenten modelliert
 
-<!-- TODO: Screenshots vom laufenden Plugin (Rhino-Rechner nötig): -->
-<!-- 1. Chat-Panel mit einer Modellierungs-Konversation -->
-<!-- 2. Parameter-Slider + Modell im Viewport -->
-<!-- 3. Skizzen-Overlay auf Viewport-Capture -->
-<!-- 4. Varianten-Galerie -->
+<img src="bilder/rtd-04-beistelltisch.png" alt="Beistelltisch mit Rohrgestell, Zeitschriftenablage und Tablett-Platte, modelliert im Dialog mit dem Assistenten" width="420">
+
+*Ein Beistelltisch aus einer der Research-through-Design-Sessions: Rohrgestell, Zeitschriftenablage und Tablett-Platte, entstanden im Dialog mit dem Assistenten in Rhino.*
+
+<!-- TODO optional, vom Rhino-PC: Parameter-Slider-Panel + Varianten-Galerie als weitere Screenshots -->
