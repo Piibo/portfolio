@@ -16,6 +16,10 @@
 
 Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Landmarken, und ein ROS-System aus drei Nodes (Kamera, Roboter, Licht) übersetzt die Gesten in Bewegungen eines MyCobot-280-Roboterarms. Vier Modi: Gestensteuerung, Follow-Modus (die Lampe folgt der Hand), Licht-Modus und Haltungs-Modus. Da die GPIO-Pins des Roboterarms nicht zugänglich waren, steuert ein externer ESP8266-Mikrocontroller die LED-Ringe.
 
+<img src="bilder/gestensteuerung.jpg" alt="Gestensteuerung im Betrieb: eine Hand schwebt über dem Lampenkopf, die LED-Matrix leuchtet grün, darunter das warme Arbeitslicht" width="360">
+
+*Gestensteuerung im Betrieb: Die Hand schwebt über dem Lampenkopf — oben leuchtet die grüne LED-Matrix, unten das warme Arbeitslicht. Standbild aus dem Projektvideo.*
+
 ## Mein Beitrag: der Lampenkopf mit verstellbarem Lichtkegel
 
 <img src="bilder/lampenkopf-nah.jpg" alt="Nahaufnahme des Lampenkopfs: Schrägnut mit Führungsschraube, ESP8266-Board, leuchtender LED-Ring" width="360">
