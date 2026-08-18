@@ -29,6 +29,14 @@ Die Human-in-the-Loop-Werkzeuge, um die es in der Studie ging:
 - **Skizzen-Overlays** auf Multi-View-Viewport-Aufnahmen
 - **Bestätigungs- und Auswahldialoge** für kontrollierte KI-Aktionen
 
+<img src="bilder/abb-slider-panel.png" alt="Slider-Workflow im Plugin: Bestätigungsdialog vor dem Anlegen, dann das Parameter-Panel mit drei Live-Reglern für Plattendicke, Plattendurchmesser und Tischhöhe" width="440">
+
+*Der Slider-Workflow an einem Beistelltisch: Vor dem Eingriff fragt der Assistent per Bestätigungsdialog nach, korrigiert beim Umsetzen einen eigenen Fehler (achsweise vs. gleichmäßige Skalierung) sichtbar im Chat — und am Ende stehen drei Live-Regler, die die Geometrie direkt in Rhino verändern.*
+
+<img src="bilder/abb-varianten-galerie.png" alt="Varianten-Galerie: Original, gerade, konische und gespreizte Beinform als anklickbare Viewport-Kacheln" width="440">
+
+*Die Varianten-Galerie: drei Beinform-Alternativen (gerade, konisch, gespreizt) als Viewport-Aufnahmen zum Durchschalten — die gewählte Variante wird im Modell aktiv.*
+
 Dazu eine vollständige **Studieninfrastruktur**: zwei Experimentalbedingungen (nur Chat vs. Chat + Werkzeuge), über eine einzige fail-closed Registry-Funktion getrennt; lückenloses Event-Logging in SQLite (12 Tabellen); Export-Bundles mit Manifest und Hash-Validierung; „Golden Hashes", die System-Prompt und Tool-Surface gegen ungewollte Änderungen während der Studie einfrieren.
 
 ## Nutzerstudie & Ergebnis
@@ -68,5 +76,3 @@ Vier Möbel aus den Research-through-Design-Sessions, jeweils im Dialog mit dem 
 </p>
 
 *Freischwinger nach Thonet-Vorbild, Hocker nach dem Vorbild des Artek Stool 60, Sideboard mit Schiebetüren.*
-
-<!-- TODO optional, vom Rhino-PC: Parameter-Slider-Panel + Varianten-Galerie als weitere Screenshots -->
