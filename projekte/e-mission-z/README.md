@@ -13,9 +13,11 @@
 | Live | **[www.cip.ifi.lmu.de/~wildva/infovis/](https://www.cip.ifi.lmu.de/~wildva/infovis/)** |
 | Code | LRZ-GitLab der LMU (nicht öffentlich einsehbar) — Einblick auf Anfrage |
 
-## Die Fragestellung
+## Der Kurs und die Fragestellung
 
-Verkehr ist einer der größten CO₂-Verursacher, aber die Daten dazu liegen verstreut: Emissionen pro Bundesland, Fahrgastzahlen im ÖPNV, Personenkilometer im Individualverkehr. E-Mission Z bringt sie in ein gemeinsames Dashboard und lässt Nutzer:innen selbst nach Mustern suchen — etwa nach dem Effekt von Corona und 9-Euro-Ticket auf die Kurven.
+Im Kurs Information Visualization entwickelt jedes Team über das Semester eine eigene interaktive Visualisierung zu einer selbst gewählten Forschungsfrage — von der Datenbeschaffung über Prototypen und Meilensteine bis zum Live-Deployment. Unsere Frage: **Hat die Nutzung verschiedener Verkehrsmittel einen Einfluss auf die Pro-Kopf-CO₂-Emissionen in Deutschland?**
+
+Verkehr ist einer der größten CO₂-Verursacher, aber die Daten dazu liegen verstreut: Emissionen pro Bundesland, Fahrgastzahlen im ÖPNV, Personenkilometer im Individualverkehr. E-Mission Z bringt sie für die Jahre 2011–2021 in ein gemeinsames Dashboard und lässt Nutzer:innen selbst nach Mustern suchen — etwa nach dem Effekt von Corona und 9-Euro-Ticket auf die Kurven.
 
 Der Kern ist das Prinzip verknüpfter Ansichten: Wer ein Bundesland in der Liste anwählt, sieht es gleichzeitig auf der Karte hervorgehoben und als Serie im Zeitreihen-Diagramm. Wer den Zeitraum ändert, ändert ihn überall. Dadurch wird der Vergleich zwischen Regionen und über die Zeit zu einer einzigen zusammenhängenden Bewegung statt zu mehreren getrennten Ablesevorgängen.
 

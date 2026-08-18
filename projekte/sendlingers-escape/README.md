@@ -12,9 +12,13 @@
 | Engine | Unreal Engine |
 | Rolle | 3D-Objekt-Arbeit (gesamtes Asset-/Modell-Cleanup) + Design und Umsetzung des ersten Rätsels |
 
+## Der Kurs und die Aufgabe
+
+Das Praktikum Game Development ist ein In-House-Praktikum des LMU-Instituts (ohne Firmenpartner): Ein Team entwickelt über das Semester ein vollständiges, spielbares Spiel — vom Konzept über Level- und Rätseldesign bis zum fertigen Build samt Gameplay-Video. Wir waren zu dritt und haben uns für ein Escape-Game an einem realen Münchner Ort entschieden.
+
 ## Das Spiel
 
-Die Spieler:innen wachen in einem U-Bahn-Zug auf und müssen aus der Station Sendlinger Tor entkommen — die Münchner U-Bahn-Umgebung ist als begehbare 3D-Welt im Spiel nachgebaut, vom Zuginneren über Bahnsteige und Rolltreppen bis zu den Technikräumen. Der Weg nach oben führt über eine Kette von Rätseln.
+Die Spieler:innen wachen in einem U-Bahn-Zug auf und müssen aus der Station Sendlinger Tor entkommen — die Münchner U-Bahn-Umgebung ist als begehbare 3D-Welt nachgebaut, vom Zuginneren über Bahnsteige und Rolltreppen bis zu den Technikräumen, mit den typischen gelben Säulen und blauen Wandkacheln der echten Station. Die Aufgaben erscheinen auf einem Smartphone im Interface; der Weg nach oben führt über eine Kette von Rätseln: aus dem Zug herausfinden, die Rolltreppe stoppen, in den Technikräumen das Passwort für die Schalträume aufspüren, Codes am Keypad eingeben — bis am Ende die Netzverbindung wiederhergestellt ist und ein Anruf das offene Ende einläutet.
 
 <img src="bilder/station.jpg" alt="Spielszene: Bahnsteigebene der U-Bahn-Station mit gelben Säulen und blauen Wandkacheln" width="560">
 
