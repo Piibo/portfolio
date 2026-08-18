@@ -12,9 +12,9 @@
 
 *Bloomie komplett: der MyCobot-280-Arm mit dem 3D-gedruckten Lampenkopf. Am Kopf sichtbar: die Schrägnut mit Führungsstift (mein Verstellmechanismus) und das ESP8266-Board für die LED-Ansteuerung.*
 
-## Der Kurs und die Idee
+## Die Idee
 
-Im HRI-Kurs der LMU konzipiert und baut jedes Team ein eigenes Mensch-Roboter-Interaktionssystem und dokumentiert es als Paper im ACM-Format. Unser Ausgangspunkt: Klassische Schreibtischlampen sind unflexibel — für jede Änderung muss man hinlangen und nachjustieren. Bloomie beantwortet das mit einer Lampe, die sich berührungslos bedienen lässt und selbst mitdenkt: Sie folgt auf Wunsch der Hand, passt Position und Licht an und macht so aus einem Alltagsgegenstand einen adaptiven Interaktionspartner.
+Im HRI-Kurs haben wir als vierköpfiges Team ein eigenes Mensch-Roboter-Interaktionssystem konzipiert, gebaut und als Paper im ACM-Format dokumentiert. Unser Ausgangspunkt: Klassische Schreibtischlampen sind unflexibel — für jede Änderung muss man hinlangen und nachjustieren. Bloomie beantwortet das mit einer Lampe, die sich berührungslos bedienen lässt und selbst mitdenkt: Sie folgt auf Wunsch der Hand, passt Position und Licht an und macht so aus einem Alltagsgegenstand einen adaptiven Interaktionspartner.
 
 ## Das System
 

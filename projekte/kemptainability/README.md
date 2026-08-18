@@ -11,9 +11,9 @@
 | Code | [fio-la/Sustainable_Mobility](https://github.com/fio-la/Sustainable_Mobility) (öffentlich) |
 | Bericht | **[Paper als PDF](kemptainability-paper.pdf)** |
 
-## Das Seminar und die Idee
+## Die Idee
 
-Das sustAInability-Seminar von Hochschule München und TU München bringt Studierende der Münchner Hochschulen in gemischten Teams zusammen: Jedes Team entwickelt ein KI-Projekt entlang der UN-Nachhaltigkeitsziele und dokumentiert es wissenschaftlich. Unser Aufhänger war konkret und real: die geplante Sperrung der St.-Mang-Brücke in Kempten und die Frage, wie man ihre Folgen für Bürger:innen greifbar macht.
+Im sustAInability-Seminar (Hochschule München + TU München) haben wir im vierköpfigen Team ein KI-Projekt zum Thema nachhaltige Mobilität entwickelt und wissenschaftlich dokumentiert. Unser Aufhänger war konkret und real: die geplante Sperrung der St.-Mang-Brücke in Kempten und die Frage, wie man ihre Folgen für Bürger:innen greifbar macht.
 
 Professionelle Verkehrssimulationen (SUMO, Vissim) sind für Laien unzugänglich. kemptAInability übersetzt sie in ein zugängliches Werkzeug: eine Karte der Stadt, auf der man Szenarien wie die Brückensperrung durchspielt und die Auswirkungen als Heatmaps (Stau, Lärm, CO₂) direkt sieht — mit Gamification-Elementen, die nachhaltige Verkehrskonfigurationen belohnen. Eingebettet in den UN-Nachhaltigkeitsrahmen (SDG 11: Nachhaltige Städte und Gemeinden).
 

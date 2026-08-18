@@ -14,9 +14,9 @@
 | Rolle | Alles selbst: Konstruktion (CAD, 3D-Druck, Getriebe), Firmware, Host-Software, Hardware-Ansteuerung |
 | Code | [Piibo/SpiceDispenser](https://github.com/Piibo/SpiceDispenser) |
 
-## Der Kurs und die Idee
+## Die Idee
 
-Sketching with Hardware ist der Hardware-Prototyping-Kurs der LMU: In einem Semester entsteht aus einer eigenen Idee ein funktionsfähiger physischer Prototyp — Elektronik, Mechanik, Software und Demo-Video inklusive. Meine Idee: Beim Kochen weiß man oft nicht, *welche* Gewürze in welcher Menge zu einem Gericht passen — also soll eine Maschine das wissen und gleich selbst dosieren.
+Im Kurs Sketching with Hardware (LMU) habe ich in einem Semester aus einer eigenen Idee einen funktionsfähigen physischen Prototyp gebaut — Elektronik, Mechanik, Software und Demo-Video inklusive. Die Idee: Beim Kochen weiß man oft nicht, *welche* Gewürze in welcher Menge zu einem Gericht passen — also soll eine Maschine das wissen und gleich selbst dosieren.
 
 ## Wie es funktioniert
 
