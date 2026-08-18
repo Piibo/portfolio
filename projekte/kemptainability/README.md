@@ -37,5 +37,3 @@ Dazu Co-Autor des Projektreports.
 ## Technologien
 
 React · Vite · GeoJSON · SUMO (Verkehrssimulation) · OpenStreetMap/Overpass · Python (osmnx, geopandas, pyproj) · wissenschaftliches Schreiben
-
-<!-- TODO: Peters konkrete Rolle präzisieren (welche zwei Projektteile?); Link zum Code-Repo, falls öffentlich -->
