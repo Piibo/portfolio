@@ -23,6 +23,12 @@ Das Team implementierte die Lernverfahren selbst statt fertige Bibliotheken zu b
 
 Die Belohnungsfunktion kombiniert dichte Strafterme (Abstand zum Würfel, Abstand zum Ziel, Kollisionen, Schrittzahl) mit seltenen positiven Signalen (erfolgreicher Griff, Ziel erreicht) und Delta-Belohnungen, die die Verbesserung gegenüber dem vorigen Schritt bewerten.
 
+Das Ergebnis des Vergleichs: **SAC erzielte die beste Performance** — robust und stabil, mit Grifferfolgsraten nahe 100 % spät im Training —, während TD3 schneller konvergierte, aber unter lokalen Optima litt.
+
+<img src="bilder/sac-erfolgsmetriken.png" alt="Erfolgsmetriken aus der Abschlusspräsentation: Grifferfolg und Zielerreichung von SAC gegenüber der SAC-Baseline über 5.000 Episoden" width="640">
+
+*Aus unserer Abschlusspräsentation: Grifferfolg (links) und Zielerreichung (rechts) unseres SAC gegenüber der SAC-Baseline über 5.000 Episoden — erzeugt aus den Logdaten der Trainings-Infrastruktur.*
+
 ## Mein Beitrag: dass die Ergebnisse vergleichbar und wiederholbar sind
 
 Mein Schwerpunkt war die Experimentier-Infrastruktur — die Schicht, die einen Vergleich von fünf Algorithmen über hunderte Trainingsläufe erst aussagekräftig macht.
