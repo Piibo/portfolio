@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| Kontext | Masterarbeit „Designing with Artificial Intelligence: Supporting Design Decision-Making in Furniture Design through Human-in-the-Loop Workflows", M.Sc. Medieninformatik, LMU München (Kooperation TUM Architekturinformatik) |
+| Kontext | Masterarbeit „Entwerfen mit Künstlicher Intelligenz: Ein KI-gestützter Workflow für den iterativen Möbelentwurf", M.Sc. Medieninformatik, LMU München (Kooperation TUM Architekturinformatik) |
 | Zeitraum | März – August 2026 |
 | Rolle | Eigenständige Konzeption, Entwicklung, Studiendurchführung und Auswertung (Solo-Projekt) |
 | Code | **[Piibo/rhino-ai-cad-assistant](https://github.com/Piibo/rhino-ai-cad-assistant)** — kuratierte Code-Basis (MCP-Server + Studien-Plugin), MIT-lizenziert. Das Arbeits-Repository bleibt privat, weil es Studiendaten enthält. |
