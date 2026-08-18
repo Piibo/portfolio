@@ -12,9 +12,13 @@
 
 *Bloomie komplett: der MyCobot-280-Arm mit dem 3D-gedruckten Lampenkopf. Am Kopf sichtbar: die Schrägnut mit Führungsstift (mein Verstellmechanismus) und das ESP8266-Board für die LED-Ansteuerung.*
 
+## Der Kurs und die Idee
+
+Im HRI-Kurs der LMU konzipiert und baut jedes Team ein eigenes Mensch-Roboter-Interaktionssystem und dokumentiert es als Paper im ACM-Format. Unser Ausgangspunkt: Klassische Schreibtischlampen sind unflexibel — für jede Änderung muss man hinlangen und nachjustieren. Bloomie beantwortet das mit einer Lampe, die sich berührungslos bedienen lässt und selbst mitdenkt: Sie folgt auf Wunsch der Hand, passt Position und Licht an und macht so aus einem Alltagsgegenstand einen adaptiven Interaktionspartner.
+
 ## Das System
 
-Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Landmarken, und ein ROS-System aus drei Nodes (Kamera, Roboter, Licht) übersetzt die Gesten in Bewegungen eines MyCobot-280-Roboterarms. Vier Modi: Gestensteuerung, Follow-Modus (die Lampe folgt der Hand), Licht-Modus und Haltungs-Modus. Da die GPIO-Pins des Roboterarms nicht zugänglich waren, steuert ein externer ESP8266-Mikrocontroller die LED-Ringe.
+Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Landmarken, und ein ROS-System aus drei Nodes (Kamera, Roboter, Licht) übersetzt die Gesten in Bewegungen eines MyCobot-280-Roboterarms. Vier Modi: Gestensteuerung (Richtungsgesten bewegen die Lampe), Follow-Modus (die Lampe folgt der Hand), Licht-Modus und Haltungs-Modus (voreingestellte Posen). Da die GPIO-Pins des Roboterarms nicht zugänglich waren, steuert ein externer ESP8266-Mikrocontroller die LED-Ringe. Unsere Tests bestätigten eine zuverlässige Gestenerkennung; Grenzen zeigten sich bei den Winkelberechnungen einzelner Armposen — beides ist im Paper offen dokumentiert.
 
 <img src="bilder/gestensteuerung.jpg" alt="Gestensteuerung im Betrieb: eine Hand schwebt über dem Lampenkopf, die LED-Matrix leuchtet grün, darunter das warme Arbeitslicht" width="360">
 

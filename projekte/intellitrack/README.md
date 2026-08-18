@@ -9,6 +9,10 @@
 | Rolle | Android-App: Dashboard mit Gebäudeplan (Marker, Stockwerk-Wechsel) und WLAN-Scan-Ansicht |
 | Bericht | **[Paper als PDF](intelliTrack-paper.pdf)** (ACM-Format) |
 
+## Der Kurs und die Idee
+
+Im Praktikum Intelligent Interactive Systems baut jedes Team über das Semester ein intelligentes interaktives System und dokumentiert es als Paper im ACM-Format. Unser Team hat sich der Indoor-Ortung angenommen: GPS fällt in Gebäuden aus, aber WLAN-Netze sind fast überall — und ihre Signalstärken bilden pro Raum ein charakteristisches Muster, einen „Fingerprint", den ein Machine-Learning-Modell wiedererkennen kann.
+
 ## Ansatz
 
 1. **Datensammlung:** Eine eigene Android-App scannt in festen Intervallen alle empfangbaren WLAN-Netze und erfasst Signalstärke (dBm), SSID/BSSID, Frequenz und Kanalbreite — geloggt in verschiedenen Räumen samt angrenzender Außenbereiche, mit randomisierten Bewegungsmustern gegen Verzerrung.

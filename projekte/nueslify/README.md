@@ -9,7 +9,9 @@
 | Code | [NoelHuibers/nueslify](https://github.com/NoelHuibers/nueslify) (öffentlich, GPL-3.0) |
 | Demo | [nueslify.vercel.app](https://nueslify.vercel.app) (läuft; zum Ausprobieren ist ein Spotify-Login nötig) |
 
-## Die Idee
+## Der Kurs und die Idee
+
+Im Kurs Intelligent User Interfaces entwirft und baut jedes Team über das Semester ein lauffähiges intelligentes Interface — bei uns eine Web-App, die KI nicht als Gimmick, sondern als Kern des Nutzungserlebnisses einsetzt.
 
 Radio lebt von der Mischung aus Information und Musik — aber das Programm bestimmt der Sender. Nüslify dreht das um: Die News kommen KI-kuratiert zu den Themen, die dich interessieren, die Musik kommt aus deinem eigenen Spotify-Account. Umgesetzt als Progressive Web App, die sich wie eine native App nutzen lässt.
 

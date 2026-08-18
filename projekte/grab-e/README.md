@@ -13,9 +13,11 @@
 | Simulation | Unity3D (5-DOF-Arm, Niryo One) mit Python-Anbindung, ONNX-Export zurück in die Simulation |
 | Code | LRZ-GitLab der LMU (nicht öffentlich einsehbar) — Einblick auf Anfrage |
 
-## Das Projekt
+## Der Kurs und das Projekt
 
-Die Umgebung ist ein Unity-Nachbau eines fünfachsigen Greifarms, angebunden an ein Python-Interface — der Arm bekommt Gelenkwinkel als Aktionen und liefert Zustand und Belohnung zurück. Aufgabe: den Würfel finden, greifen und am Ziel absetzen.
+Im Praktikum Autonome Systeme wendet jedes Team Methoden des maschinellen Lernens auf ein Robotik-Problem an — bei uns: Kann ein Greifarm eine Pick-and-Place-Aufgabe rein durch Reinforcement Learning lernen, und wie schlagen sich selbst implementierte Verfahren gegen etablierte Bibliotheken?
+
+Die Umgebung ist eine Unity-Simulation eines fünfachsigen Arms (Niryo One, aufgebaut auf dem Pick-and-Place-Tutorial des Unity Robotics Hub), angebunden an ein Python-Interface — der Arm bekommt Gelenkwinkel als Aktionen und liefert Zustand und Belohnung zurück. Aufgabe: den Würfel finden, greifen und am Ziel absetzen.
 
 Das Team implementierte die Lernverfahren selbst statt fertige Bibliotheken zu benutzen: **Soft Actor-Critic (SAC)** mit adaptivem Alpha und einem evolutionären Ansatz zur Actor-Auswahl, **TD3** mit priorisiertem Replay-Buffer und OU-Rauschen, **DDPG**, dazu einfachere Policy-, Policy-Value- und Policy-Q-Netze als Zwischenstufen zum Verständnis. Zum Vergleich liefen Baselines aus Stable-Baselines3 sowie eine Zufalls-Baseline.
 
