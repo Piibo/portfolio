@@ -39,6 +39,16 @@ Mein Schwerpunkt war die Experimentier-Infrastruktur — die Schicht, die einen 
 - **Hyperparameter-Tuning und Trainingsläufe** für mehrere Algorithmen, dokumentiert in einer gemeinsamen Parametertabelle.
 - **Nachvollziehbarkeit im Code:** Kommentierung und Aufräumen der SAC- und DDPG-Implementierungen sowie der Trainingsskripte, damit die Abgabe für Außenstehende lesbar ist.
 
+Was aus diesen Logdaten wurde, zeigen die Auswertungen der Abschlusspräsentation:
+
+<img src="bilder/sac-trajektorien.png" alt="Trajektorien-Auswertung: Greifer- und Objektpfade des SAC-Agenten in 3D und als Projektionen" width="640">
+
+*Trajektorien-Auswertung aus den geloggten Episodenpfaden: Greifer- und Objektbewegungen des SAC-Agenten in 3D und als Draufsicht/Frontansicht.*
+
+<img src="bilder/sac-heatmaps.png" alt="Heatmap-Auswertung: Objektpositionen und erfolgreiche Griffe im Arbeitsraum des Arms" width="640">
+
+*Heatmap-Auswertung: wo im Arbeitsraum die Objekte lagen (links) und wo Griffe gelangen (rechts) — die räumliche Erfolgsverteilung des trainierten Agenten.*
+
 ## Technologien
 
 | Ebene | Eingesetzt |
