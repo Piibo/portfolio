@@ -13,9 +13,9 @@
 | Simulation | Unity3D (5-DOF-Arm, Niryo One) mit Python-Anbindung, ONNX-Export zurück in die Simulation |
 | Code | LRZ-GitLab der LMU (nicht öffentlich einsehbar) — Einblick auf Anfrage |
 
-## Der Kurs und das Projekt
+## Das Projekt
 
-Im Praktikum Autonome Systeme wendet jedes Team Methoden des maschinellen Lernens auf ein Robotik-Problem an — bei uns: Kann ein Greifarm eine Pick-and-Place-Aufgabe rein durch Reinforcement Learning lernen, und wie schlagen sich selbst implementierte Verfahren gegen etablierte Bibliotheken?
+Im Praktikum Autonome Systeme haben wir uns im Team zwei Fragen vorgenommen: Kann ein Greifarm eine Pick-and-Place-Aufgabe rein durch Reinforcement Learning lernen — und wie schlagen sich selbst implementierte Verfahren gegen etablierte Bibliotheken?
 
 Die Umgebung ist eine Unity-Simulation eines fünfachsigen Arms (Niryo One, aufgebaut auf dem Pick-and-Place-Tutorial des Unity Robotics Hub), angebunden an ein Python-Interface — der Arm bekommt Gelenkwinkel als Aktionen und liefert Zustand und Belohnung zurück. Aufgabe: den Würfel finden, greifen und am Ziel absetzen.
 
