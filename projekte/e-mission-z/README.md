@@ -19,6 +19,10 @@ Verkehr ist einer der größten CO₂-Verursacher, aber die Daten dazu liegen ve
 
 Der Kern ist das Prinzip verknüpfter Ansichten: Wer ein Bundesland in der Liste anwählt, sieht es gleichzeitig auf der Karte hervorgehoben und als Serie im Zeitreihen-Diagramm. Wer den Zeitraum ändert, ändert ihn überall. Dadurch wird der Vergleich zwischen Regionen und über die Zeit zu einer einzigen zusammenhängenden Bewegung statt zu mehreren getrennten Ablesevorgängen.
 
+<img src="bilder/dashboard-oepnv.png" alt="Die ÖPNV-Ansicht des Dashboards in Grün: beförderte Personen pro Kopf auf Karte, Zeitreihe und Verkehrsmittel-Aufteilung" width="640">
+
+*Die ÖPNV-Ansicht: gleiche verknüpfte Struktur, eigene Farbwelt, andere Kennzahl (beförderte Personen pro Kopf). In den Kurven deutlich sichtbar: der Corona-Einbruch der Fahrgastzahlen ab 2020.*
+
 ## Mein Beitrag
 
 Mit **77 von 295 Commits** hatte ich den größten Einzelanteil im fünfköpfigen Team. Mein Schwerpunkt lag auf der Zeitreihen-Seite des Dashboards und den Bedienelementen, die die Ansichten miteinander koppeln:
