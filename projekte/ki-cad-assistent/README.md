@@ -55,8 +55,18 @@ Zusätzlich entstand in der explorativen Phase ein **MCP-Server** (68 CAD-Tools 
 
 ## Mit dem Assistenten modelliert
 
+Vier Möbel aus den Research-through-Design-Sessions, jeweils im Dialog mit dem Assistenten in Rhino entstanden — von der Nachbildung von Klassikern bis zum eigenen Entwurf:
+
 <img src="bilder/rtd-04-beistelltisch.png" alt="Beistelltisch mit Rohrgestell, Zeitschriftenablage und Tablett-Platte, modelliert im Dialog mit dem Assistenten" width="420">
 
-*Ein Beistelltisch aus einer der Research-through-Design-Sessions: Rohrgestell, Zeitschriftenablage und Tablett-Platte, entstanden im Dialog mit dem Assistenten in Rhino.*
+*Beistelltisch mit Rohrgestell, Zeitschriftenablage und Tablett-Platte.*
+
+<p>
+<img src="bilder/rtd-01-freischwinger.png" alt="Freischwinger-Stuhl nach Thonet-Vorbild" width="240">
+<img src="bilder/rtd-02-stool60.png" alt="Stapelhocker nach dem Vorbild des Artek Stool 60" width="240">
+<img src="bilder/rtd-03-sideboard.png" alt="Sideboard mit Schiebetüren" width="330">
+</p>
+
+*Freischwinger nach Thonet-Vorbild, Hocker nach dem Vorbild des Artek Stool 60, Sideboard mit Schiebetüren.*
 
 <!-- TODO optional, vom Rhino-PC: Parameter-Slider-Panel + Varianten-Galerie als weitere Screenshots -->
