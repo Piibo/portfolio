@@ -4,7 +4,7 @@
 
 ![Drei Trainingsläufe mit fixierten Seeds: Lernkurven und Erfolgsraten](bilder/seed-reproduzierbarkeit.png)
 
-*Drei Läufe derselben Konfiguration mit den fixierten Seeds 41, 42 und 43 (PPO-Baseline, 3 Mio. Schritte). Links die geglätteten Lernkurven, rechts die Erfolgsraten im letzten Trainingsfünftel. Erzeugt aus den Logdateien der Trainings-Infrastruktur, an der ich gearbeitet habe — die Streuung zwischen den Seeds ist genau das, was diese Infrastruktur sichtbar machen soll.*
+*Drei Läufe derselben Konfiguration mit den fixierten Seeds 41, 42 und 43 (PPO-Baseline, 3 Mio. Schritte). Links die geglätteten Lernkurven, rechts die Erfolgsraten im letzten Trainingsfünftel. Erzeugt aus den Logdateien meiner Trainings-Infrastruktur — die Streuung zwischen den Seeds ist genau das, was sie sichtbar machen soll.*
 
 | | |
 |---|---|
@@ -23,7 +23,7 @@ Die Belohnungsfunktion kombiniert dichte Strafterme (Abstand zum Würfel, Abstan
 
 ## Mein Beitrag: dass die Ergebnisse vergleichbar und wiederholbar sind
 
-Die Lernverfahren selbst haben andere im Team implementiert. Mein Teil war die Schicht darum herum — ohne die ein Vergleich von fünf Algorithmen über hunderte Trainingsläufe nicht aussagekräftig wird. **57 von 256 Commits.**
+Mein Schwerpunkt war die Experimentier-Infrastruktur — die Schicht, die einen Vergleich von fünf Algorithmen über hunderte Trainingsläufe erst aussagekräftig macht.
 
 - **Seeding für Reproduzierbarkeit:** ein zentrales Utility, das den Zufall über alle Trainingsskripte hinweg auf einen gesetzten Seed festlegt, damit Läufe wiederholbar werden und Unterschiede zwischen Algorithmen nicht bloß Zufallsstreuung sind.
 - **Ergebnis-Logging:** einheitliches CSV-Format für Return, Episodenlänge, Grifferfolg und Zielerreichung pro Episode, mit Algorithmus- und Laufkennung im Dateikopf — die Datengrundlage aller Auswertungen und Plots des Projekts. Dazu das Speichern der Episoden-Trajektorien für die räumlichen Auswertungen.

@@ -19,11 +19,10 @@ Radio lebt von der Mischung aus Information und Musik — aber das Programm best
 
 *Das Interessen-Feature — mein Hauptbeitrag: Profil, News↔Musik-Balance, KI- und Host-Auswahl, Musik-Favoriten und die Genre-Kacheln für die News-Personalisierung.*
 
-Ich war mit 32 Commits der zweitaktivste Entwickler im fünfköpfigen Team, Schwerpunkt Frontend:
+Mein Schwerpunkt lag im Frontend:
 
 - **Das Interessen-Feature von UI bis Datenbank:** die Seiten und Formulare, mit denen Nutzer:innen ihre Themeninteressen auswählen (React/Next.js), samt Styling, tRPC-API-Router und Anbindung an das Drizzle-Datenbankschema — die Grundlage für die personalisierte News-Auswahl
 - **Teile des Player-Dashboards:** News-Player als eigenständige Komponente herausgelöst und gestylt, Spotify-Button, Navbar-Styling, Ladezustände
-- Kleinere Beiträge: Genre-Übersetzungen (Internationalisierung), Icons und Bild-Assets
 
 ## Technologien
 
