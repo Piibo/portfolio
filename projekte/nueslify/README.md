@@ -7,7 +7,7 @@
 | Kontext | Kurs Intelligent User Interfaces (IUI), LMU München, WiSe 2023/24 · 5-köpfiges Team |
 | Rolle | Frontend: Interessen-Feature (UI bis Datenbank) und Teile des Player-Dashboards |
 | Code | [NoelHuibers/nueslify](https://github.com/NoelHuibers/nueslify) (öffentlich, GPL-3.0) |
-| Demo | [nueslify.vercel.app](https://nueslify.vercel.app) |
+| Demo | [nueslify.vercel.app](https://nueslify.vercel.app) (läuft; zum Ausprobieren ist ein Spotify-Login nötig) |
 
 ## Die Idee
 
