@@ -7,7 +7,7 @@
 | Kontext | Masterarbeit „Designing with Artificial Intelligence: Supporting Design Decision-Making in Furniture Design through Human-in-the-Loop Workflows", M.Sc. Medieninformatik, LMU München (Kooperation TUM Architekturinformatik) |
 | Zeitraum | März – August 2026 |
 | Rolle | Eigenständige Konzeption, Entwicklung, Studiendurchführung und Auswertung (Solo-Projekt) |
-| Code | Privat (das Repository enthält Studiendaten); Einblick in den Code gebe ich auf Anfrage gern |
+| Code | **[Piibo/rhino-ai-cad-assistant](https://github.com/Piibo/rhino-ai-cad-assistant)** — kuratierte Code-Basis (MCP-Server + Studien-Plugin), MIT-lizenziert. Das Arbeits-Repository bleibt privat, weil es Studiendaten enthält. |
 
 <img src="bilder/abb-ui-werkzeug.png" alt="Chat-Panel des Plugins mit Skizze auf Viewport-Aufnahme, KI-Rückfrage mit Auswahl-Dialog und Objekt-Referenz-Chip" width="420">
 
