@@ -4,6 +4,8 @@
 
 ![Verkehrsfluss-Simulation](bilder/trafficFlow.png)
 
+*Die animierte Verkehrssimulation auf dem Straßennetz von Kempten: Fahrzeuge folgen den SUMO-Verkehrsflüssen, die Farben zeigen die Belastung.*
+
 | | |
 |---|---|
 | Kontext | sustAInability-Seminar, Hochschule München + TU München, 2025 · 4-köpfiges Team |
@@ -25,6 +27,8 @@ Professionelle Verkehrssimulationen (SUMO, Vissim) sind für Laien unzugänglich
 
 ![Barrieren-Platzierung im Straßennetz](bilder/Barriers.png)
 
+*Barrieren-Platzierung: gesperrte Straßenabschnitte im Netz — die Simulation leitet den Verkehr um und zeigt die Folgen direkt.*
+
 ## Mein Beitrag: die Datenpipeline
 
 Der Weg von der rohen Karte zur simulierbaren Stadt — alle vier Stufen der Datenaufbereitung:
@@ -38,4 +42,4 @@ Dazu Co-Autor des Projektreports.
 
 ## Technologien
 
-React · Vite · GeoJSON · SUMO (Verkehrssimulation) · OpenStreetMap/Overpass · Python (osmnx, geopandas, pyproj) · wissenschaftliches Schreiben
+React · Vite · GeoJSON · SUMO (Verkehrssimulation) · OpenStreetMap/Overpass · Python (osmnx, geopandas, pyproj)

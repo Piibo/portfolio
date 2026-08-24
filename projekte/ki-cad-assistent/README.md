@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| Kontext | Masterarbeit „Entwerfen mit Künstlicher Intelligenz: Ein KI-gestützter Workflow für den iterativen Möbelentwurf", M.Sc. Medieninformatik, LMU München (Kooperation TUM Architekturinformatik) |
+| Kontext | Masterarbeit „Entwerfen mit Künstlicher Intelligenz: Ein KI-gestützter Workflow für den iterativen Möbelentwurf“, M.Sc. Medieninformatik, LMU München (Kooperation TUM Architekturinformatik) |
 | Zeitraum | März – August 2026 |
 | Rolle | Eigenständige Konzeption, Entwicklung, Studiendurchführung und Auswertung (Solo-Projekt) |
 | Code | **[Piibo/rhino-ai-cad-assistant](https://github.com/Piibo/rhino-ai-cad-assistant)** — kuratierte Code-Basis (MCP-Server + Studien-Plugin), MIT-lizenziert. Das Arbeits-Repository bleibt privat, weil es Studiendaten enthält. |
@@ -15,7 +15,7 @@
 
 ## Problem
 
-Reine Prompt-Werkzeuge degradieren Designer:innen zu Zuschauern: Räumliche Absichten lassen sich sprachlich nur schwer präzise vermitteln („das linke hintere Bein, etwas geschwungener…"). Metrische Angaben funktionieren im Chat robust — lokale, zeigende und richtungsbezogene Bezüge brauchen dagegen sichtbare Selektion, Markierung, Vorschau und Parameter. Die Arbeit untersucht, welche Interaktionswerkzeuge ein chatbasierter KI-CAD-Assistent braucht, damit aus passivem Prompten aktive Modellinteraktion wird.
+Reine Prompt-Werkzeuge degradieren Designer:innen zu Zuschauern: Räumliche Absichten lassen sich sprachlich nur schwer präzise vermitteln („das linke hintere Bein, etwas geschwungener…“). Metrische Angaben funktionieren im Chat robust — lokale, zeigende und richtungsbezogene Bezüge brauchen dagegen sichtbare Selektion, Markierung, Vorschau und Parameter. Die Arbeit untersucht, welche Interaktionswerkzeuge ein chatbasierter KI-CAD-Assistent braucht, damit aus passivem Prompten aktive Modellinteraktion wird.
 
 ## Lösung
 
@@ -37,7 +37,7 @@ Die Human-in-the-Loop-Werkzeuge, um die es in der Studie ging:
 
 *Die Varianten-Galerie: drei Beinform-Alternativen (gerade, konisch, gespreizt) als Viewport-Aufnahmen zum Durchschalten — die gewählte Variante wird im Modell aktiv.*
 
-Dazu eine vollständige **Studieninfrastruktur**: zwei Experimentalbedingungen (nur Chat vs. Chat + Werkzeuge), über eine einzige fail-closed Registry-Funktion getrennt; lückenloses Event-Logging in SQLite (12 Tabellen); Export-Bundles mit Manifest und Hash-Validierung; „Golden Hashes", die System-Prompt und Tool-Surface gegen ungewollte Änderungen während der Studie einfrieren.
+Dazu eine vollständige **Studieninfrastruktur**: zwei Experimentalbedingungen (nur Chat vs. Chat + Werkzeuge), über eine einzige fail-closed Registry-Funktion getrennt; lückenloses Event-Logging in SQLite (12 Tabellen); Export-Bundles mit Manifest und Hash-Validierung; „Golden Hashes“, die System-Prompt und Tool-Surface gegen ungewollte Änderungen während der Studie einfrieren.
 
 ## Nutzerstudie & Ergebnis
 

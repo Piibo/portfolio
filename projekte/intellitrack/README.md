@@ -11,7 +11,7 @@
 
 ## Die Idee
 
-Im Praktikum Intelligent Interactive Systems haben wir uns als vierköpfiges Team der Indoor-Ortung angenommen und das Ergebnis als ACM-Paper dokumentiert. Der Kern der Idee: GPS fällt in Gebäuden aus, aber WLAN-Netze sind fast überall — und ihre Signalstärken bilden pro Raum ein charakteristisches Muster, einen „Fingerprint", den ein Machine-Learning-Modell wiedererkennen kann.
+Im Praktikum Intelligent Interactive Systems haben wir uns als vierköpfiges Team der Indoor-Ortung angenommen und das Ergebnis als ACM-Paper dokumentiert. Der Kern der Idee: GPS fällt in Gebäuden aus, aber WLAN-Netze sind fast überall — und ihre Signalstärken bilden pro Raum ein charakteristisches Muster, einen „Fingerprint“, den ein Machine-Learning-Modell wiedererkennen kann.
 
 ## Ansatz
 
@@ -19,7 +19,9 @@ Im Praktikum Intelligent Interactive Systems haben wir uns als vierköpfiges Tea
 2. **Preprocessing:** Normalisierung der Signalstärken, Ausreißer-Filterung, Feature-Extraktion und Dimensionsreduktion. Ein zentraler Befund dabei: 5-GHz-Netze liefern deutlich konsistentere Daten und trennen Räume besser als 2,4 GHz.
 3. **Modellvergleich:** Decision Tree als Baseline (80,8 %), Random Forest (86,4 %), XGBoost (92,0 %) — jeweils mit 5-fach-Kreuzvalidierung evaluiert; Hyperparameter-Tuning per GridSearch.
 
-![Precision der Raumvorhersage im Modellvergleich](precision_plot.png)
+![Precision der Raumvorhersage pro Raum-Klasse (bestes Modell, XGBoost)](precision_plot.png)
+
+*Precision pro Raum-Klasse des besten Modells (XGBoost) — Abbildung aus dem Paper.*
 
 ## Mein Beitrag: die Android-App
 

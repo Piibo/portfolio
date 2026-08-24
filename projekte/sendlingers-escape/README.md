@@ -14,7 +14,7 @@
 
 ## Das Projekt
 
-Im Praktikum Game Development (In-House-Praktikum der LMU, ohne Firmenpartner) haben wir zu dritt über das Semester ein vollständiges, spielbares Spiel entwickelt — vom Konzept über Level- und Rätseldesign bis zum fertigen Build samt Gameplay-Video. Unsere Wahl: ein Escape-Game an einem realen Münchner Ort.
+Im Praktikum Game Development haben wir zu dritt über das Semester ein vollständiges, spielbares Spiel entwickelt — vom Konzept über Level- und Rätseldesign bis zum fertigen Build samt Gameplay-Video. Unsere Wahl: ein Escape-Game an einem realen Münchner Ort.
 
 ## Das Spiel
 

@@ -26,7 +26,7 @@ Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Land
 
 ## Mein Beitrag: der Lampenkopf mit verstellbarem Lichtkegel
 
-<img src="bilder/lampenkopf-nah.jpg" alt="Nahaufnahme des Lampenkopfs: Schrägnut mit Führungsschraube, ESP8266-Board, leuchtender LED-Ring" width="360">
+<img src="bilder/lampenkopf-nah.jpg" alt="Nahaufnahme des Lampenkopfs: Schrägnut mit Führungsstift, ESP8266-Board, leuchtender LED-Ring" width="360">
 
 *Der Lampenkopf im Detail: In der Schrägnut läuft der Führungsstift, der beim Rotieren der Rohre die Linse hebt und senkt. Oben das ESP8266-Board (D1 Mini), unten der LED-Ring.*
 

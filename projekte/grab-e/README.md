@@ -19,7 +19,7 @@ Im Praktikum Autonome Systeme haben wir uns im Team zwei Fragen vorgenommen: Kan
 
 Die Umgebung ist eine Unity-Simulation eines fünfachsigen Arms (Niryo One, aufgebaut auf dem Pick-and-Place-Tutorial des Unity Robotics Hub), angebunden an ein Python-Interface — der Arm bekommt Gelenkwinkel als Aktionen und liefert Zustand und Belohnung zurück. Aufgabe: den Würfel finden, greifen und am Ziel absetzen.
 
-Das Team implementierte die Lernverfahren selbst statt fertige Bibliotheken zu benutzen: **Soft Actor-Critic (SAC)** mit adaptivem Alpha und einem evolutionären Ansatz zur Actor-Auswahl, **TD3** mit priorisiertem Replay-Buffer und OU-Rauschen, **DDPG**, dazu einfachere Policy-, Policy-Value- und Policy-Q-Netze als Zwischenstufen zum Verständnis. Zum Vergleich liefen Baselines aus Stable-Baselines3 sowie eine Zufalls-Baseline.
+Das Team implementierte die Lernverfahren selbst, statt fertige Bibliotheken zu benutzen: **Soft Actor-Critic (SAC)** mit adaptivem Alpha und einem evolutionären Ansatz zur Actor-Auswahl, **TD3** mit priorisiertem Replay-Buffer und OU-Rauschen, **DDPG**, dazu einfachere Policy-, Policy-Value- und Policy-Q-Netze als Zwischenstufen zum Verständnis. Zum Vergleich liefen Baselines aus Stable-Baselines3 sowie eine Zufalls-Baseline.
 
 Die Belohnungsfunktion kombiniert dichte Strafterme (Abstand zum Würfel, Abstand zum Ziel, Kollisionen, Schrittzahl) mit seltenen positiven Signalen (erfolgreicher Griff, Ziel erreicht) und Delta-Belohnungen, die die Verbesserung gegenüber dem vorigen Schritt bewerten.
 
@@ -31,7 +31,7 @@ Das Ergebnis des Vergleichs: **SAC erzielte die beste Performance** — robust u
 
 ## Mein Beitrag: dass die Ergebnisse vergleichbar und wiederholbar sind
 
-Mein Schwerpunkt war die Experimentier-Infrastruktur — die Schicht, die einen Vergleich von fünf Algorithmen über hunderte Trainingsläufe erst aussagekräftig macht.
+Mein Schwerpunkt war die Experimentier-Infrastruktur — die Schicht, die einen Vergleich mehrerer Algorithmen über hunderte Trainingsläufe erst aussagekräftig macht.
 
 - **Seeding für Reproduzierbarkeit:** ein zentrales Utility, das den Zufall über alle Trainingsskripte hinweg auf einen gesetzten Seed festlegt, damit Läufe wiederholbar werden und Unterschiede zwischen Algorithmen nicht bloß Zufallsstreuung sind.
 - **Ergebnis-Logging:** einheitliches CSV-Format für Return, Episodenlänge, Grifferfolg und Zielerreichung pro Episode, mit Algorithmus- und Laufkennung im Dateikopf — die Datengrundlage aller Auswertungen und Plots des Projekts. Dazu das Speichern der Episoden-Trajektorien für die räumlichen Auswertungen.
