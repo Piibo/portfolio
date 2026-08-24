@@ -1,6 +1,6 @@
 # SpAice — KI-gesteuerter Gewürzautomat
 
-**Gericht nennen (per Sprache oder Text) → ein lokales LLM bestimmt die typischen Gewürze samt Grammmengen → die Maschine dosiert sie automatisch.** „SpAice – AI powered Spice Dispenser": ein Solo-Projekt, das Konstruktion, KI-Anbindung, Spracherkennung und Hardware-Steuerung verbindet.
+**Gericht nennen (per Sprache oder Text) → ein lokales LLM bestimmt die typischen Gewürze samt Grammmengen → die Maschine dosiert sie automatisch.** „SpAice – AI powered Spice Dispenser“: ein Solo-Projekt, das Konstruktion, KI-Anbindung, Spracherkennung und Hardware-Steuerung verbindet.
 
 <img src="bilder/spaice-gesamt.jpg" alt="SpAice komplett: fünf 3D-gedruckte Gewürzbehälter auf der Linearachse, rechts die Bedienbox mit OLED-Display und Drehknopf" width="640">
 
@@ -29,7 +29,7 @@ Im Kurs Sketching with Hardware (LMU) habe ich in einem Semester aus einer eigen
 <img src="bilder/display-ai-gericht.jpg" alt="OLED-Display: LLM-Ergebnis für „Chili con carne“ — Cayennepfeffer, Chili, Ingwer mit Mengen" width="400">
 </p>
 
-*Links: Spracheingabe am Gerät („Jetzt Sprechen"). Rechts: das LLM-Ergebnis für „Chili con carne" — Cayennepfeffer, Chili und Ingwer samt Mengen, direkt auf dem OLED zum Bestätigen.*
+*Links: Spracheingabe am Gerät („Jetzt Sprechen“). Rechts: das LLM-Ergebnis für „Chili con carne“ — Cayennepfeffer, Chili und Ingwer samt Mengen, direkt auf dem OLED zum Bestätigen.*
 
 ## Die Konstruktion
 

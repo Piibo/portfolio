@@ -1,6 +1,6 @@
 # VR-Interaktion im virtuellen Fahrzeug — Bachelorarbeit
 
-**Wie bedient man ein Auto in Virtual Reality — mit Controllern oder mit den bloßen Händen?** Meine Bachelorarbeit „Vergleich von verschiedenen VR-Interaktionsmöglichkeiten innerhalb eines virtuellen Fahrzeugs" vergleicht die beiden Eingabemethoden in einem selbst gebauten VR-Prototyp und einer Nutzerstudie mit 17 Teilnehmenden.
+**Wie bedient man ein Auto in Virtual Reality — mit Controllern oder mit den bloßen Händen?** Meine Bachelorarbeit „Vergleich von verschiedenen VR-Interaktionsmöglichkeiten innerhalb eines virtuellen Fahrzeugs“ vergleicht die beiden Eingabemethoden in einem selbst gebauten VR-Prototyp und einer Nutzerstudie mit 17 Teilnehmenden.
 
 <img src="bilder/cockpit-handtracking.jpg" alt="Blick aus der Fahrerposition im virtuellen Honda-e-Cockpit, zwei per Handtracking erfasste Hände über dem Lenkrad" width="640">
 
@@ -35,7 +35,7 @@ Erhoben wurden Bearbeitungszeiten, Think-Aloud-Kommentare, Bildschirmaufnahmen u
 ## Zentrale Befunde
 
 - **Handtracking fühlt sich realistischer an:** Die 1:1-Übertragung der eigenen Hand wurde als äußerst realistisch bewertet — etwa beim Fensterheber, wo man den Finger natürlich anwinkeln und unter den Knopf führen kann, was mit dem Controller kaum jemand herausfand.
-- **Controller sind zuverlässiger und geben Feedback:** Vibration als haptische Rückmeldung wurde besonders bei kleinen Knöpfen als hilfreich empfunden; Greifen und Hebel-Bedienung erkannte das System mit Controllern robuster — beim Handtracking „klebten" Hebel teils an der Hand, wenn die Griffunterbrechung nicht erkannt wurde.
+- **Controller sind zuverlässiger und geben Feedback:** Vibration als haptische Rückmeldung wurde besonders bei kleinen Knöpfen als hilfreich empfunden; Greifen und Hebel-Bedienung erkannte das System mit Controllern robuster — beim Handtracking „klebten“ Hebel teils an der Hand, wenn die Griffunterbrechung nicht erkannt wurde.
 - **Die schwierigsten Interaktionen** waren Innenspiegel und Lautstärke-Drehknopf; bei Präzisionsaufgaben wechselten viele spontan zur stärkeren Hand.
 
 Die Arbeit leitet daraus ab, wofür sich welche Methode im Fahrzeugkontext eignet — Feinmotorik und Realismus sprechen für Handtracking, Zuverlässigkeit und Feedback für Controller.

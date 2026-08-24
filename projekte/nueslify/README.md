@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Kontext | Kurs Intelligent User Interfaces (IUI), LMU München, WiSe 2023/24 · 5-köpfiges Team |
-| Rolle | Frontend: Interessen-Feature (UI bis Datenbank) und Teile des Player-Dashboards |
+| Rolle | Interessen-Feature durchgängig von der Oberfläche bis zur Datenbank, dazu Teile des Player-Dashboards |
 | Code | [NoelHuibers/nueslify](https://github.com/NoelHuibers/nueslify) (öffentlich, GPL-3.0) |
 | Demo | [nueslify.vercel.app](https://nueslify.vercel.app) (läuft; zum Ausprobieren ist ein Spotify-Login nötig) |
 
@@ -21,7 +21,7 @@ Radio lebt von der Mischung aus Information und Musik — aber das Programm best
 
 *Das Interessen-Feature — mein Hauptbeitrag: Profil, News↔Musik-Balance, KI- und Host-Auswahl, Musik-Favoriten und die Genre-Kacheln für die News-Personalisierung.*
 
-Mein Schwerpunkt lag im Frontend:
+Mein Schwerpunkt lag auf dem Interessen-Feature — durchgängig von der Oberfläche bis zum Datenbankschema:
 
 - **Das Interessen-Feature von UI bis Datenbank:** die Seiten und Formulare, mit denen Nutzer:innen ihre Themeninteressen auswählen (React/Next.js), samt Styling, tRPC-API-Router und Anbindung an das Drizzle-Datenbankschema — die Grundlage für die personalisierte News-Auswahl
 - **Teile des Player-Dashboards:** News-Player als eigenständige Komponente herausgelöst und gestylt, Spotify-Button, Navbar-Styling, Ladezustände
