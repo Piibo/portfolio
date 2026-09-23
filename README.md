@@ -23,9 +23,7 @@ M.Sc. Medieninformatik an der LMU München (Abschluss vorauss. 2026), Schwerpunk
 <td align="center"><a href="projekte/grab-e/"><img src="projekte/grab-e/bilder/vorschau.jpg" alt="GRAB-E: Trajektorien-Auswertung des Greifarms" width="260"></a><br><b><a href="projekte/grab-e/">GRAB-E</a></b><br><sub>Reinforcement Learning · PyTorch</sub></td>
 </tr>
 <tr>
-<td align="center"><a href="projekte/sendlingers-escape/"><img src="projekte/sendlingers-escape/bilder/vorschau.jpg" alt="Sendlingers Escape: U-Bahn-Station Sendlinger Tor im Spiel" width="260"></a><br><b><a href="projekte/sendlingers-escape/">Sendlingers Escape</a></b><br><sub>Escape-Game · Unreal Engine</sub></td>
-<td></td>
-<td></td>
+<td align="center" colspan="3"><a href="projekte/sendlingers-escape/"><img src="projekte/sendlingers-escape/bilder/vorschau.jpg" alt="Sendlingers Escape: U-Bahn-Station Sendlinger Tor im Spiel" width="260"></a><br><b><a href="projekte/sendlingers-escape/">Sendlingers Escape</a></b><br><sub>Escape-Game · Unreal Engine</sub></td>
 </tr>
 </table>
 
