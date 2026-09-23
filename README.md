@@ -6,6 +6,31 @@ M.Sc. Medieninformatik an der LMU München (Abschluss vorauss. 2026), Schwerpunk
 
 ## Projekte
 
+<table>
+<tr>
+<td align="center" width="33%"><a href="projekte/ki-cad-assistent/"><img src="projekte/ki-cad-assistent/bilder/vorschau.jpg" alt="KI-CAD-Assistent: Chat-Panel neben einem im Dialog modellierten Beistelltisch" width="260"></a><br><b><a href="projekte/ki-cad-assistent/">KI-CAD-Assistent</a></b><br><sub>Masterarbeit · KI-Werkzeug für Rhino 8</sub></td>
+<td align="center" width="33%"><a href="projekte/spice-dispenser/"><img src="projekte/spice-dispenser/bilder/vorschau.jpg" alt="SpAice: Gewürzautomat mit fünf Behältern auf einer Linearachse" width="260"></a><br><b><a href="projekte/spice-dispenser/">SpAice</a></b><br><sub>KI-Gewürzautomat · selbst gebaut</sub></td>
+<td align="center" width="33%"><a href="projekte/bachelorarbeit-vr-fahrzeug/"><img src="projekte/bachelorarbeit-vr-fahrzeug/bilder/vorschau.jpg" alt="VR-Fahrzeug: virtuelle Hände am Lenkrad eines Autocockpits" width="260"></a><br><b><a href="projekte/bachelorarbeit-vr-fahrzeug/">VR im Fahrzeug</a></b><br><sub>Bachelorarbeit · Nutzerstudie (n = 17)</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="projekte/e-mission-z/"><img src="projekte/e-mission-z/bilder/vorschau.jpg" alt="E-Mission Z: Dashboard mit Deutschlandkarte, Zeitreihe und Tortendiagrammen" width="260"></a><br><b><a href="projekte/e-mission-z/">E-Mission Z</a></b><br><sub>Datenvisualisierung · React, D3</sub></td>
+<td align="center"><a href="projekte/nueslify/"><img src="projekte/nueslify/bilder/vorschau.jpg" alt="Nüslify: Startseite mit Logo" width="260"></a><br><b><a href="projekte/nueslify/">Nüslify</a></b><br><sub>KI-Radio als PWA · Next.js</sub></td>
+<td align="center"><a href="projekte/kemptainability/"><img src="projekte/kemptainability/bilder/vorschau.jpg" alt="kemptAInability: Verkehrsfluss-Simulation auf der Karte von Kempten" width="260"></a><br><b><a href="projekte/kemptainability/">kemptAInability</a></b><br><sub>Verkehrssimulation · SUMO-Pipeline</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="projekte/intellitrack/"><img src="projekte/intellitrack/bilder/vorschau.jpg" alt="IntelliTrack: Balkendiagramm der Vorhersage-Präzision pro Raum" width="260"></a><br><b><a href="projekte/intellitrack/">IntelliTrack</a></b><br><sub>Indoor-Ortung per ML · Android</sub></td>
+<td align="center"><a href="projekte/bloomie/"><img src="projekte/bloomie/bilder/vorschau.jpg" alt="Bloomie: Roboterarm mit weißem Lampenkopf" width="260"></a><br><b><a href="projekte/bloomie/">Bloomie</a></b><br><sub>Gestengesteuerte Roboterlampe</sub></td>
+<td align="center"><a href="projekte/grab-e/"><img src="projekte/grab-e/bilder/vorschau.jpg" alt="GRAB-E: Trajektorien-Auswertung des Greifarms" width="260"></a><br><b><a href="projekte/grab-e/">GRAB-E</a></b><br><sub>Reinforcement Learning · PyTorch</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="projekte/sendlingers-escape/"><img src="projekte/sendlingers-escape/bilder/vorschau.jpg" alt="Sendlingers Escape: U-Bahn-Station Sendlinger Tor im Spiel" width="260"></a><br><b><a href="projekte/sendlingers-escape/">Sendlingers Escape</a></b><br><sub>Escape-Game · Unreal Engine</sub></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+### Im Überblick
+
 | Projekt | Was es ist | Technologien |
 |---|---|---|
 | [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: chatbasierter KI-Assistent mit Human-in-the-Loop-Werkzeugen, evaluiert in einer Nutzerstudie (n = 8) | React, TypeScript, Python, FastAPI, WebSockets, SQLite, Anthropic API |
