@@ -7,7 +7,7 @@
 | Kontext | Kurs Intelligent User Interfaces (IUI), LMU München, WiSe 2023/24 · 5-köpfiges Team |
 | Rolle | Interessen-Feature durchgängig von der Oberfläche bis zur Datenbank, dazu Teile des Player-Dashboards |
 | Code | [NoelHuibers/nueslify](https://github.com/NoelHuibers/nueslify) (öffentlich, GPL-3.0) |
-| Demo | [nueslify.vercel.app](https://nueslify.vercel.app) (läuft; zum Ausprobieren ist ein Spotify-Login nötig) |
+| Deployment | War als PWA auf Vercel live (nueslify.vercel.app); die Anmeldung über Spotify funktioniert inzwischen nicht mehr (Stand 09/2026) |
 
 ## Die Idee
 
@@ -33,4 +33,4 @@ Mein Schwerpunkt lag auf dem Interessen-Feature — durchgängig von der Oberfl�
 | Web-App | Next.js · TypeScript · tRPC · Tailwind CSS (T3-Stack), als PWA |
 | Daten | Drizzle ORM · SQL (PlanetScale) |
 | Integrationen | Spotify-API (Login via NextAuth) · LangChain mit wählbarem Modell (OpenAI GPT / Google Gemini) für die News-Aufbereitung · AWS S3 |
-| Betrieb | Vercel (Live-Deployment) |
+| Betrieb | Vercel |
