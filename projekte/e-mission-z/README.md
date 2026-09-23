@@ -34,6 +34,10 @@ Mit **77 von 295 Commits** hatte ich den größten Einzelanteil im fünfköpfige
 - **Die Bundesland-Auswahlliste** (`StateList`): Auswahl- und Hover-Zustände sowie die Verdrahtung, über die eine Auswahl gleichzeitig Karte und Diagramm erreicht.
 - **Zusammenführung der Komponenten** in der App-Struktur (`App.js`, 28 Commits) und Anbindung der Kartenkomponente an den geteilten Auswahlzustand.
 
+<img src="bilder/interaktion.gif" alt="Animation im Live-Dashboard: Der rechte Griff des Zeitraum-Sliders wird bis 2021 gezogen, die Zeitreihe wächst mit; dann werden Bayern, Berlin und Nordrhein-Westfalen in der Liste gewählt und auf Karte und Zeitreihe hervorgehoben; zum Schluss schaltet ein Reiterwechsel alle Ansichten auf ÖPNV um" width="720">
+
+*Das Zusammenspiel im Live-Dashboard: Zeitraum aufziehen, Bundesländer in der Liste wählen — Zeitreihe und Karte folgen sofort. Slider, Auswahlliste und Zeitreihe sind meine Komponenten. Am Ende schaltet ein Reiterwechsel alle Ansichten gemeinsam auf ÖPNV um.*
+
 ## Technologien
 
 | Ebene | Eingesetzt |
