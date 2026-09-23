@@ -31,9 +31,19 @@ Im Kurs Sketching with Hardware (LMU) habe ich in einem Semester aus einer eigen
 
 *Links: Spracheingabe am Gerät („Jetzt Sprechen“). Rechts: das LLM-Ergebnis für „Chili con carne“ — Cayennepfeffer, Chili und Ingwer samt Mengen, direkt auf dem OLED zum Bestätigen.*
 
+Ohne KI geht es auch: Im Modus **„Einzel-Auswahl“** stellt man die Menge jedes Gewürzes selbst per Drehknopf ein, in 0,5-Gramm-Schritten. Welches Gewürz in welchem Behälter steckt, lässt sich per Sprache neu zuordnen; der Name wird dabei gegen eine feste Gewürzliste geprüft.
+
+<img src="bilder/display-einzelauswahl.jpg" alt="OLED-Display im Modus Einzel-Auswahl: Salz 2, Pfeffer 3, Chili 1,5 (markiert), Paprika 0; oben eine Hand am Drehknopf" width="400">
+
+*Manueller Modus: Salz, Pfeffer, Chili und Paprika mit selbst gewählten Mengen, eingestellt über den Drehknopf.*
+
 ## Die Konstruktion
 
-Die Maschine ist komplett selbst konstruiert: Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse als CAD-Entwurf, gefertigt im 3D-Druck, montiert auf einer Aluminium-Profilschiene.
+Die Maschine ist komplett selbst konstruiert: Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse als CAD-Entwurf in Fusion 360, gefertigt im 3D-Druck, montiert auf einer Aluminium-Profilschiene.
+
+<img src="bilder/linearachse.gif" alt="Animation: Die fünf weißen Gewürzbehälter fahren auf der schwarzen Linearachse seitlich an der Antriebseinheit vorbei" width="440">
+
+*Ausschnitt aus dem Demo-Video: Der Schrittmotor verschiebt die Behälterreihe auf der Linearachse zum nächsten Gewürz.*
 
 <p>
 <img src="bilder/getriebe-cad.png" alt="CAD-Render der Kraftübertragung in der Antriebseinheit" width="400">
@@ -42,9 +52,26 @@ Die Maschine ist komplett selbst konstruiert: Gewürzbehälter mit Dosiermechani
 
 *Die Kraftübertragung der Antriebseinheit — links der CAD-Entwurf, rechts das gedruckte Ergebnis mit Zahnrädern, Servo und Schrittmotor.*
 
+## Herausforderungen und Lösungen
+
+| Problem | Lösung |
+|---|---|
+| Schrittmotor und Servo liefen anfangs nicht synchron, Behälter und Dosierer standen nicht genau übereinander | angepasste Dosierregel und präzisere Mechanik |
+| Die Display-Bibliotheken ließen sich unter ESP-IDF nicht nutzen | Wechsel auf das Arduino-Framework, Bibliotheken angepasst |
+| Für unbekannte Gerichte erfand das LLM Gewürze | strikte Prompts, Wikipedia-Abgleich und Gewürz-Whitelist (siehe oben) |
+| Spracheingabe in eine einfache Bedienung einbauen | Drehknopf für alles, was präzise sein muss, Sprache für die KI-Aufgaben |
+
+## Nächste Schritte
+
+- Mikrofon ins Gerät einbauen (bisher extern)
+- Waage integrieren, damit die Mengen genauer werden
+- Kopplungsmechanismus zuverlässiger machen
+- Behälter im Kreis statt in einer Reihe anordnen, das spart Platz
+- Gewürzempfehlungen der KI verfeinern und die freihändige Bedienung verbessern
+
 ## Was ich dabei gelernt/gezeigt habe
 
-- **Mechanische Konstruktion:** die komplette Maschine selbst entworfen — CAD, Zahnrad-Kraftübertragung, Dosiermechanik, 3D-Druck aller Sonderteile
+- **Mechanische Konstruktion:** die komplette Maschine selbst entworfen — CAD in Fusion 360, Zahnrad-Kraftübertragung, Dosiermechanik, 3D-Druck aller Sonderteile
 - **Embedded-Entwicklung:** C++ auf ESP32-C6 (Arduino-Framework, PlatformIO), Schrittmotor- und Servo-Ansteuerung auf Pin-Ebene, Debouncing, WLAN/HTTP auf dem Mikrocontroller
 - **Praktische LLM-Integration mit Guardrails:** lokales Modell statt Cloud, strikte Prompts, Validierung und Normalisierung der Ausgaben — der interessante Teil ist nicht der LLM-Aufruf, sondern das Robust-Machen dagegen, dass er Unsinn liefert
 - **Lokale Spracherkennung:** Whisper-ASR + Voice-Activity-Detection ohne Cloud-Dienste
@@ -54,6 +81,6 @@ Die Maschine ist komplett selbst konstruiert: Gewürzbehälter mit Dosiermechani
 
 | Ebene | Eingesetzt |
 |---|---|
-| Konstruktion | CAD-Entwurf · 3D-Druck · Zahnrad-Getriebe · Aluminium-Profilschiene · Schrittmotor + Servo |
+| Konstruktion | CAD in Fusion 360 · 3D-Druck · Zahnrad-Getriebe · Aluminium-Profilschiene · Schrittmotor + Servo |
 | Firmware (~840 Zeilen C/C++) | ESP32-C6 · Arduino-Framework · PlatformIO · ESP32Servo · ArduinoJson · U8g2 |
 | Host (~570 Zeilen Python) | Python · Ollama (Mistral, lokal) · faster-whisper · webrtcvad · Wikipedia-API · pyserial |

@@ -26,13 +26,16 @@ Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Land
 
 ## Mein Beitrag: der Lampenkopf mit verstellbarem Lichtkegel
 
+<p>
+<img src="bilder/lampenkopf-render.jpg" alt="Rendering des CAD-Entwurfs: weißer Lampenkopf mit Rohr und Trichter, im Rohr schräg verlaufende Führungsnuten" width="278">
 <img src="bilder/lampenkopf-nah.jpg" alt="Nahaufnahme des Lampenkopfs: Schrägnut mit Führungsstift, ESP8266-Board, leuchtender LED-Ring" width="360">
+</p>
 
-*Der Lampenkopf im Detail: In der Schrägnut läuft der Führungsstift, der beim Rotieren der Rohre die Linse hebt und senkt. Oben das ESP8266-Board (D1 Mini), unten der LED-Ring.*
+*Links mein CAD-Entwurf des Lampenkopfs (Fusion 360, gerendert) mit den schräg verlaufenden Führungsnuten. Rechts der gedruckte Lampenkopf am Arm: In der Schrägnut läuft der Führungsstift, der beim Rotieren der Rohre die Linse hebt und senkt. Oben das ESP8266-Board (D1 Mini), unten der LED-Ring.*
 
 - **Linsenmechanik nach dem Zoom-Objektiv-Prinzip:** Vor den LEDs sitzt eine bewegliche Linse, die den Lichtkegel stufenlos von breitem Ambient-Licht bis zum eng gebündelten Arbeits-Spot verändert. Umgesetzt über einen Schrägnut-Mechanismus wie in einem Kamera-Zoom: Außen- und Innenrohr tragen gegenläufige Führungsnuten, ein Führungsstift am Linsenhalter greift in beide — rotieren die Rohre gegeneinander, fährt die Linse präzise hoch oder runter.
 - **Der Clou dabei:** Die Rotation kommt vom obersten Drehgelenk des Roboterarms selbst — der Mechanismus braucht keinen zusätzlichen Motor.
-- **Konstruktion:** Lampenkopf als 3D-Druck, Befestigung am Arm über LEGO-kompatible Pins (Plug-and-Play).
+- **Konstruktion:** Lampenkopf in Fusion 360 konstruiert und im 3D-Druck gefertigt, Befestigung am Arm über LEGO-kompatible Pins (Plug-and-Play).
 - **LED-Hardware:** Einbau der LED-Ringe samt Ansteuerung im Lampenkopf.
 
 ## Technologien
@@ -41,4 +44,4 @@ Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Land
 |---|---|
 | Robotik | MyCobot 280 M5 · ROS (3-Node-Architektur) · Pymycobot |
 | Computer Vision | MediaPipe (Hand-Tracking, 21 Landmarken) · OpenCV · Webcam |
-| Licht/Hardware | 3D-gedruckter Lampenkopf · Linsenmechanik (Schrägnut-Prinzip) · ESP8266 (D1 Mini) + LED-Ringe |
+| Licht/Hardware | Lampenkopf in Fusion 360 konstruiert, 3D-gedruckt · Linsenmechanik (Schrägnut-Prinzip) · ESP8266 (D1 Mini) + LED-Ringe |
