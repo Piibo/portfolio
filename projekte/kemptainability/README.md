@@ -33,6 +33,10 @@ Professionelle Verkehrssimulationen (SUMO, Vissim) sind für Laien unzugänglich
 
 Der Weg von der rohen Karte zur simulierbaren Stadt — alle vier Stufen der Datenaufbereitung:
 
+![Die Datenpipeline in vier Stufen: Overpass-Abfrage mit allen OSM-Knoten auf der Karte von Kempten, Import in SUMO, bereinigtes SUMO-Netz, fertiges GeoJSON-Straßennetz auf der Karte der App](bilder/datenpipeline.jpg)
+
+*Die Pipeline in Bildern: (1) das per Overpass gezogene OSM-Straßennetz mit allen Knoten, (2) der erste Import in SUMO, (3) das bereinigte Netz ohne Fuß- und Radwege, Ampeln und überflüssige Knoten, (4) das daraus erzeugte GeoJSON, wie es die App auf der Karte rendert. Kartendaten © OpenStreetMap-Mitwirkende.*
+
 - **OSM-Extraktion:** Overpass-Turbo-Queries, die gezielt das relevante Straßennetz von Kempten aus OpenStreetMap ziehen
 - **Bereinigung:** manuelle Prüfung in JOSM plus Python-Skripte, die Fußwege, Radwege, Ampeln und überflüssige Knoten entfernen
 - **SUMO-Netzkonvertierung:** Umwandlung in ein valides SUMO-Verkehrsnetz (`netconvert`, `map.net.xml`) mit Nacharbeit in `netedit`, samt Dokumentation des Workflows im Repo
