@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Kontext | Kurs Human-Robot Interaction (HRI), LMU München, 2025 · 4-köpfiges Team |
-| Rolle | Lampenkopf mit verstellbarem Lichtkegel (Linsenmechanik nach dem Zoom-Objektiv-Prinzip) + LED-Hardware |
+| Rolle | Software gemeinsam im Team (Co-Coding: ROS, MediaPipe, Robotersteuerung) · eigene Konstruktion des Lampenkopfs mit verstellbarem Lichtkegel (Zoom-Objektiv-Prinzip) + LED-Hardware |
 | Projektbericht | **[Paper als PDF](bloomie-paper.pdf)** (ACM-Format) |
 
 <img src="bilder/bloomie-gesamt.jpg" alt="Bloomie: MyCobot-Roboterarm mit dem 3D-gedruckten Lampenkopf, LED-Ring leuchtet violett" width="420">
@@ -24,7 +24,19 @@ Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Land
 
 *Gestensteuerung im Betrieb: Die Hand schwebt über dem Lampenkopf — oben leuchtet die grüne LED-Matrix, unten das warme Arbeitslicht. Standbild aus dem Projektvideo.*
 
-## Mein Beitrag: der Lampenkopf mit verstellbarem Lichtkegel
+## Mein Beitrag
+
+Die Software haben wir im Team per Co-Coding geschrieben, also gemeinsam am selben Code statt nach Modulen aufgeteilt. Den Lampenkopf mit dem verstellbaren Lichtkegel habe ich konstruiert und gebaut.
+
+### Software (gemeinsam im Co-Coding)
+
+- **ROS-Architektur aus drei Nodes:** Kamera-Node für Hand-Tracking und Gestenerkennung, Roboter-Node für die Armbewegung, Licht-Node für die LEDs
+- **Gestenerkennung mit MediaPipe:** Die Modi werden über Fingerstellungen umgeschaltet, Richtungsgesten über Winkel zwischen Handgelenk und Zeigefinger erkannt. Eine Geste gilt erst, wenn sie über mehrere Frames stabil bleibt.
+- **Robotersteuerung über die MyCobot-API:** MoveIt war für die Echtzeit-Steuerung zu träge, deshalb steuern wir die Gelenke direkt an (`jog_angle`, `send_angles`). Im Follow-Modus ignoriert eine Toleranzzone kleine Handbewegungen.
+- **Licht-Anbindung:** zwei ROS-Nodes, die Licht-Gesten in serielle Befehle an den ESP8266 übersetzen
+- **Setup:** ROS in einer virtuellen Maschine (UTM) auf einem ARM-MacBook, Roboterarm und Webcam per USB durchgereicht
+
+### Lampenkopf mit verstellbarem Lichtkegel (meine Konstruktion)
 
 <p>
 <img src="bilder/lampenkopf-render.jpg" alt="Rendering des CAD-Entwurfs: weißer Lampenkopf mit Rohr und Trichter, im Rohr schräg verlaufende Führungsnuten" width="278">
