@@ -31,6 +31,10 @@ Das Nutzer-Frontend des Systems ist eine Android-App (Kotlin), an der ich einen 
 - **WLAN-Scan-Ansicht:** Listen-Adapter, die die laufenden WiFi-Scans und erkannten Räume anzeigen
 - UI-Aufbau und Styling der Fragmente
 
+<img src="bilder/app-dashboard.png" alt="Screenshot der Android-App: Dashboard mit Gebäudeplan des 3. Obergeschosses, Positions-Marker in Raum 353, Stockwerkswahl 3 und 4 und darunter die Raumliste mit Vorhersage-Wahrscheinlichkeiten" width="300">
+
+*Das Dashboard der App: Gebäudeplan mit Positions-Marker und Stockwerkswahl, darunter die Raumliste mit den Vorhersage-Wahrscheinlichkeiten.*
+
 ## Technologien
 
 Android (Kotlin) · Python · Machine Learning (XGBoost, Random Forest, Decision Trees) · Feature Engineering · Kreuzvalidierung, GridSearch · wissenschaftliches Schreiben (ACM-Paper, LaTeX)
