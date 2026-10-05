@@ -2,15 +2,15 @@
 
 **Wie bedient man ein Auto in Virtual Reality — mit Controllern oder mit den bloßen Händen?** Meine Bachelorarbeit „Vergleich von verschiedenen VR-Interaktionsmöglichkeiten innerhalb eines virtuellen Fahrzeugs“ vergleicht die beiden Eingabemethoden in einem selbst gebauten VR-Prototyp und einer Nutzerstudie mit 17 Teilnehmenden.
 
-<img src="bilder/cockpit-handtracking.jpg" alt="Blick aus der Fahrerposition im virtuellen Honda-e-Cockpit, zwei per Handtracking erfasste Hände über dem Lenkrad" width="640">
+<img src="bilder/cockpit-handtracking.jpg" alt="Blick aus der Fahrerposition im virtuellen Honda-e-Cockpit, zwei per Handtracking erfasste Hände über dem Lenkrad" width="720">
 
 *Das virtuelle Cockpit aus der Fahrerposition: Die eigenen Hände werden per Handtracking der Meta Quest 2 in Echtzeit erfasst — greifen, drücken, schieben und ziehen funktionieren direkt an den Fahrzeugkomponenten.*
 
 | | |
 |---|---|
-| Kontext | Bachelorarbeit im Fach Medieninformatik, Universität Regensburg, abgegeben April 2023 · allein |
+| Kontext | Bachelorarbeit im Fach Medieninformatik, Universität Regensburg, abgegeben April 2023 |
 | Rolle | Prototyp (Unity, Oculus Interaction SDK), Fahrzeugszene, Studiendesign, Durchführung und Auswertung |
-| Arbeit | Auf Anfrage — die PDF enthält persönliche Daten und ist deshalb nicht eingebettet |
+| Arbeit | Auf Anfrage — das PDF enthält persönliche Daten und ist deshalb nicht eingebettet |
 
 ## Der Prototyp
 
@@ -42,4 +42,8 @@ Die Arbeit leitet daraus ab, wofür sich welche Methode im Fahrzeugkontext eigne
 
 ## Technologien
 
-Unity · Oculus Interaction SDK · Meta Quest 2 (Handtracking + Controller) · Blender (Modellaufbereitung) · Studiendesign (within-subjects) · standardisierte UX-Fragebögen (UEQ, PQ, IPQ, AttrakDiff) · Think-Aloud
+| Ebene | Eingesetzt |
+|---|---|
+| Prototyp | Unity · Oculus Interaction SDK · Meta Quest 2 (Handtracking + Controller) |
+| 3D | Blender (Modellaufbereitung) |
+| Studie | Studiendesign (within-subjects) · standardisierte UX-Fragebögen (UEQ, PQ, IPQ, AttrakDiff) · Think-Aloud |

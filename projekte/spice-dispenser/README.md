@@ -2,7 +2,7 @@
 
 **Gericht nennen (per Sprache oder Text) → ein lokales LLM bestimmt die typischen Gewürze samt Grammmengen → die Maschine dosiert sie automatisch.** „SpAice – AI powered Spice Dispenser“ verbindet Konstruktion, KI-Anbindung, Spracherkennung und Hardware-Steuerung in einem Gerät.
 
-<img src="bilder/spaice-gesamt.jpg" alt="SpAice komplett: fünf 3D-gedruckte Gewürzbehälter auf der Linearachse, rechts die Bedienbox mit OLED-Display und Drehknopf" width="640">
+<img src="bilder/spaice-gesamt.jpg" alt="SpAice komplett: fünf 3D-gedruckte Gewürzbehälter auf der Linearachse, rechts die Bedienbox mit OLED-Display und Drehknopf" width="720">
 
 *Die Maschine: fünf 3D-gedruckte Gewürzbehälter auf einer Linearachse, darunter der Trichter-Auslauf, rechts die Bedienbox mit OLED-Display und Drehknopf.*
 
@@ -10,7 +10,7 @@
 
 | | |
 |---|---|
-| Kontext | Kurs Sketching with Hardware, LMU München, 2025 |
+| Kontext | Kurs Sketching with Hardware, LMU München, SoSe 2025 |
 | Rolle | Konstruktion (CAD, 3D-Druck, Getriebe), Firmware, Host-Software, Hardware-Ansteuerung |
 | Code | [Piibo/SpiceDispenser](https://github.com/Piibo/SpiceDispenser) |
 
@@ -20,7 +20,7 @@ Im Kurs Sketching with Hardware (LMU) habe ich in einem Semester aus einer eigen
 
 ## Wie es funktioniert
 
-1. **Eingabe:** Der Nutzer nennt ein Gericht — wahlweise getippt oder gesprochen. Die Spracheingabe läuft komplett lokal über faster-whisper mit Voice-Activity-Detection (webrtcvad).
+1. **Eingabe:** Man nennt ein Gericht, getippt oder gesprochen. Die Spracheingabe läuft komplett lokal über faster-whisper mit Voice-Activity-Detection (webrtcvad).
 2. **Gewürz-Bestimmung (Python-Host):** Ein lokales LLM (Ollama, Mistral) erzeugt eine JSON-Liste typischer Gewürze mit Mengen in Gramm, skalierbar nach Portionen und Schärfe-Intensität. Damit das robust bleibt: Wikipedia-Plausibilitätscheck (DE/EN), ob es das Gericht wirklich gibt; Synonym-Normalisierung und Fuzzy-Abgleich gegen eine Gewürz-Whitelist; Fallback-Modus, wenn das LLM kein valides JSON liefert; harte Unter- und weiche Obergrenzen mit Warnungen gegen Halluzinationen.
 3. **Dosierung (ESP32-Firmware):** Der Host schickt das Ergebnis an einen ESP32-C6. Ein Schrittmotor positioniert Behälter und Auslauf auf der Linearachse zueinander, ein Servo löst die Dosierung aus. Dazu entprellte Taster-Bedienung und JSON-Verarbeitung direkt auf dem Mikrocontroller.
 

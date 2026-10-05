@@ -8,9 +8,9 @@
 
 | | |
 |---|---|
-| Kontext | Eigene Projekte und Uni-Prototypen, 11/2024 – 09/2026 · allein |
-| Werkzeuge | Fusion 360 (mit den Add-ins Gridfinity Generator und Helical Gear Generator), Bambu Studio, Bambu Lab A1 mit AMS · PLA, PETG, ASA |
-| Umfang | 143 Designs mit zusammen 508 gespeicherten Versionen; 34 Designs haben mindestens 5 Versionen, 12 mindestens 10 |
+| Kontext | Eigene Projekte und Uni-Prototypen, seit November 2024 |
+| Rolle | Konstruktion und Druck |
+| Umfang | 143 Designs mit zusammen 508 gespeicherten Versionen; 34 Designs haben mindestens 5 Versionen, 12 mindestens 10 (Stand 09/2026) |
 
 ## Was drin ist
 
@@ -26,3 +26,10 @@ Einige wenige Teile sind Remixe fremder Modelle, die ich angepasst habe.
 ## Wie das Bild entstanden ist
 
 Die Designs lagen als STEP-Exporte vor. Ein Python-Skript wandelt sie in Meshes um (cascadio, trimesh), legt jedes Teil auf seine größte Fläche und verteilt alle ohne Überlappung auf der Fläche, jedes in einem zufälligen Winkel. Blender zeichnet daraus die sichtbaren Kanten als Linien (Freestyle). 12 Designs bestehen nur aus Mesh-Körpern und fehlen deshalb im Bild; zwei weitere habe ich weggelassen.
+
+## Technologien
+
+| Ebene | Eingesetzt |
+|---|---|
+| Konstruktion | Fusion 360 · Add-ins Gridfinity Generator und Helical Gear Generator |
+| Druck | Bambu Studio · Bambu Lab A1 mit AMS · PLA, PETG, ASA |

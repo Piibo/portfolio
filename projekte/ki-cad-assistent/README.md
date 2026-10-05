@@ -2,22 +2,21 @@
 
 **Chatbasierter KI-Assistent, der in Rhino 8 eingebettet ist und Designer:innen 3D-Möbelmodelle über Konversation, visuelle Selektion, Live-Parameter-Slider und Skizzen-Anmerkungen erstellen und bearbeiten lässt.**
 
-| | |
-|---|---|
-| Kontext | Masterarbeit „Entwerfen mit Künstlicher Intelligenz: Ein KI-gestützter Workflow für den iterativen Möbelentwurf“, M.Sc. Medieninformatik, LMU München (Kooperation TUM Architekturinformatik) |
-| Zeitraum | März – August 2026 |
-| Rolle | Konzeption, Entwicklung, Studie und Auswertung — allein |
-| Code | **[Piibo/rhino-ai-cad-assistant](https://github.com/Piibo/rhino-ai-cad-assistant)** — kuratierte Code-Basis (MCP-Server + Studien-Plugin), MIT-lizenziert. Das Arbeits-Repository bleibt privat, weil es Studiendaten enthält. |
-
 <img src="bilder/abb-ui-werkzeug.png" alt="Chat-Panel des Plugins mit Skizze auf Viewport-Aufnahme, KI-Rückfrage mit Auswahl-Dialog und Objekt-Referenz-Chip" width="420">
 
 *Das Chat-Panel: Eine Skizze auf der Viewport-Aufnahme markiert, wo die Rückenlehne hin soll; die KI stellt eine Rückfrage mit Auswahl-Dialog; im Eingabefeld referenziert ein Chip die zuvor angeklickte Fläche.*
 
-## Problem
+| | |
+|---|---|
+| Kontext | Masterarbeit „Entwerfen mit Künstlicher Intelligenz: Ein KI-gestützter Workflow für den iterativen Möbelentwurf“, M.Sc. Medieninformatik, LMU München, März – August 2026 (Kooperation TUM Architekturinformatik) |
+| Rolle | Konzeption, Entwicklung, Studie und Auswertung |
+| Code | **[Piibo/rhino-ai-cad-assistant](https://github.com/Piibo/rhino-ai-cad-assistant)** — kuratierte Code-Basis (MCP-Server + Studien-Plugin), MIT-lizenziert. Das Arbeits-Repository bleibt privat, weil es Studiendaten enthält. |
+
+## Die Fragestellung
 
 Reine Prompt-Werkzeuge degradieren Designer:innen zu Zuschauern: Räumliche Absichten lassen sich sprachlich nur schwer präzise vermitteln („das linke hintere Bein, etwas geschwungener…“). Metrische Angaben funktionieren im Chat robust — lokale, zeigende und richtungsbezogene Bezüge brauchen dagegen sichtbare Selektion, Markierung, Vorschau und Parameter. Die Arbeit untersucht, welche Interaktionswerkzeuge ein chatbasierter KI-CAD-Assistent braucht, damit aus passivem Prompten aktive Modellinteraktion wird.
 
-## Lösung
+## Der Prototyp
 
 Ein Rhino-8-Plugin aus zwei Teilen: ein **Python-Backend (FastAPI), das direkt in Rhino läuft**, und eine **Chat-Oberfläche in React**, verbunden über WebSocket. Das Backend lässt das Sprachmodell (Anthropic API) in einer Schleife arbeiten: Das Modell wählt aus **108 Werkzeugen** — etwa einen Regler anlegen oder Varianten zeigen —, das Plugin führt sie in Rhino aus und meldet das Ergebnis zurück, bis die Anfrage erledigt ist.
 
@@ -39,7 +38,9 @@ Die Human-in-the-Loop-Werkzeuge, um die es in der Studie ging:
 
 Die Studie steckt im Plugin selbst: Eine einzige Stelle im Code schaltet zwischen den beiden Bedingungen um (nur Chat oder Chat mit Werkzeugen), jede Aktion wird in einer Datenbank protokolliert, und eine Prüfsumme stellt sicher, dass sich Anweisungen und Werkzeuge des Assistenten während der Studie nicht unbemerkt ändern.
 
-## Nutzerstudie & Ergebnis
+In der Anfangsphase entstand außerdem ein **MCP-Server**, über den Claude Rhino und Grasshopper direkt bedienen konnte. Er baut auf zwei MIT-lizenzierten Open-Source-Projekten auf, die ich deutlich erweitert habe.
+
+## Die Studie
 
 <img src="bilder/abb-ui-basis.png" alt="Das Chat-Panel in der Basis-Bedingung: reiner Textdialog ohne Interaktionswerkzeuge" width="330">
 
@@ -48,18 +49,6 @@ Die Studie steckt im Plugin selbst: Eine einzige Stelle im Code schaltet zwische
 Studie mit **8 Teilnehmenden in 16 Sitzungen**: Jede Person löste Möbelentwurfsaufgaben in beiden Bedingungen. Ausgewertet habe ich die Sitzungen mit einer thematischen Analyse. Daraus entstand ein Modell, wann ein chatbasierter KI-CAD-Assistent welche Werkzeuge braucht — der wissenschaftliche Beitrag der Arbeit.
 
 Einwilligung und Fragebögen waren ins Plugin eingebaut; die Gespräche wurden offline auf dem eigenen Rechner transkribiert.
-
-## Technologien
-
-| Ebene | Eingesetzt |
-|---|---|
-| Frontend (~13.800 Zeilen TS) | React 19 · TypeScript · Vite · Zustand · Tailwind CSS · Radix UI |
-| Backend (~30.700 Zeilen Python) | Python · FastAPI · WebSockets · SQLite · Anthropic API (Streaming + Tool-Use) |
-| CAD | Rhino 8 · RhinoCommon · rhinoscriptsyntax · Grasshopper |
-| Testing | pytest (68 Backend-Tests) · Vitest · eigene Prüfskripte |
-| Research | Studiendesign (within-subjects) · qualitative Interviews · thematische Analyse |
-
-In der Anfangsphase entstand außerdem ein **MCP-Server**, über den Claude Rhino und Grasshopper direkt bedienen konnte. Er baut auf zwei MIT-lizenzierten Open-Source-Projekten auf, die ich deutlich erweitert habe.
 
 ## Mit dem Assistenten modelliert
 
@@ -76,3 +65,13 @@ Vier Möbel aus den Research-through-Design-Sessions, jeweils im Dialog mit dem 
 </p>
 
 *Freischwinger nach Thonet-Vorbild, Hocker nach dem Vorbild des Artek Stool 60, Sideboard mit Schiebetüren.*
+
+## Technologien
+
+| Ebene | Eingesetzt |
+|---|---|
+| Frontend (~13.800 Zeilen TS) | React 19 · TypeScript · Vite · Zustand · Tailwind CSS · Radix UI |
+| Backend (~30.700 Zeilen Python) | Python · FastAPI · WebSockets · SQLite · Anthropic API (Streaming + Tool-Use) |
+| CAD | Rhino 8 · RhinoCommon · rhinoscriptsyntax · Grasshopper |
+| Tests | pytest (68 Backend-Tests) · Vitest · eigene Prüfskripte |
+| Studie | Studiendesign (within-subjects) · qualitative Interviews · thematische Analyse |

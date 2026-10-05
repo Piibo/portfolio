@@ -2,7 +2,7 @@
 
 **Hängen die Verkehrsmittel, die ein Bundesland nutzt, mit seinen Pro-Kopf-CO₂-Emissionen zusammen?** E-Mission Z macht diese Frage explorierbar: eine Dashboard-Anwendung, in der man Bundesländer auswählt, den Zeitraum von 2011 bis 2021 aufzieht und Karte, Zeitreihe und Verkehrsmittel-Aufteilung als verknüpfte Ansichten nebeneinander liest.
 
-[![E-Mission Z öffnen](bilder/dashboard.png)](https://www.cip.ifi.lmu.de/~wildva/infovis/)
+<a href="https://www.cip.ifi.lmu.de/~wildva/infovis/"><img src="bilder/dashboard.png" alt="Das E-Mission-Z-Dashboard mit vier ausgewählten Bundesländern: Choroplethenkarte, Zeitreihe der Pro-Kopf-Emissionen und Aufteilung nach Verkehrsmitteln" width="720"></a>
 
 *Das Dashboard mit vier ausgewählten Bundesländern: links die Choroplethenkarte, rechts oben die Zeitreihe der Pro-Kopf-Emissionen, rechts unten die Aufteilung nach Verkehrsmitteln. Auswahl und Zeitraum wirken auf alle Ansichten gleichzeitig.*
 

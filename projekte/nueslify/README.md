@@ -1,19 +1,19 @@
-# Nüslify — dein persönliches KI-Radio
+# Nüslify — persönliches KI-Radio
 
-**Ein Radiosender, der nur für dich sendet:** Nüslify holt per KI aktuelle Nachrichten zu deinen Interessen, bereitet sie auf und mischt sie mit deiner eigenen Spotify-Musik — wie ein klassisches Radioprogramm aus Moderation und Musik, nur eben personalisiert auf Interessen und Hörgewohnheiten.
+**Ein Radioprogramm für eine einzige Person:** Nüslify holt per KI aktuelle Nachrichten zu den eigenen Interessen, bereitet sie auf und mischt sie mit der eigenen Spotify-Musik — wie ein klassisches Radioprogramm aus Moderation und Musik, nur personalisiert auf Interessen und Hörgewohnheiten.
 
 | | |
 |---|---|
 | Kontext | Kurs Intelligent User Interfaces (IUI), LMU München, WiSe 2023/24 · 5-köpfiges Team |
 | Rolle | Interessen-Feature durchgängig von der Oberfläche bis zur Datenbank, dazu Teile des Player-Dashboards |
 | Code | [NoelHuibers/nueslify](https://github.com/NoelHuibers/nueslify) (öffentlich, GPL-3.0) |
-| Deployment | War als PWA auf Vercel live (nueslify.vercel.app); die Anmeldung über Spotify funktioniert inzwischen nicht mehr (Stand 09/2026) |
+| Deployment | Lief als PWA auf Vercel (nueslify.vercel.app); die Anmeldung über Spotify funktioniert inzwischen nicht mehr (Stand 09/2026) |
 
 ## Die Idee
 
-Im Kurs Intelligent User Interfaces haben wir im Team ein lauffähiges intelligentes Interface gebaut und live deployed — eine Web-App, die KI nicht als Gimmick, sondern als Kern des Nutzungserlebnisses einsetzt.
+Im Kurs Intelligent User Interfaces haben wir im Team eine Web-App gebaut und veröffentlicht, in der KI den Kern des Nutzungserlebnisses bildet.
 
-Radio lebt von der Mischung aus Information und Musik — aber das Programm bestimmt der Sender. Nüslify dreht das um: Die News kommen KI-kuratiert zu den Themen, die dich interessieren, die Musik kommt aus deinem eigenen Spotify-Account. Umgesetzt als Progressive Web App, die sich wie eine native App nutzen lässt.
+Radio lebt von der Mischung aus Information und Musik — aber das Programm bestimmt der Sender. Nüslify dreht das um: Die News kommen KI-kuratiert zu selbst gewählten Themen, die Musik aus dem eigenen Spotify-Account. Umgesetzt als Progressive Web App, die sich wie eine native App nutzen lässt.
 
 ## Mein Beitrag
 
