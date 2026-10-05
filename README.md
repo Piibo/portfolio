@@ -10,21 +10,21 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026), Schwerpunkt Mensch-
 <tr>
 <td align="center" width="33%"><a href="projekte/ki-cad-assistent/"><img src="projekte/ki-cad-assistent/bilder/vorschau.jpg" alt="KI-CAD-Assistent: Chat-Panel neben einem im Dialog modellierten Beistelltisch" width="260"></a><br><b><a href="projekte/ki-cad-assistent/">KI-CAD-Assistent</a></b><br><sub>Masterarbeit · KI-Werkzeug für Rhino 8</sub></td>
 <td align="center" width="33%"><a href="projekte/spice-dispenser/"><img src="projekte/spice-dispenser/bilder/vorschau.jpg" alt="SpAice: Gewürzautomat mit fünf Behältern auf einer Linearachse" width="260"></a><br><b><a href="projekte/spice-dispenser/">SpAice</a></b><br><sub>KI-Gewürzautomat · selbst gebaut</sub></td>
-<td align="center" width="33%"><a href="projekte/bachelorarbeit-vr-fahrzeug/"><img src="projekte/bachelorarbeit-vr-fahrzeug/bilder/vorschau.jpg" alt="VR-Fahrzeug: virtuelle Hände am Lenkrad eines Autocockpits" width="260"></a><br><b><a href="projekte/bachelorarbeit-vr-fahrzeug/">VR im Fahrzeug</a></b><br><sub>Bachelorarbeit · Nutzerstudie (n = 17)</sub></td>
+<td align="center" width="33%"><a href="projekte/konstruktionen/"><img src="projekte/konstruktionen/bilder/vorschau.jpg" alt="Konstruktionen: blaue Linienzeichnung selbst konstruierter Teile von oben" width="260"></a><br><b><a href="projekte/konstruktionen/">Konstruktionen</a></b><br><sub>143 Teile aus Fusion 360 · 3D-Druck</sub></td>
 </tr>
 <tr>
+<td align="center"><a href="projekte/bachelorarbeit-vr-fahrzeug/"><img src="projekte/bachelorarbeit-vr-fahrzeug/bilder/vorschau.jpg" alt="VR-Fahrzeug: virtuelle Hände am Lenkrad eines Autocockpits" width="260"></a><br><b><a href="projekte/bachelorarbeit-vr-fahrzeug/">VR im Fahrzeug</a></b><br><sub>Bachelorarbeit · Nutzerstudie (n = 17)</sub></td>
 <td align="center"><a href="projekte/e-mission-z/"><img src="projekte/e-mission-z/bilder/vorschau.jpg" alt="E-Mission Z: Dashboard mit Deutschlandkarte, Zeitreihe und Tortendiagrammen" width="260"></a><br><b><a href="projekte/e-mission-z/">E-Mission Z</a></b><br><sub>Datenvisualisierung · React, D3</sub></td>
 <td align="center"><a href="projekte/nueslify/"><img src="projekte/nueslify/bilder/vorschau.jpg" alt="Nüslify: Startseite mit Logo" width="260"></a><br><b><a href="projekte/nueslify/">Nüslify</a></b><br><sub>KI-Radio als PWA · Next.js</sub></td>
-<td align="center"><a href="projekte/kemptainability/"><img src="projekte/kemptainability/bilder/vorschau.jpg" alt="kemptAInability: Verkehrsfluss-Simulation auf der Karte von Kempten" width="260"></a><br><b><a href="projekte/kemptainability/">kemptAInability</a></b><br><sub>Verkehrssimulation · SUMO-Pipeline</sub></td>
 </tr>
 <tr>
+<td align="center"><a href="projekte/kemptainability/"><img src="projekte/kemptainability/bilder/vorschau.jpg" alt="kemptAInability: Verkehrsfluss-Simulation auf der Karte von Kempten" width="260"></a><br><b><a href="projekte/kemptainability/">kemptAInability</a></b><br><sub>Verkehrssimulation · SUMO-Pipeline</sub></td>
 <td align="center"><a href="projekte/intellitrack/"><img src="projekte/intellitrack/bilder/vorschau.jpg" alt="IntelliTrack: Balkendiagramm der Vorhersage-Präzision pro Raum" width="260"></a><br><b><a href="projekte/intellitrack/">IntelliTrack</a></b><br><sub>Indoor-Ortung per ML · Android</sub></td>
 <td align="center"><a href="projekte/bloomie/"><img src="projekte/bloomie/bilder/vorschau.jpg" alt="Bloomie: Roboterarm mit weißem Lampenkopf" width="260"></a><br><b><a href="projekte/bloomie/">Bloomie</a></b><br><sub>Gestengesteuerte Roboterlampe</sub></td>
-<td align="center"><a href="projekte/grab-e/"><img src="projekte/grab-e/bilder/vorschau.jpg" alt="GRAB-E: Trajektorien-Auswertung des Greifarms" width="260"></a><br><b><a href="projekte/grab-e/">GRAB-E</a></b><br><sub>Reinforcement Learning · PyTorch</sub></td>
 </tr>
 <tr>
+<td align="center"><a href="projekte/grab-e/"><img src="projekte/grab-e/bilder/vorschau.jpg" alt="GRAB-E: Trajektorien-Auswertung des Greifarms" width="260"></a><br><b><a href="projekte/grab-e/">GRAB-E</a></b><br><sub>Reinforcement Learning · PyTorch</sub></td>
 <td align="center"><a href="projekte/sendlingers-escape/"><img src="projekte/sendlingers-escape/bilder/vorschau.jpg" alt="Sendlingers Escape: U-Bahn-Station Sendlinger Tor im Spiel" width="260"></a><br><b><a href="projekte/sendlingers-escape/">Sendlingers Escape</a></b><br><sub>Escape-Game · Unreal Engine</sub></td>
-<td align="center"><a href="projekte/konstruktionen/"><img src="projekte/konstruktionen/bilder/vorschau.jpg" alt="Konstruktionen: blaue Linienzeichnung selbst konstruierter Teile von oben" width="260"></a><br><b><a href="projekte/konstruktionen/">Konstruktionen</a></b><br><sub>143 Teile aus Fusion 360 · 3D-Druck</sub></td>
 <td></td>
 </tr>
 </table>
@@ -35,6 +35,7 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026), Schwerpunkt Mensch-
 |---|---|---|
 | [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: chatbasierter KI-Assistent mit Human-in-the-Loop-Werkzeugen, evaluiert in einer Nutzerstudie (n = 8) | React, TypeScript, Python, FastAPI, WebSockets, SQLite, Anthropic API |
 | [SpAice](projekte/spice-dispenser/) | KI-gesteuerter Gewürzautomat, komplett selbst konstruiert und gebaut: Gericht nennen (Sprache/Text), lokales LLM bestimmt Gewürze + Mengen, die Maschine dosiert ([Video](https://youtu.be/Efl0KOGhpKA)) | CAD (Fusion 360), 3D-Druck, C++ (ESP32), PlatformIO, Python, Ollama, faster-whisper |
+| [Konstruktionen](projekte/konstruktionen/) | 143 eigene Designs seit 11/2024, selbst gedruckt: Halter, Leuchtenteile, Beschläge, Ersatzteile — alle in einem Bild, gerendert aus den STEP-Exporten | Fusion 360, 3D-Druck (Bambu Lab A1), Python, Blender |
 | [VR-Interaktion im virtuellen Fahrzeug](projekte/bachelorarbeit-vr-fahrzeug/) | Bachelorarbeit (Uni Regensburg, 2023): VR-Controller vs. Handtracking beim Bedienen eines virtuellen Autos — eigener Unity-Prototyp (Meta Quest 2, 10 Aufgaben) und Nutzerstudie mit 17 Teilnehmenden | Unity, Oculus Interaction SDK, Blender, UX-Research |
 | [E-Mission Z](projekte/e-mission-z/) | Interaktives Dashboard zu Verkehr und CO₂-Emissionen der Bundesländer 2011–2021: Karte, Zeitreihe und Verkehrsmittel-Aufteilung als verknüpfte Ansichten (Teamprojekt, LMU) — meine Rolle: Zeitreihen-Diagramm, Zeitraum-Slider und die Kopplung der Ansichten ([live](https://www.cip.ifi.lmu.de/~wildva/infovis/)) | React, D3, Recharts, GeoJSON |
 | [Nüslify](projekte/nueslify/) | Persönliches KI-Radio: KI-kuratierte News gemischt mit der eigenen Spotify-Musik, als PWA (Teamprojekt) — meine Rolle: Interessen-Feature (UI bis DB) + Teile der Player-UI | Next.js, TypeScript, tRPC, Spotify-API |
@@ -43,7 +44,6 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026), Schwerpunkt Mensch-
 | [Bloomie](projekte/bloomie/) | Gestengesteuerte Schreibtischlampe an einem Roboterarm (HRI-Teamprojekt, LMU) — meine Rolle: Software gemeinsam im Co-Coding, dazu der Lampenkopf mit verstellbarem Lichtkegel (Zoom-Objektiv-Mechanik, 3D-Druck) + LED-Hardware | MyCobot/ROS, MediaPipe, Fusion 360, 3D-Druck, Hardware-Prototyping |
 | [GRAB-E](projekte/grab-e/) | Simulierter 5-Achsen-Greifarm, der per Reinforcement Learning greifen und ablegen lernt — selbst implementierte SAC/TD3/DDPG gegen Standard-Baselines (Teamprojekt, LMU) — meine Rolle: Trainings- und Auswertungsinfrastruktur (Seeding, Logging, Baseline-Läufe) | Python, PyTorch, Stable-Baselines3, Unity ML-Agents |
 | [Sendlingers Escape](projekte/sendlingers-escape/) | Escape-Game rund um das Sendlinger Tor München, Teamprojekt im LMU-Game-Development-Praktikum — meine Rolle: 3D-Objekt-Arbeit + erstes Rätsel ([Video](https://youtu.be/RlHncoayMY8)) | Unreal Engine, 3D-Modellierung |
-| [Konstruktionen](projekte/konstruktionen/) | 143 eigene Designs seit 11/2024, selbst gedruckt: Halter, Leuchtenteile, Beschläge, Ersatzteile — alle in einem Bild, gerendert aus den STEP-Exporten | Fusion 360, 3D-Druck (Bambu Lab A1), Python, Blender |
 
 *(Weitere Projekte folgen.)*
 
