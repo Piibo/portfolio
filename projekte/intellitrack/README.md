@@ -8,10 +8,10 @@
 
 | | |
 |---|---|
-| Kontext | Praktikum Intelligent Interactive Systems (PIIS), LMU München, WiSe 2023/24 · 4-köpfiges Team |
-| Rolle | Android-App: Dashboard mit Gebäudeplan (Marker, Stockwerk-Wechsel) und WLAN-Scan-Ansicht |
+| Kontext | Praktikum Intelligent Interactive Systems, LMU München, WiSe 2023/24 · 4-köpfiges Team |
+| Rolle | Android-App: Dashboard mit Gebäudeplan (Marker, Stockwerkswechsel) und WLAN-Scan-Ansicht |
 | Ergebnis | **92 % Raum-Vorhersagegenauigkeit** (XGBoost, 5-fach-Kreuzvalidierung) |
-| Bericht | **[Paper als PDF](intellitrack-paper.pdf)** (ACM-Format) |
+| Bericht | [Paper als PDF](intellitrack-paper.pdf) (ACM-Format) |
 
 ## Die Idee
 
@@ -19,7 +19,7 @@ Im Praktikum Intelligent Interactive Systems haben wir uns im Team der Indoor-Or
 
 ## Wie es funktioniert
 
-1. **Datensammlung:** Eine eigene Android-App scannt in festen Intervallen alle empfangbaren WLAN-Netze und erfasst Signalstärke (dBm), SSID/BSSID, Frequenz und Kanalbreite — geloggt in verschiedenen Räumen samt angrenzender Außenbereiche, mit randomisierten Bewegungsmustern gegen Verzerrung.
+1. **Datensammlung:** Eine eigene Android-App scannt in festen Intervallen alle empfangbaren WLAN-Netze und erfasst Signalstärke (dBm), SSID/BSSID, Frequenz und Kanalbreite — geloggt in verschiedenen Räumen samt angrenzenden Außenbereichen, mit randomisierten Bewegungsmustern gegen Verzerrung.
 2. **Preprocessing:** Normalisierung der Signalstärken, Ausreißer-Filterung, Feature-Extraktion und Dimensionsreduktion. Ein zentraler Befund dabei: 5-GHz-Netze liefern deutlich konsistentere Daten und trennen Räume besser als 2,4 GHz.
 3. **Modellvergleich:** Decision Tree als Baseline (80,8 %), Random Forest (86,4 %), XGBoost (92,0 %) — jeweils mit 5-fach-Kreuzvalidierung evaluiert; Hyperparameter-Tuning per GridSearch.
 
@@ -29,11 +29,11 @@ Im Praktikum Intelligent Interactive Systems haben wir uns im Team der Indoor-Or
 
 ## Mein Beitrag
 
-Das Nutzer-Frontend des Systems ist eine Android-App (Kotlin), an der ich einen der beiden Hauptanteile hatte (20 von 44 Commits):
+Das Frontend des Systems ist eine Android-App (Kotlin), an der ich einen der beiden Hauptanteile hatte (20 von 44 Commits):
 
-- **Dashboard mit interaktivem Gebäudeplan:** Kartenansicht mit Positions-Markern und Stockwerk-Wechsel — die Ansicht, auf der die vorhergesagte Raumposition angezeigt wird
+- **Dashboard mit interaktivem Gebäudeplan:** Kartenansicht mit Positions-Markern und Stockwerkswechsel — die Ansicht, auf der die vorhergesagte Raumposition angezeigt wird
 - **WLAN-Scan-Ansicht:** Listen-Adapter, die die laufenden WLAN-Scans und erkannten Räume anzeigen
-- UI-Aufbau und Styling der Fragmente
+- **Aufbau und Styling:** die Oberflächen der App-Ansichten (Fragmente)
 
 ## Technologien
 

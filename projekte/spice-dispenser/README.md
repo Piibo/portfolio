@@ -16,13 +16,13 @@
 
 ## Die Idee
 
-Im Kurs Sketching with Hardware (LMU) habe ich in einem Semester aus einer eigenen Idee einen funktionsfähigen physischen Prototyp gebaut — Elektronik, Mechanik, Software und Demo-Video inklusive. Die Idee: Beim Kochen weiß man oft nicht, *welche* Gewürze in welcher Menge zu einem Gericht passen — also soll eine Maschine das wissen und gleich selbst dosieren.
+Im Kurs Sketching with Hardware habe ich in einem Semester aus einer eigenen Idee einen funktionsfähigen physischen Prototyp gebaut — Elektronik, Mechanik, Software und Demo-Video inklusive. Die Idee: Beim Kochen weiß man oft nicht, *welche* Gewürze in welcher Menge zu einem Gericht passen — also soll eine Maschine das wissen und gleich selbst dosieren.
 
 ## Wie es funktioniert
 
 1. **Eingabe:** Man nennt ein Gericht, getippt oder gesprochen. Die Spracheingabe läuft komplett lokal über faster-whisper mit Voice-Activity-Detection (webrtcvad).
-2. **Gewürz-Bestimmung (Python-Host):** Ein lokales LLM (Ollama, Mistral) erzeugt eine JSON-Liste typischer Gewürze mit Mengen in Gramm, skalierbar nach Portionen und Schärfe-Intensität. Damit das robust bleibt: Wikipedia-Plausibilitätscheck (DE/EN), ob es das Gericht wirklich gibt; Synonym-Normalisierung und Fuzzy-Abgleich gegen eine Gewürz-Whitelist; Fallback-Modus, wenn das LLM kein valides JSON liefert; harte Unter- und weiche Obergrenzen mit Warnungen gegen Halluzinationen.
-3. **Dosierung (ESP32-Firmware):** Der Host schickt das Ergebnis an einen ESP32-C6. Ein Schrittmotor positioniert Behälter und Auslauf auf der Linearachse zueinander, ein Servo löst die Dosierung aus. Dazu entprellte Taster-Bedienung und JSON-Verarbeitung direkt auf dem Mikrocontroller.
+2. **Gewürz-Bestimmung (Python-Host):** Ein lokales LLM (Ollama, Mistral) erzeugt eine JSON-Liste typischer Gewürze mit Mengen in Gramm, skalierbar nach Portionen und Schärfegrad. Damit das robust bleibt: Wikipedia-Plausibilitätscheck (DE/EN), ob es das Gericht wirklich gibt; Synonym-Normalisierung und Fuzzy-Abgleich gegen eine Gewürz-Whitelist; Fallback-Modus, wenn das LLM kein valides JSON liefert; harte Unter- und weiche Obergrenzen mit Warnungen bei unplausiblen Mengen.
+3. **Dosierung (ESP32-Firmware):** Der Host schickt das Ergebnis an einen ESP32-C6. Ein einziger Schrittmotor erledigt beides: Er fährt die Behälterreihe auf der Linearachse zum richtigen Gewürz und dreht dann dessen Förderschnecke, die die Menge in kalibrierten Umdrehungen ausgibt. Ein Servo koppelt dafür zwischen Fahren und Ausgeben um. Dazu entprellte Taster-Bedienung und JSON-Verarbeitung direkt auf dem Mikrocontroller.
 
 <p>
 <img src="bilder/display-sprechen.jpg" alt="OLED-Display der Bedienbox: Mikrofon-Symbol und „Jetzt Sprechen“" width="400">
@@ -31,7 +31,7 @@ Im Kurs Sketching with Hardware (LMU) habe ich in einem Semester aus einer eigen
 
 *Links: Spracheingabe am Gerät („Jetzt Sprechen“). Rechts: das LLM-Ergebnis für „Chili con carne“ — Cayennepfeffer, Chili und Ingwer samt Mengen, direkt auf dem OLED zum Bestätigen.*
 
-Ohne KI geht es auch: Im Modus **„Einzel-Auswahl“** stellt man die Menge jedes Gewürzes selbst per Drehknopf ein, in 0,5-Gramm-Schritten. Welches Gewürz in welchem Behälter steckt, lässt sich per Sprache neu zuordnen; der Name wird dabei gegen eine feste Gewürzliste geprüft.
+Ohne KI geht es auch: Im Modus **„Einzel-Auswahl“** stellt man die Menge jedes Gewürzes selbst per Drehknopf ein, in 0,5-Gramm-Schritten. Die Behälter lassen sich per Sprache neu belegen; der Gewürzname wird dabei gegen eine feste Liste geprüft.
 
 <img src="bilder/display-einzelauswahl.jpg" alt="OLED-Display im Modus Einzel-Auswahl: Salz 2, Pfeffer 3, Chili 1,5 (markiert), Paprika 0; oben eine Hand am Drehknopf" width="400">
 
@@ -39,7 +39,7 @@ Ohne KI geht es auch: Im Modus **„Einzel-Auswahl“** stellt man die Menge jed
 
 ## Die Konstruktion
 
-Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse habe ich in Fusion 360 konstruiert und im 3D-Druck gefertigt, montiert auf einer Aluminium-Profilschiene.
+Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse habe ich in Fusion 360 konstruiert und im 3D-Druck gefertigt; montiert ist alles auf einer Aluminium-Profilschiene.
 
 <img src="bilder/linearachse.gif" alt="Animation: Die fünf weißen Gewürzbehälter fahren auf der schwarzen Linearachse seitlich an der Antriebseinheit vorbei" width="440">
 
@@ -75,4 +75,4 @@ Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse habe
 |---|---|
 | Konstruktion | CAD in Fusion 360 · 3D-Druck · Zahnrad-Getriebe · Aluminium-Profilschiene · Schrittmotor + Servo |
 | Firmware (~840 Zeilen C/C++) | ESP32-C6 · Arduino-Framework · PlatformIO · ESP32Servo · ArduinoJson · U8g2 |
-| Host (~570 Zeilen Python) | Python · Ollama (Mistral, lokal) · faster-whisper · webrtcvad · Wikipedia-API · pyserial |
+| Host (~570 Zeilen Python) | Python · Ollama (Mistral, lokal) · faster-whisper · webrtcvad · Wikipedia-API · FastAPI (Verbindung zum ESP32 per WLAN) · pyserial (alternativ per USB) |

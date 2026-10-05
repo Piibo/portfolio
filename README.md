@@ -1,8 +1,8 @@
 # Portfolio — Peter Trenkle
 
-M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reichen von KI-Werkzeugen und Web-Anwendungen über VR bis zu Hardware-Prototypen und 3D-Konstruktionen. Jede Seite zeigt die Idee, die Umsetzung, meinen Anteil und die eingesetzten Technologien; bei Teamprojekten ist mein Beitrag getrennt ausgewiesen und, wo Repo oder Bericht zugänglich sind, darüber belegt.
+M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reichen von KI-Werkzeugen und Web-Anwendungen über VR bis zu Hardware-Prototypen und 3D-Konstruktionen. Jede Seite zeigt die Idee, die Umsetzung, meinen Beitrag und die eingesetzten Technologien; bei Teamprojekten ist er getrennt ausgewiesen und, wo Repo oder Bericht zugänglich sind, darüber belegt.
 
-> **English summary:** Project portfolio of Peter Trenkle (M.Sc. Media Informatics, LMU Munich, 2026) — eleven projects across AI tools, web apps, VR, hardware prototyping and 3D design, each documented with images, my part, and the tech stack. Highlights: an AI assistant for the CAD software Rhino 8 (master's thesis, evaluated in a user study with 8 participants), an AI-powered spice dispenser (CAD, 3D printing, ESP32, local LLM), 143 parts I designed in Fusion 360 for 3D printing, and several team web projects (React, Next.js, D3). The pages are written in German — I'm happy to walk through any of them in English.
+> **English summary:** Project portfolio of Peter Trenkle (M.Sc. Media Informatics, LMU Munich, 2026) — eleven projects across AI tools, web apps, VR, hardware prototyping, and 3D design, each with my contribution and the tech stack. Highlights: an AI assistant for the CAD software Rhino 8 (master's thesis, evaluated in a user study with eight participants), an AI-powered spice dispenser (CAD, 3D printing, ESP32, local LLM), 143 parts I designed in Fusion 360 for 3D printing, and several team web projects (React, Next.js, D3). The pages are written in German — I'm happy to walk you through any of them in English.
 
 ## Projekte
 
@@ -13,7 +13,7 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reiche
 <td align="center" colspan="2" width="33%"><a href="projekte/konstruktionen/"><img src="projekte/konstruktionen/bilder/vorschau.jpg" alt="Konstruktionen: blaue Linienzeichnung selbst konstruierter Teile von oben" width="260"></a><br><b><a href="projekte/konstruktionen/">Konstruktionen</a></b><br><sub>143 Teile aus Fusion 360 · 3D-Druck</sub></td>
 </tr>
 <tr>
-<td align="center" colspan="2"><a href="projekte/bachelorarbeit-vr-fahrzeug/"><img src="projekte/bachelorarbeit-vr-fahrzeug/bilder/vorschau.jpg" alt="VR-Fahrzeug: virtuelle Hände am Lenkrad eines Autocockpits" width="260"></a><br><b><a href="projekte/bachelorarbeit-vr-fahrzeug/">VR im Fahrzeug</a></b><br><sub>Bachelorarbeit · Nutzerstudie (n = 17)</sub></td>
+<td align="center" colspan="2"><a href="projekte/bachelorarbeit-vr-fahrzeug/"><img src="projekte/bachelorarbeit-vr-fahrzeug/bilder/vorschau.jpg" alt="VR-Fahrzeug: virtuelle Hände am Lenkrad eines Autocockpits" width="260"></a><br><b><a href="projekte/bachelorarbeit-vr-fahrzeug/">VR-Interaktion</a></b><br><sub>Bachelorarbeit · Nutzerstudie (n = 17)</sub></td>
 <td align="center" colspan="2"><a href="projekte/e-mission-z/"><img src="projekte/e-mission-z/bilder/vorschau.jpg" alt="E-Mission Z: Dashboard mit Deutschlandkarte, Zeitreihe und Tortendiagrammen" width="260"></a><br><b><a href="projekte/e-mission-z/">E-Mission Z</a></b><br><sub>Datenvisualisierung · React, D3</sub></td>
 <td align="center" colspan="2"><a href="projekte/nueslify/"><img src="projekte/nueslify/bilder/vorschau.jpg" alt="Nüslify: Startseite mit Logo" width="260"></a><br><b><a href="projekte/nueslify/">Nüslify</a></b><br><sub>KI-Radio als PWA · Next.js</sub></td>
 </tr>
@@ -30,7 +30,7 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reiche
 
 ### Im Überblick
 
-| Projekt | Worum es geht | Mein Teil |
+| Projekt | Worum es geht | Mein Beitrag |
 |---|---|---|
 | [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: KI-Assistent, mit dem man Möbel in Rhino per Chat, Klick, Regler und Skizze modelliert; Nutzerstudie (n = 8) | Konzept, Entwicklung, Studie |
 | [SpAice](projekte/spice-dispenser/) | Gewürzautomat: Gericht nennen, ein lokales Sprachmodell wählt Gewürze und Mengen, die Maschine dosiert ([Video](https://youtu.be/Efl0KOGhpKA)) | Konstruktion, Elektronik, Firmware, Software |

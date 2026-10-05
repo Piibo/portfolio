@@ -1,10 +1,10 @@
 # Nüslify — persönliches KI-Radio
 
-**Ein Radioprogramm für eine einzige Person:** Nüslify holt per KI aktuelle Nachrichten zu den eigenen Interessen, bereitet sie auf und mischt sie mit der eigenen Spotify-Musik — wie ein klassisches Radioprogramm aus Moderation und Musik, nur personalisiert auf Interessen und Hörgewohnheiten.
+**Ein Radioprogramm für eine einzige Person:** Nüslify holt per KI aktuelle Nachrichten zu den Interessen der Hörer:innen, bereitet sie auf und mischt sie mit ihrer Spotify-Musik — Moderation und Musik wie im klassischen Radio, nur personalisiert.
 
 | | |
 |---|---|
-| Kontext | Kurs Intelligent User Interfaces (IUI), LMU München, WiSe 2023/24 · 5-köpfiges Team |
+| Kontext | Kurs Intelligent User Interfaces, LMU München, WiSe 2023/24 · 5-köpfiges Team |
 | Rolle | Interessen-Feature durchgängig von der Oberfläche bis zur Datenbank, dazu Teile des Player-Dashboards |
 | Code | [NoelHuibers/nueslify](https://github.com/NoelHuibers/nueslify) (öffentlich, GPL-3.0) |
 | Deployment | Lief als PWA auf Vercel (nueslify.vercel.app); die Anmeldung über Spotify funktioniert inzwischen nicht mehr (Stand 09/2026) |
@@ -17,7 +17,7 @@ Radio lebt von der Mischung aus Information und Musik — aber das Programm best
 
 ## Mein Beitrag
 
-- **Das Interessen-Feature:** die Seiten und Formulare, auf denen Nutzer:innen ihr Profil anlegen und festlegen, welche News-Themen sie interessieren, wie viel News und wie viel Musik sie hören wollen, welches KI-Modell und welcher Moderationsstil die News aufbereiten und welche Musik sie mögen (React/Next.js), samt Styling, tRPC-API-Router und Anbindung an das Drizzle-Datenbankschema — die Grundlage für die personalisierte News-Auswahl
+- **Das Interessen-Feature:** die Seiten und Formulare, auf denen Nutzer:innen ihr Profil anlegen und festlegen, welche News-Themen sie interessieren, welchen Anteil News und Musik haben, welches KI-Modell und welcher Moderationsstil die News aufbereiten und welche Musik sie mögen (React/Next.js), samt Styling, tRPC-API-Router und Anbindung an das Drizzle-Datenbankschema — die Grundlage für die personalisierte News-Auswahl
 - **Teile des Player-Dashboards:** News-Player als eigenständige Komponente herausgelöst und gestylt, Spotify-Button, Navbar-Styling, Ladezustände
 
 ## Technologien

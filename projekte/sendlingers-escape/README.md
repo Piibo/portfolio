@@ -1,6 +1,6 @@
 # Sendlingers Escape — Escape-Game in der Unreal Engine
 
-**Ein Escape-Game rund um das Sendlinger Tor in München, entwickelt im Praktikum Game Development der LMU München.**
+**Ein Escape-Game in der U-Bahn-Station Sendlinger Tor in München, entwickelt im Praktikum Game Development der LMU.**
 
 <img src="bilder/station.jpg" alt="Spielszene in der U-Bahn-Station: gelbe Säulen, eine Rolltreppe und ein Bauzaun; oben rechts die Aufgabe „Finde den Ausgang“, unten rechts das Smartphone" width="720">
 
@@ -11,7 +11,7 @@
 | | |
 |---|---|
 | Kontext | Praktikum Game Development, LMU München, SoSe 2024 · 3-köpfiges Team |
-| Rolle | 3D-Objekt-Arbeit (gesamtes Asset-/Modell-Cleanup) · Design und Umsetzung des ersten Rätsels |
+| Rolle | Aufbereitung aller 3D-Modelle · Design und Umsetzung des ersten Rätsels |
 
 ## Die Idee
 
@@ -23,7 +23,7 @@ Die Spieler:innen wachen in einem U-Bahn-Zug auf und müssen aus der Station Sen
 
 ## Mein Beitrag
 
-- **Die 3D-Objekt-Arbeit des Projekts:** Aufbereitung und Cleanup des Stations-Modells und der Spielobjekte, damit sie in der Unreal Engine sauber nutzbar waren — Geometrie bereinigen und spieltauglich machen.
+- **Die 3D-Modelle des Projekts:** Stationsmodell und Spielobjekte so aufbereitet und bereinigt, dass sie in der Unreal Engine sauber nutzbar waren.
 - **Das erste Rätsel:** Konzeption und Umsetzung des Einstiegsrätsels, das die Spieler:innen ins Spiel führt — eine Schaltertafel, deren richtige Stellung sich aus einer Notiz voller verschachtelter Logik-Hinweise ergibt.
 
 <p>

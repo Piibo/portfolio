@@ -10,16 +10,18 @@
 |---|---|
 | Kontext | Kurs Information Visualization, LMU München, WiSe 2023/24 · 5-köpfiges Team |
 | Rolle | Zeitreihen-Diagramm, Zeitraum-Slider, Bundesland-Auswahlliste und deren Verknüpfung mit der Karte |
-| Live | **[www.cip.ifi.lmu.de/~wildva/infovis/](https://www.cip.ifi.lmu.de/~wildva/infovis/)** |
+| Live | [www.cip.ifi.lmu.de/~wildva/infovis/](https://www.cip.ifi.lmu.de/~wildva/infovis/) |
 | Code | LRZ-GitLab der LMU (nicht öffentlich einsehbar) — Einblick auf Anfrage |
 
 ## Die Fragestellung
 
 Im Kurs Information Visualization haben wir im Team eine interaktive Visualisierung zu einer selbst gewählten Forschungsfrage entwickelt — von der Datenbeschaffung über mehrere Prototyp-Stufen bis zum Live-Deployment. Unsere Frage: **Hat die Nutzung verschiedener Verkehrsmittel einen Einfluss auf die Pro-Kopf-CO₂-Emissionen in Deutschland?**
 
-Verkehr ist einer der größten CO₂-Verursacher, aber die Daten dazu liegen verstreut: Emissionen pro Bundesland, Fahrgastzahlen im ÖPNV, Personenkilometer im Individualverkehr. E-Mission Z bringt sie für die Jahre 2011–2021 in ein gemeinsames Dashboard und lässt Nutzer:innen selbst nach Mustern suchen — etwa nach dem Effekt von Corona und 9-Euro-Ticket auf die Kurven.
+Verkehr ist einer der größten CO₂-Verursacher, aber die Daten dazu liegen verstreut: Emissionen pro Bundesland, Fahrgastzahlen im ÖPNV, Personenkilometer im Individualverkehr. E-Mission Z bringt sie für die Jahre 2011–2021 in ein gemeinsames Dashboard und lässt Nutzer:innen selbst nach Mustern suchen — etwa nach dem Corona-Einbruch ab 2020.
 
-Der Kern ist das Prinzip verknüpfter Ansichten: Wer ein Bundesland in der Liste anwählt, sieht es gleichzeitig auf der Karte hervorgehoben und als Serie im Zeitreihen-Diagramm. Wer den Zeitraum ändert, ändert ihn überall. Dadurch wird der Vergleich zwischen Regionen und über die Zeit zu einer einzigen zusammenhängenden Bewegung statt zu mehreren getrennten Ablesevorgängen.
+## Wie es funktioniert
+
+Der Kern ist das Prinzip verknüpfter Ansichten: Wer ein Bundesland in der Liste anwählt, sieht es gleichzeitig auf der Karte hervorgehoben und als Serie im Zeitreihen-Diagramm. Wer den Zeitraum ändert, ändert ihn überall. So lassen sich Regionen und Jahre in einem Zug vergleichen.
 
 <img src="bilder/dashboard-oepnv.png" alt="Die ÖPNV-Ansicht des Dashboards in Grün: beförderte Personen pro Kopf auf Karte, Zeitreihe und Verkehrsmittel-Aufteilung" width="640">
 

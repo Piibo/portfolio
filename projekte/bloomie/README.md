@@ -1,6 +1,6 @@
 # Bloomie — gestengesteuerte Schreibtischlampe an einem Roboterarm
 
-**Bloomie ist eine smarte Schreibtischlampe auf einem Roboterarm, die sich berührungslos über Handgesten steuern lässt.**
+**Bloomie ist eine Schreibtischlampe an einem Roboterarm, die sich berührungslos über Handgesten steuern lässt.**
 
 <img src="bilder/bloomie-gesamt.jpg" alt="Bloomie: MyCobot-Roboterarm mit dem 3D-gedruckten Lampenkopf, LED-Ring leuchtet violett" width="420">
 
@@ -8,13 +8,13 @@
 
 | | |
 |---|---|
-| Kontext | Kurs Human-Robot Interaction (HRI), LMU München, WiSe 2024/25 · 4-köpfiges Team |
+| Kontext | Kurs Human-Robot Interaction, LMU München, WiSe 2024/25 · 4-köpfiges Team |
 | Rolle | Lampenkopf mit verstellbarem Lichtkegel nach dem Zoom-Objektiv-Prinzip: Konstruktion, Druck und LED-Hardware · Software gemeinsam im Team (Co-Coding: ROS, MediaPipe, Robotersteuerung) |
-| Bericht | **[Paper als PDF](bloomie-paper.pdf)** (ACM-Format) |
+| Bericht | [Paper als PDF](bloomie-paper.pdf) (ACM-Format) |
 
 ## Die Idee
 
-Im Kurs haben wir im Team ein eigenes Mensch-Roboter-Interaktionssystem konzipiert, gebaut und als Paper im ACM-Format dokumentiert. Unser Ausgangspunkt: Klassische Schreibtischlampen sind unflexibel — für jede Änderung muss man hinlangen und nachjustieren. Bloomie beantwortet das mit einer Lampe, die sich berührungslos bedienen lässt und selbst mitdenkt: Sie folgt auf Wunsch der Hand, passt Position und Licht an und macht so aus einem Alltagsgegenstand einen adaptiven Interaktionspartner.
+Im Kurs haben wir im Team ein eigenes Mensch-Roboter-Interaktionssystem konzipiert, gebaut und als Paper im ACM-Format dokumentiert. Unser Ausgangspunkt: Klassische Schreibtischlampen sind unflexibel — für jede Änderung muss man hinlangen und nachjustieren. Bloomie ist eine Lampe, die sich berührungslos bedienen lässt: Sie folgt auf Wunsch der Hand, fährt voreingestellte Posen an und steuert das Licht per Geste.
 
 ## Wie es funktioniert
 
@@ -44,10 +44,10 @@ Den Lampenkopf mit dem verstellbaren Lichtkegel habe ich konstruiert und gebaut.
 
 ### Software
 
-- **ROS-Architektur aus drei Nodes:** Kamera-Node für Hand-Tracking und Gestenerkennung, Roboter-Node für die Armbewegung, Licht-Node für die LEDs
+- **ROS-Architektur aus drei Nodes:** Kamera-Node für Handtracking und Gestenerkennung, Roboter-Node für die Armbewegung, Licht-Node für die LEDs
 - **Gestenerkennung mit MediaPipe:** Die Modi werden über Fingerstellungen umgeschaltet, Richtungsgesten über Winkel zwischen Handgelenk und Zeigefinger erkannt. Eine Geste gilt erst, wenn sie über mehrere Frames stabil bleibt.
 - **Robotersteuerung über die MyCobot-API:** MoveIt war für die Echtzeit-Steuerung zu träge, deshalb steuern wir die Gelenke direkt an (`jog_angle`, `send_angles`). Im Follow-Modus ignoriert eine Toleranzzone kleine Handbewegungen.
-- **Licht-Anbindung:** zwei ROS-Nodes, die Licht-Gesten in serielle Befehle an den ESP8266 übersetzen
+- **Licht-Anbindung:** Licht-Gesten werden in serielle Befehle an den ESP8266 übersetzt (zwei Skripte: Gestenlogik und serielle Verbindung)
 
 ## Technologien
 
@@ -55,4 +55,4 @@ Den Lampenkopf mit dem verstellbaren Lichtkegel habe ich konstruiert und gebaut.
 |---|---|
 | Licht/Hardware | Lampenkopf in Fusion 360 konstruiert, 3D-gedruckt · Linsenmechanik (Schrägnut-Prinzip) · ESP8266 (D1 Mini) + LED-Ringe |
 | Robotik | MyCobot 280 M5 · ROS (3-Node-Architektur) · Pymycobot |
-| Computer Vision | MediaPipe (Hand-Tracking, 21 Landmarken) · OpenCV · Webcam |
+| Computer Vision | MediaPipe (Handtracking, 21 Landmarken) · OpenCV · Webcam |

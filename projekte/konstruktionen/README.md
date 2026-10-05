@@ -4,13 +4,13 @@
 
 <img src="bilder/konstruktionen.png" alt="Linienzeichnung in Blau auf Weiß: 129 selbst konstruierte Teile von oben gesehen, frei über die Fläche verteilt und unterschiedlich gedreht — Lampenschirme, Halter, Rahmen, Zahnräder, Gridfinity-Einsätze, ein Geländerelief; einige Teile sind blau gefüllt" width="720">
 
-*Alle Teile in echter Größe zueinander, von oben gesehen. Gerendert aus den STEP-Exporten der Fusion-Designs.*
+*Alle 129 Teile im richtigen Größenverhältnis zueinander, von oben gesehen. Gerendert aus den STEP-Exporten der Fusion-Designs.*
 
 | | |
 |---|---|
 | Kontext | Eigene Projekte und Uni-Prototypen, seit November 2024 |
 | Rolle | Konstruktion und Druck |
-| Umfang | 143 Designs mit zusammen 508 gespeicherten Versionen; 34 Designs haben mindestens 5 Versionen, 12 mindestens 10 (Stand 09/2026) |
+| Umfang | 143 Teile (Fusion-Designs) mit zusammen 508 gespeicherten Versionen; 34 davon haben mindestens 5 Versionen, 12 mindestens 10 (Stand 09/2026) |
 
 ## Was drin ist
 
@@ -25,7 +25,7 @@ Einige wenige Teile sind Remixe fremder Modelle, die ich angepasst habe.
 
 ## Wie das Bild entstanden ist
 
-Die Designs lagen als STEP-Exporte vor. Ein Python-Skript wandelt sie in Meshes um (cascadio, trimesh), legt jedes Teil auf seine größte Fläche und verteilt alle ohne Überlappung auf der Fläche, jedes in einem zufälligen Winkel. Blender zeichnet daraus die sichtbaren Kanten als Linien (Freestyle). 12 Designs bestehen nur aus Mesh-Körpern und fehlen deshalb im Bild; zwei weitere habe ich weggelassen.
+Die Designs lagen als STEP-Exporte vor. Ein Python-Skript wandelt sie in Meshes um (cascadio, trimesh), legt jedes Teil auf seine größte Fläche und verteilt alle ohne Überlappung auf der Zeichenfläche, jedes in einem zufälligen Winkel. Blender zeichnet daraus die sichtbaren Kanten als Linien (Freestyle). Zwölf Designs bestehen nur aus Mesh-Körpern und fehlen deshalb im Bild; zwei weitere habe ich weggelassen.
 
 ## Technologien
 
