@@ -32,7 +32,7 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reiche
 
 | Projekt | Worum es geht | Mein Beitrag |
 |---|---|---|
-| [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: KI-Assistent, mit dem man Möbel in Rhino per Chat, Klick, Regler und Skizze modelliert; Nutzerstudie (n = 8) | Konzept, Entwicklung, Studie |
+| [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: KI-Assistent, mit dem man Möbel in Rhino per Chat, Klick, Regler und Skizze modelliert; Nutzerstudie mit 8 Teilnehmenden ([Video](https://youtu.be/Qb64zsemRec)) | Konzept, Entwicklung, Studie |
 | [SpAice](projekte/spice-dispenser/) | Gewürzautomat: Gericht nennen, ein lokales Sprachmodell wählt Gewürze und Mengen, die Maschine dosiert ([Video](https://youtu.be/Efl0KOGhpKA)) | Konstruktion, Elektronik, Firmware, Software |
 | [Konstruktionen](projekte/konstruktionen/) | 143 Teile nach Maß, konstruiert in Fusion 360 für den 3D-Druck | Konstruktion und Druck |
 | [VR-Interaktion im virtuellen Fahrzeug](projekte/bachelorarbeit-vr-fahrzeug/) | Bachelorarbeit: Controller oder eigene Hände — wie bedient man ein virtuelles Auto besser? Nutzerstudie (n = 17) | Prototyp, Studie, Auswertung |

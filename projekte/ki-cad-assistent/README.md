@@ -6,6 +6,10 @@
 
 *Das Chat-Panel: Eine Skizze auf der Viewport-Aufnahme markiert, wo die Rückenlehne sitzen soll; die KI stellt eine Rückfrage mit Auswahldialog; im Eingabefeld referenziert ein Chip die zuvor angeklickte Fläche.*
 
+<a href="https://youtu.be/Qb64zsemRec"><img src="https://img.youtube.com/vi/Qb64zsemRec/maxresdefault.jpg" alt="Vorschaubild des Demo-Videos: Rhino AI Assistant, KI-Plugin für Rhino 8" width="420"></a>
+
+▶️ **[Demo-Video auf YouTube](https://youtu.be/Qb64zsemRec)**
+
 | | |
 |---|---|
 | Kontext | Masterarbeit „Entwerfen mit Künstlicher Intelligenz: Ein KI-gestützter Workflow für den iterativen Möbelentwurf“, M.Sc. Medieninformatik, LMU München, März bis August 2026 (Kooperation TUM Architekturinformatik) |
