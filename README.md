@@ -2,7 +2,7 @@
 
 M.Sc. Medieninformatik an der LMU München (Abschluss 2026), Schwerpunkt Mensch-Computer-Interaktion und KI-gestützte Werkzeuge. Dieses Repo sammelt meine Projekte — jeweils mit Problemstellung, Lösung, meiner Rolle und den eingesetzten Technologien.
 
-> **🇬🇧 English summary:** Project portfolio of Peter Trenkle (M.Sc. Media Informatics, LMU Munich, 2026) — ten projects across UX engineering, VR, frontend/full-stack development, and applied AI, each documented with images, my specific role, and the tech stack. Highlights: a chat-based AI CAD assistant for Rhino 8, built solo as my master's thesis (React/TypeScript + Python/FastAPI + Anthropic API, evaluated in a qualitative user study with 8 participants), a fully self-built AI-powered spice dispenser (CAD/3D printing + ESP32 + local LLM), and several team web projects (React, Next.js, D3). The pages are written in German — I'm happy to walk through any of them in English.
+> **🇬🇧 English summary:** Project portfolio of Peter Trenkle (M.Sc. Media Informatics, LMU Munich, 2026) — ten projects across UX engineering, VR, frontend/full-stack development, and applied AI, each documented with images, my specific role, and the tech stack — plus an overview of 143 parts I designed in Fusion 360 and 3D-printed myself. Highlights: a chat-based AI CAD assistant for Rhino 8, built solo as my master's thesis (React/TypeScript + Python/FastAPI + Anthropic API, evaluated in a qualitative user study with 8 participants), a fully self-built AI-powered spice dispenser (CAD/3D printing + ESP32 + local LLM), and several team web projects (React, Next.js, D3). The pages are written in German — I'm happy to walk through any of them in English.
 
 ## Projekte
 
@@ -23,7 +23,9 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026), Schwerpunkt Mensch-
 <td align="center"><a href="projekte/grab-e/"><img src="projekte/grab-e/bilder/vorschau.jpg" alt="GRAB-E: Trajektorien-Auswertung des Greifarms" width="260"></a><br><b><a href="projekte/grab-e/">GRAB-E</a></b><br><sub>Reinforcement Learning · PyTorch</sub></td>
 </tr>
 <tr>
-<td align="center" colspan="3"><a href="projekte/sendlingers-escape/"><img src="projekte/sendlingers-escape/bilder/vorschau.jpg" alt="Sendlingers Escape: U-Bahn-Station Sendlinger Tor im Spiel" width="260"></a><br><b><a href="projekte/sendlingers-escape/">Sendlingers Escape</a></b><br><sub>Escape-Game · Unreal Engine</sub></td>
+<td align="center"><a href="projekte/sendlingers-escape/"><img src="projekte/sendlingers-escape/bilder/vorschau.jpg" alt="Sendlingers Escape: U-Bahn-Station Sendlinger Tor im Spiel" width="260"></a><br><b><a href="projekte/sendlingers-escape/">Sendlingers Escape</a></b><br><sub>Escape-Game · Unreal Engine</sub></td>
+<td align="center"><a href="projekte/konstruktionen/"><img src="projekte/konstruktionen/bilder/vorschau.jpg" alt="Konstruktionen: blaue Linienzeichnung selbst konstruierter Teile von oben" width="260"></a><br><b><a href="projekte/konstruktionen/">Konstruktionen</a></b><br><sub>143 Teile aus Fusion 360 · 3D-Druck</sub></td>
+<td></td>
 </tr>
 </table>
 
@@ -41,6 +43,7 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026), Schwerpunkt Mensch-
 | [Bloomie](projekte/bloomie/) | Gestengesteuerte Schreibtischlampe an einem Roboterarm (HRI-Teamprojekt, LMU) — meine Rolle: Software gemeinsam im Co-Coding, dazu der Lampenkopf mit verstellbarem Lichtkegel (Zoom-Objektiv-Mechanik, 3D-Druck) + LED-Hardware | MyCobot/ROS, MediaPipe, Fusion 360, 3D-Druck, Hardware-Prototyping |
 | [GRAB-E](projekte/grab-e/) | Simulierter 5-Achsen-Greifarm, der per Reinforcement Learning greifen und ablegen lernt — selbst implementierte SAC/TD3/DDPG gegen Standard-Baselines (Teamprojekt, LMU) — meine Rolle: Trainings- und Auswertungsinfrastruktur (Seeding, Logging, Baseline-Läufe) | Python, PyTorch, Stable-Baselines3, Unity ML-Agents |
 | [Sendlingers Escape](projekte/sendlingers-escape/) | Escape-Game rund um das Sendlinger Tor München, Teamprojekt im LMU-Game-Development-Praktikum — meine Rolle: 3D-Objekt-Arbeit + erstes Rätsel ([Video](https://youtu.be/RlHncoayMY8)) | Unreal Engine, 3D-Modellierung |
+| [Konstruktionen](projekte/konstruktionen/) | 143 eigene Designs seit 11/2024, selbst gedruckt: Halter, Leuchtenteile, Beschläge, Ersatzteile — alle in einem Bild, gerendert aus den STEP-Exporten | Fusion 360, 3D-Druck (Bambu Lab A1), Python, Blender |
 
 *(Weitere Projekte folgen.)*
 
