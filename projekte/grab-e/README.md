@@ -1,6 +1,6 @@
-# GRAB-E — Reinforcement Learning für einen simulierten Greifarm (Teamprojekt)
+# GRAB-E — Reinforcement Learning für einen simulierten Greifarm
 
-**Ein 5-Achsen-Roboterarm lernt in einer Unity-Simulation, einen Würfel zu greifen und an einem Zielort abzulegen** — trainiert mit selbst implementierten Reinforcement-Learning-Verfahren (SAC, TD3, DDPG) und gegen Standard-Baselines verglichen. Entstanden als fünfköpfiges Teamprojekt im Praktikum Autonome Systeme.
+**Ein 5-Achsen-Roboterarm lernt in einer Unity-Simulation, einen Würfel zu greifen und an einem Zielort abzulegen** — mit Reinforcement-Learning-Verfahren (SAC, TD3, DDPG), die das Team selbst implementiert und mit Standard-Baselines verglichen hat.
 
 ![Drei Trainingsläufe mit fixierten Seeds: Lernkurven und Erfolgsraten](bilder/seed-reproduzierbarkeit.png)
 
@@ -19,9 +19,9 @@ Im Praktikum Autonome Systeme haben wir uns im Team zwei Fragen vorgenommen: Kan
 
 Die Umgebung ist eine Unity-Simulation eines fünfachsigen Arms (Niryo One, aufgebaut auf dem Pick-and-Place-Tutorial des Unity Robotics Hub), angebunden an ein Python-Interface — der Arm bekommt Gelenkwinkel als Aktionen und liefert Zustand und Belohnung zurück. Aufgabe: den Würfel finden, greifen und am Ziel absetzen.
 
-Das Team implementierte die Lernverfahren selbst, statt fertige Bibliotheken zu benutzen: **Soft Actor-Critic (SAC)** mit adaptivem Alpha und einem evolutionären Ansatz zur Actor-Auswahl, **TD3** mit priorisiertem Replay-Buffer und OU-Rauschen, **DDPG**, dazu einfachere Policy-, Policy-Value- und Policy-Q-Netze als Zwischenstufen zum Verständnis. Zum Vergleich liefen Baselines aus Stable-Baselines3 sowie eine Zufalls-Baseline.
+Den eigenen Implementierungen (SAC, TD3, DDPG und einfachere Vorstufen) standen fertige Baselines aus Stable-Baselines3 und eine Zufalls-Baseline gegenüber.
 
-Die Belohnungsfunktion kombiniert dichte Strafterme (Abstand zum Würfel, Abstand zum Ziel, Kollisionen, Schrittzahl) mit seltenen positiven Signalen (erfolgreicher Griff, Ziel erreicht) und Delta-Belohnungen, die die Verbesserung gegenüber dem vorigen Schritt bewerten.
+Belohnt wird, wenn der Arm dem Würfel und dem Ziel näherkommt, greift und absetzt; Kollisionen und unnötige Schritte kosten Punkte.
 
 Das Ergebnis des Vergleichs: **SAC erzielte die beste Performance** — robust und stabil, mit Grifferfolgsraten nahe 100 % spät im Training —, während TD3 schneller konvergierte, aber unter lokalen Optima litt.
 
@@ -53,6 +53,6 @@ Was aus diesen Logdaten wurde, zeigen die Auswertungen der Abschlusspräsentatio
 
 | Ebene | Eingesetzt |
 |---|---|
-| Reinforcement Learning | PyTorch · Stable-Baselines3 · SAC / TD3 / DDPG · Replay-Buffer, OU-Rauschen, Reward-Shaping |
+| Reinforcement Learning | PyTorch · Stable-Baselines3 · SAC / TD3 / DDPG · Reward-Shaping |
 | Simulation | Unity3D · Unity ML-Agents · ONNX-Export · Python-Unity-Side-Channel |
 | Experimente | Seeding und Reproduzierbarkeit · CSV-Logging · Hyperparameter-Tuning · Auswertung mit pandas/matplotlib |

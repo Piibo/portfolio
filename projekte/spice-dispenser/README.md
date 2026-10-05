@@ -1,6 +1,6 @@
 # SpAice — KI-gesteuerter Gewürzautomat
 
-**Gericht nennen (per Sprache oder Text) → ein lokales LLM bestimmt die typischen Gewürze samt Grammmengen → die Maschine dosiert sie automatisch.** „SpAice – AI powered Spice Dispenser“: ein Solo-Projekt, das Konstruktion, KI-Anbindung, Spracherkennung und Hardware-Steuerung verbindet.
+**Gericht nennen (per Sprache oder Text) → ein lokales LLM bestimmt die typischen Gewürze samt Grammmengen → die Maschine dosiert sie automatisch.** „SpAice – AI powered Spice Dispenser“ verbindet Konstruktion, KI-Anbindung, Spracherkennung und Hardware-Steuerung in einem Gerät.
 
 <img src="bilder/spaice-gesamt.jpg" alt="SpAice komplett: fünf 3D-gedruckte Gewürzbehälter auf der Linearachse, rechts die Bedienbox mit OLED-Display und Drehknopf" width="640">
 
@@ -10,8 +10,8 @@
 
 | | |
 |---|---|
-| Kontext | Kurs Sketching with Hardware, LMU München, 2025 · Solo-Projekt |
-| Rolle | Alles selbst: Konstruktion (CAD, 3D-Druck, Getriebe), Firmware, Host-Software, Hardware-Ansteuerung |
+| Kontext | Kurs Sketching with Hardware, LMU München, 2025 · allein |
+| Rolle | Konstruktion (CAD, 3D-Druck, Getriebe), Firmware, Host-Software, Hardware-Ansteuerung |
 | Code | [Piibo/SpiceDispenser](https://github.com/Piibo/SpiceDispenser) |
 
 ## Die Idee
@@ -39,7 +39,7 @@ Ohne KI geht es auch: Im Modus **„Einzel-Auswahl“** stellt man die Menge jed
 
 ## Die Konstruktion
 
-Die Maschine ist komplett selbst konstruiert: Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse als CAD-Entwurf in Fusion 360, gefertigt im 3D-Druck, montiert auf einer Aluminium-Profilschiene.
+Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse habe ich in Fusion 360 konstruiert und im 3D-Druck gefertigt, montiert auf einer Aluminium-Profilschiene.
 
 <img src="bilder/linearachse.gif" alt="Animation: Die fünf weißen Gewürzbehälter fahren auf der schwarzen Linearachse seitlich an der Antriebseinheit vorbei" width="440">
 
@@ -61,21 +61,13 @@ Die Maschine ist komplett selbst konstruiert: Gewürzbehälter mit Dosiermechani
 | Für unbekannte Gerichte erfand das LLM Gewürze | strikte Prompts, Wikipedia-Abgleich und Gewürz-Whitelist (siehe oben) |
 | Spracheingabe in eine einfache Bedienung einbauen | Drehknopf für alles, was präzise sein muss, Sprache für die KI-Aufgaben |
 
-## Nächste Schritte
+## Was ich als Nächstes verbessern würde
 
 - Mikrofon ins Gerät einbauen (bisher extern)
 - Waage integrieren, damit die Mengen genauer werden
 - Kopplungsmechanismus zuverlässiger machen
 - Behälter im Kreis statt in einer Reihe anordnen, das spart Platz
 - Gewürzempfehlungen der KI verfeinern und die freihändige Bedienung verbessern
-
-## Was ich dabei gelernt/gezeigt habe
-
-- **Mechanische Konstruktion:** die komplette Maschine selbst entworfen — CAD in Fusion 360, Zahnrad-Kraftübertragung, Dosiermechanik, 3D-Druck aller Sonderteile
-- **Embedded-Entwicklung:** C++ auf ESP32-C6 (Arduino-Framework, PlatformIO), Schrittmotor- und Servo-Ansteuerung auf Pin-Ebene, Debouncing, WLAN/HTTP auf dem Mikrocontroller
-- **Praktische LLM-Integration mit Guardrails:** lokales Modell statt Cloud, strikte Prompts, Validierung und Normalisierung der Ausgaben — der interessante Teil ist nicht der LLM-Aufruf, sondern das Robust-Machen dagegen, dass er Unsinn liefert
-- **Lokale Spracherkennung:** Whisper-ASR + Voice-Activity-Detection ohne Cloud-Dienste
-- **Systemintegration:** Python-Host und Mikrocontroller-Firmware, die über eine definierte Schnittstelle zusammenspielen
 
 ## Technologien
 

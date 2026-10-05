@@ -8,8 +8,8 @@
 
 | | |
 |---|---|
-| Kontext | Bachelorarbeit im Fach Medieninformatik, Universität Regensburg, abgegeben April 2023 · Solo-Arbeit |
-| Rolle | Alles selbst: Prototyp (Unity, Oculus Interaction SDK), Fahrzeugszene, Studiendesign, Durchführung und Auswertung |
+| Kontext | Bachelorarbeit im Fach Medieninformatik, Universität Regensburg, abgegeben April 2023 · allein |
+| Rolle | Prototyp (Unity, Oculus Interaction SDK), Fahrzeugszene, Studiendesign, Durchführung und Auswertung |
 | Arbeit | Auf Anfrage — die PDF enthält persönliche Daten und ist deshalb nicht eingebettet |
 
 ## Der Prototyp

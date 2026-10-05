@@ -1,4 +1,4 @@
-# IntelliTrack — Indoor-Ortung per WiFi-Fingerprinting und Machine Learning (Teamprojekt)
+# IntelliTrack — Indoor-Ortung per WiFi-Fingerprinting und Machine Learning
 
 **Wo bin ich im Gebäude, wenn GPS nicht funktioniert?** IntelliTrack sagt den Raum, in dem sich ein Smartphone befindet, allein aus den empfangenen WLAN-Signalstärken vorher — als Grundlage für Indoor-Navigation über einen Gebäudeplan, z. B. in Unikliniken, Universitäten oder öffentlichen Gebäuden.
 
@@ -11,7 +11,7 @@
 
 ## Die Idee
 
-Im Praktikum Intelligent Interactive Systems haben wir uns als vierköpfiges Team der Indoor-Ortung angenommen und das Ergebnis als ACM-Paper dokumentiert. Der Kern der Idee: GPS fällt in Gebäuden aus, aber WLAN-Netze sind fast überall — und ihre Signalstärken bilden pro Raum ein charakteristisches Muster, einen „Fingerprint“, den ein Machine-Learning-Modell wiedererkennen kann.
+Im Praktikum Intelligent Interactive Systems haben wir uns im Team der Indoor-Ortung angenommen und das Ergebnis als ACM-Paper dokumentiert. Der Kern der Idee: GPS fällt in Gebäuden aus, aber WLAN-Netze sind fast überall — und ihre Signalstärken bilden pro Raum ein charakteristisches Muster, einen „Fingerprint“, den ein Machine-Learning-Modell wiedererkennen kann.
 
 ## Ansatz
 

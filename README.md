@@ -1,8 +1,8 @@
 # Portfolio — Peter Trenkle
 
-M.Sc. Medieninformatik an der LMU München (Abschluss 2026), Schwerpunkt Mensch-Computer-Interaktion und KI-gestützte Werkzeuge. Dieses Repo sammelt meine Projekte — jeweils mit Problemstellung, Lösung, meiner Rolle und den eingesetzten Technologien.
+M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reichen von KI-Werkzeugen und Web-Anwendungen über VR bis zu Hardware-Prototypen und 3D-Konstruktionen. Jede Seite zeigt Problemstellung, Lösung, meinen Anteil und die eingesetzten Technologien.
 
-> **🇬🇧 English summary:** Project portfolio of Peter Trenkle (M.Sc. Media Informatics, LMU Munich, 2026) — ten projects across UX engineering, VR, frontend/full-stack development, and applied AI, each documented with images, my specific role, and the tech stack — plus an overview of 143 parts I designed in Fusion 360 and 3D-printed myself. Highlights: a chat-based AI CAD assistant for Rhino 8, built solo as my master's thesis (React/TypeScript + Python/FastAPI + Anthropic API, evaluated in a qualitative user study with 8 participants), a fully self-built AI-powered spice dispenser (CAD/3D printing + ESP32 + local LLM), and several team web projects (React, Next.js, D3). The pages are written in German — I'm happy to walk through any of them in English.
+> **🇬🇧 English summary:** Project portfolio of Peter Trenkle (M.Sc. Media Informatics, LMU Munich, 2026) — ten projects across AI tools, web apps, VR, and hardware prototyping, each documented with images, my part, and the tech stack, plus an overview of 143 parts I designed in Fusion 360 for 3D printing. Highlights: an AI assistant for the CAD software Rhino 8 (master's thesis, evaluated in a user study with 8 participants), an AI-powered spice dispenser I designed and built (CAD, 3D printing, ESP32, local LLM), and several team web projects (React, Next.js, D3). The pages are written in German — I'm happy to walk through any of them in English.
 
 ## Projekte
 
@@ -31,19 +31,19 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026), Schwerpunkt Mensch-
 
 ### Im Überblick
 
-| Projekt | Was es ist | Technologien |
+| Projekt | Worum es geht | Mein Teil |
 |---|---|---|
-| [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: chatbasierter KI-Assistent mit Human-in-the-Loop-Werkzeugen, evaluiert in einer Nutzerstudie (n = 8) | React, TypeScript, Python, FastAPI, WebSockets, SQLite, Anthropic API |
-| [SpAice](projekte/spice-dispenser/) | KI-gesteuerter Gewürzautomat, komplett selbst konstruiert und gebaut: Gericht nennen (Sprache/Text), lokales LLM bestimmt Gewürze + Mengen, die Maschine dosiert ([Video](https://youtu.be/Efl0KOGhpKA)) | CAD (Fusion 360), 3D-Druck, C++ (ESP32), PlatformIO, Python, Ollama, faster-whisper |
-| [Konstruktionen](projekte/konstruktionen/) | 143 eigene Designs seit 11/2024, selbst gedruckt: Halter, Leuchtenteile, Beschläge, Ersatzteile — alle in einem Bild, gerendert aus den STEP-Exporten | Fusion 360, 3D-Druck (Bambu Lab A1), Python, Blender |
-| [VR-Interaktion im virtuellen Fahrzeug](projekte/bachelorarbeit-vr-fahrzeug/) | Bachelorarbeit (Uni Regensburg, 2023): VR-Controller vs. Handtracking beim Bedienen eines virtuellen Autos — eigener Unity-Prototyp (Meta Quest 2, 10 Aufgaben) und Nutzerstudie mit 17 Teilnehmenden | Unity, Oculus Interaction SDK, Blender, UX-Research |
-| [E-Mission Z](projekte/e-mission-z/) | Interaktives Dashboard zu Verkehr und CO₂-Emissionen der Bundesländer 2011–2021: Karte, Zeitreihe und Verkehrsmittel-Aufteilung als verknüpfte Ansichten (Teamprojekt, LMU) — meine Rolle: Zeitreihen-Diagramm, Zeitraum-Slider und die Kopplung der Ansichten ([live](https://www.cip.ifi.lmu.de/~wildva/infovis/)) | React, D3, Recharts, GeoJSON |
-| [Nüslify](projekte/nueslify/) | Persönliches KI-Radio: KI-kuratierte News gemischt mit der eigenen Spotify-Musik, als PWA (Teamprojekt) — meine Rolle: Interessen-Feature (UI bis DB) + Teile der Player-UI | Next.js, TypeScript, tRPC, Spotify-API |
-| [kemptAInability](projekte/kemptainability/) | Interaktive Verkehrsfluss-Simulation für Kempten: Straßen sperren, Auswirkungen auf Stau/Lärm/CO₂ live sehen (Teamprojekt, sustAInability-Seminar HM+TUM) — meine Rolle: die komplette Datenpipeline (OSM → SUMO → GeoJSON) | React, SUMO, OpenStreetMap, Python |
-| [IntelliTrack](projekte/intellitrack/) | Indoor-Ortung per WiFi-Fingerprinting: ML-Modell sagt den Raum im Gebäude aus WLAN-Signalstärken vorher — 92 % Genauigkeit (Teamprojekt, LMU) — meine Rolle: Android-App (Dashboard mit Gebäudeplan) | Python, XGBoost, Machine Learning, Android/Kotlin |
-| [Bloomie](projekte/bloomie/) | Gestengesteuerte Schreibtischlampe an einem Roboterarm (HRI-Teamprojekt, LMU) — meine Rolle: Software gemeinsam im Co-Coding, dazu der Lampenkopf mit verstellbarem Lichtkegel (Zoom-Objektiv-Mechanik, 3D-Druck) + LED-Hardware | MyCobot/ROS, MediaPipe, Fusion 360, 3D-Druck, Hardware-Prototyping |
-| [GRAB-E](projekte/grab-e/) | Simulierter 5-Achsen-Greifarm, der per Reinforcement Learning greifen und ablegen lernt — selbst implementierte SAC/TD3/DDPG gegen Standard-Baselines (Teamprojekt, LMU) — meine Rolle: Trainings- und Auswertungsinfrastruktur (Seeding, Logging, Baseline-Läufe) | Python, PyTorch, Stable-Baselines3, Unity ML-Agents |
-| [Sendlingers Escape](projekte/sendlingers-escape/) | Escape-Game rund um das Sendlinger Tor München, Teamprojekt im LMU-Game-Development-Praktikum — meine Rolle: 3D-Objekt-Arbeit + erstes Rätsel ([Video](https://youtu.be/RlHncoayMY8)) | Unreal Engine, 3D-Modellierung |
+| [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: KI-Assistent, mit dem man Möbel in Rhino per Chat, Klick, Regler und Skizze modelliert; Nutzerstudie (n = 8) | alles: Konzept, Entwicklung, Studie |
+| [SpAice](projekte/spice-dispenser/) | Gewürzautomat: Gericht nennen, ein lokales Sprachmodell wählt Gewürze und Mengen, die Maschine dosiert ([Video](https://youtu.be/Efl0KOGhpKA)) | alles: Konstruktion, Elektronik, Firmware, Software |
+| [Konstruktionen](projekte/konstruktionen/) | 143 Teile nach Maß, konstruiert in Fusion 360 für den 3D-Druck | alles |
+| [VR-Interaktion im virtuellen Fahrzeug](projekte/bachelorarbeit-vr-fahrzeug/) | Bachelorarbeit: Controller oder eigene Hände — wie bedient man ein virtuelles Auto besser? Nutzerstudie (n = 17) | alles: Prototyp, Studie, Auswertung |
+| [E-Mission Z](projekte/e-mission-z/) | Dashboard zu Verkehr und CO₂-Emissionen der Bundesländer mit verknüpften Ansichten ([live](https://www.cip.ifi.lmu.de/~wildva/infovis/)) | Zeitreihe, Zeitraum-Slider und die Kopplung der Ansichten |
+| [Nüslify](projekte/nueslify/) | KI-Radio: News zu den eigenen Interessen, gemischt mit der eigenen Spotify-Musik | Interessen-Feature von der Oberfläche bis zur Datenbank |
+| [kemptAInability](projekte/kemptainability/) | Verkehrssimulation für Kempten: Straßen sperren und die Folgen für Stau, Lärm und CO₂ sehen | Datenpipeline OSM → SUMO → GeoJSON |
+| [IntelliTrack](projekte/intellitrack/) | Indoor-Ortung aus WLAN-Signalstärken, 92 % Genauigkeit | Android-App mit Gebäudeplan |
+| [Bloomie](projekte/bloomie/) | Schreibtischlampe an einem Roboterarm, per Handgeste gesteuert | Lampenkopf mit verstellbarem Lichtkegel; Software gemeinsam im Team |
+| [GRAB-E](projekte/grab-e/) | Simulierter Greifarm, der per Reinforcement Learning greifen lernt | Trainings- und Auswertungsinfrastruktur |
+| [Sendlingers Escape](projekte/sendlingers-escape/) | Escape-Game in der Unreal Engine am Sendlinger Tor ([Video](https://youtu.be/RlHncoayMY8)) | 3D-Objekte und das erste Rätsel |
 
 *(Weitere Projekte folgen.)*
 

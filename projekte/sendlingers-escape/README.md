@@ -1,6 +1,6 @@
-# Sendlingers Escape — Escape-Game in der Unreal Engine (Teamprojekt)
+# Sendlingers Escape — Escape-Game in der Unreal Engine
 
-**Ein Escape-Game rund um das Sendlinger Tor in München, entwickelt im dreiköpfigen Team im Praktikum Game Development der LMU München** (In-House-Praktikum des Instituts, ohne Firmenpartner).
+**Ein Escape-Game rund um das Sendlinger Tor in München, entwickelt im Praktikum Game Development der LMU München.**
 
 [![Gameplay-Video ansehen](https://img.youtube.com/vi/RlHncoayMY8/hqdefault.jpg)](https://youtu.be/RlHncoayMY8)
 
@@ -14,7 +14,7 @@
 
 ## Das Projekt
 
-Im Praktikum Game Development haben wir zu dritt über das Semester ein vollständiges, spielbares Spiel entwickelt — vom Konzept über Level- und Rätseldesign bis zum fertigen Build samt Gameplay-Video. Unsere Wahl: ein Escape-Game an einem realen Münchner Ort.
+Im Praktikum Game Development haben wir über das Semester ein vollständiges, spielbares Spiel entwickelt — vom Konzept über Level- und Rätseldesign bis zum fertigen Build samt Gameplay-Video. Unsere Wahl: ein Escape-Game an einem realen Münchner Ort.
 
 ## Das Spiel
 
@@ -38,5 +38,5 @@ Die Spieler:innen wachen in einem U-Bahn-Zug auf und müssen aus der Station Sen
 
 ## Technologien
 
-Unreal Engine · 3D-Modell-Aufbereitung und -Cleanup · Teamarbeit (3-köpfiges Entwicklungsteam)
+Unreal Engine · 3D-Modell-Aufbereitung und -Cleanup
 

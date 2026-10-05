@@ -6,7 +6,7 @@
 |---|---|
 | Kontext | Masterarbeit „Entwerfen mit Künstlicher Intelligenz: Ein KI-gestützter Workflow für den iterativen Möbelentwurf“, M.Sc. Medieninformatik, LMU München (Kooperation TUM Architekturinformatik) |
 | Zeitraum | März – August 2026 |
-| Rolle | Eigenständige Konzeption, Entwicklung, Studiendurchführung und Auswertung (Solo-Projekt) |
+| Rolle | Konzeption, Entwicklung, Studie und Auswertung — allein |
 | Code | **[Piibo/rhino-ai-cad-assistant](https://github.com/Piibo/rhino-ai-cad-assistant)** — kuratierte Code-Basis (MCP-Server + Studien-Plugin), MIT-lizenziert. Das Arbeits-Repository bleibt privat, weil es Studiendaten enthält. |
 
 <img src="bilder/abb-ui-werkzeug.png" alt="Chat-Panel des Plugins mit Skizze auf Viewport-Aufnahme, KI-Rückfrage mit Auswahl-Dialog und Objekt-Referenz-Chip" width="420">
@@ -19,7 +19,7 @@ Reine Prompt-Werkzeuge degradieren Designer:innen zu Zuschauern: Räumliche Absi
 
 ## Lösung
 
-Ein Rhino-8-Plugin mit zwei Prozessen: ein **FastAPI-Backend, das direkt im Python-Prozess von Rhino läuft**, und ein **React-Frontend im Browser**, verbunden über WebSocket (Streaming) und REST. Das Backend implementiert einen vollständigen **Agent-Loop auf der Anthropic API**: Streaming, 108 Tool-Definitionen, Tool-Dispatch in den Rhino-UI-Thread, Verlaufs-Management und Fehlerbehandlung.
+Ein Rhino-8-Plugin aus zwei Teilen: ein **Python-Backend (FastAPI), das direkt in Rhino läuft**, und eine **Chat-Oberfläche in React**, verbunden über WebSocket. Das Backend lässt das Sprachmodell (Anthropic API) in einer Schleife arbeiten: Das Modell wählt aus **108 Werkzeugen** — etwa einen Regler anlegen oder Varianten zeigen —, das Plugin führt sie in Rhino aus und meldet das Ergebnis zurück, bis die Anfrage erledigt ist.
 
 Die Human-in-the-Loop-Werkzeuge, um die es in der Studie ging:
 
@@ -37,7 +37,7 @@ Die Human-in-the-Loop-Werkzeuge, um die es in der Studie ging:
 
 *Die Varianten-Galerie: drei Beinform-Alternativen (gerade, konisch, gespreizt) als Viewport-Aufnahmen zum Durchschalten — die gewählte Variante wird im Modell aktiv.*
 
-Dazu eine vollständige **Studieninfrastruktur**: zwei Experimentalbedingungen (nur Chat vs. Chat + Werkzeuge), über eine einzige fail-closed Registry-Funktion getrennt; lückenloses Event-Logging in SQLite (12 Tabellen); Export-Bundles mit Manifest und Hash-Validierung; „Golden Hashes“, die System-Prompt und Tool-Surface gegen ungewollte Änderungen während der Studie einfrieren.
+Die Studie steckt im Plugin selbst: Eine einzige Stelle im Code schaltet zwischen den beiden Bedingungen um (nur Chat oder Chat mit Werkzeugen), jede Aktion wird in einer Datenbank protokolliert, und eine Prüfsumme stellt sicher, dass sich Anweisungen und Werkzeuge des Assistenten während der Studie nicht unbemerkt ändern.
 
 ## Nutzerstudie & Ergebnis
 
@@ -45,9 +45,9 @@ Dazu eine vollständige **Studieninfrastruktur**: zwei Experimentalbedingungen (
 
 *Zum Vergleich die `basis`-Bedingung der Studie: gleiche CAD-Kompetenz des Assistenten, aber nur Chat — Absichten müssen rein sprachlich vermittelt werden. Der Kontrast zwischen beiden Bedienformen ist der Kern des Studiendesigns.*
 
-Within-subjects-Studie mit **8 Teilnehmenden (16 Sitzungen)**: Jede Person löste Möbelentwurfsaufgaben in beiden Bedingungen. Die Auswertung (codebuchgestützte thematische Analyse: 124 Episoden, 76 Codes, fünf Themen) mündete in ein **empirisch begründetes Interaktions- und Werkzeugmodell** für chatbasierte KI-CAD-Unterstützung — der wissenschaftliche Beitrag der Arbeit.
+Studie mit **8 Teilnehmenden in 16 Sitzungen**: Jede Person löste Möbelentwurfsaufgaben in beiden Bedingungen. Ausgewertet habe ich die Sitzungen mit einer thematischen Analyse. Daraus entstand ein Modell, wann ein chatbasierter KI-CAD-Assistent welche Werkzeuge braucht — der wissenschaftliche Beitrag der Arbeit.
 
-Zur Studieninfrastruktur gehörten außerdem Counterbalancing-Logik, Consent-Flow und Fragebogen-Instrumente (u. a. Creativity Support Index) im Plugin selbst sowie eine lokale, datenschutzkonforme Transkriptionspipeline (faster-whisper, offline) und ~4.600 Zeilen Auswertungsskripte.
+Einwilligung und Fragebögen waren ins Plugin eingebaut; die Gespräche wurden offline auf dem eigenen Rechner transkribiert.
 
 ## Technologien
 
@@ -56,10 +56,10 @@ Zur Studieninfrastruktur gehörten außerdem Counterbalancing-Logik, Consent-Flo
 | Frontend (~13.800 Zeilen TS) | React 19 · TypeScript · Vite · Zustand · Tailwind CSS · Radix UI |
 | Backend (~30.700 Zeilen Python) | Python · FastAPI · WebSockets · SQLite · Anthropic API (Streaming + Tool-Use) |
 | CAD | Rhino 8 · RhinoCommon · rhinoscriptsyntax · Grasshopper |
-| Testing | pytest (68 Backend-Tests) · Vitest · eigene Validierungsskripte (Export-Bundles, Golden Hashes) |
-| Research | Studiendesign (within-subjects, Counterbalancing) · qualitative Interviews · thematische Analyse |
+| Testing | pytest (68 Backend-Tests) · Vitest · eigene Prüfskripte |
+| Research | Studiendesign (within-subjects) · qualitative Interviews · thematische Analyse |
 
-Zusätzlich entstand in der explorativen Phase ein **MCP-Server** (68 CAD-Tools in 8 Modulen, inkl. SubD-Bearbeitung), der Claude mit Rhino und Grasshopper verband — Basis: zwei MIT-lizenzierte Open-Source-Projekte, dokumentiert nachgenutzt und deutlich erweitert.
+In der Anfangsphase entstand außerdem ein **MCP-Server**, über den Claude Rhino und Grasshopper direkt bedienen konnte. Er baut auf zwei MIT-lizenzierten Open-Source-Projekten auf, die ich deutlich erweitert habe.
 
 ## Mit dem Assistenten modelliert
 

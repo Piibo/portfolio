@@ -1,6 +1,6 @@
-# Bloomie — gestengesteuerte Schreibtischlampe an einem Roboterarm (HRI-Teamprojekt)
+# Bloomie — gestengesteuerte Schreibtischlampe an einem Roboterarm
 
-**Bloomie ist eine smarte Schreibtischlampe auf einem Roboterarm, die sich berührungslos über Handgesten steuern lässt** — entstanden als vierköpfiges Teamprojekt im Kurs Human-Robot Interaction (LMU München, 2025).
+**Bloomie ist eine smarte Schreibtischlampe auf einem Roboterarm, die sich berührungslos über Handgesten steuern lässt.**
 
 | | |
 |---|---|
@@ -14,7 +14,7 @@
 
 ## Die Idee
 
-Im HRI-Kurs haben wir als vierköpfiges Team ein eigenes Mensch-Roboter-Interaktionssystem konzipiert, gebaut und als Paper im ACM-Format dokumentiert. Unser Ausgangspunkt: Klassische Schreibtischlampen sind unflexibel — für jede Änderung muss man hinlangen und nachjustieren. Bloomie beantwortet das mit einer Lampe, die sich berührungslos bedienen lässt und selbst mitdenkt: Sie folgt auf Wunsch der Hand, passt Position und Licht an und macht so aus einem Alltagsgegenstand einen adaptiven Interaktionspartner.
+Im Kurs haben wir im Team ein eigenes Mensch-Roboter-Interaktionssystem konzipiert, gebaut und als Paper im ACM-Format dokumentiert. Unser Ausgangspunkt: Klassische Schreibtischlampen sind unflexibel — für jede Änderung muss man hinlangen und nachjustieren. Bloomie beantwortet das mit einer Lampe, die sich berührungslos bedienen lässt und selbst mitdenkt: Sie folgt auf Wunsch der Hand, passt Position und Licht an und macht so aus einem Alltagsgegenstand einen adaptiven Interaktionspartner.
 
 ## Das System
 
@@ -28,13 +28,12 @@ Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Land
 
 Die Software haben wir im Team per Co-Coding geschrieben, also gemeinsam am selben Code statt nach Modulen aufgeteilt. Den Lampenkopf mit dem verstellbaren Lichtkegel habe ich konstruiert und gebaut.
 
-### Software (gemeinsam im Co-Coding)
+### Software
 
 - **ROS-Architektur aus drei Nodes:** Kamera-Node für Hand-Tracking und Gestenerkennung, Roboter-Node für die Armbewegung, Licht-Node für die LEDs
 - **Gestenerkennung mit MediaPipe:** Die Modi werden über Fingerstellungen umgeschaltet, Richtungsgesten über Winkel zwischen Handgelenk und Zeigefinger erkannt. Eine Geste gilt erst, wenn sie über mehrere Frames stabil bleibt.
 - **Robotersteuerung über die MyCobot-API:** MoveIt war für die Echtzeit-Steuerung zu träge, deshalb steuern wir die Gelenke direkt an (`jog_angle`, `send_angles`). Im Follow-Modus ignoriert eine Toleranzzone kleine Handbewegungen.
 - **Licht-Anbindung:** zwei ROS-Nodes, die Licht-Gesten in serielle Befehle an den ESP8266 übersetzen
-- **Setup:** ROS in einer virtuellen Maschine (UTM) auf einem ARM-MacBook, Roboterarm und Webcam per USB durchgereicht
 
 ### Lampenkopf mit verstellbarem Lichtkegel (meine Konstruktion)
 
