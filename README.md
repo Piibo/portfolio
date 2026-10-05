@@ -2,14 +2,14 @@
 
 M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reichen von KI-Werkzeugen und Web-Anwendungen über VR bis zu Hardware-Prototypen und 3D-Konstruktionen. Jede Seite zeigt Problemstellung, Lösung, meinen Anteil und die eingesetzten Technologien.
 
-> **🇬🇧 English summary:** Project portfolio of Peter Trenkle (M.Sc. Media Informatics, LMU Munich, 2026) — ten projects across AI tools, web apps, VR, and hardware prototyping, each documented with images, my part, and the tech stack, plus an overview of 143 parts I designed in Fusion 360 for 3D printing. Highlights: an AI assistant for the CAD software Rhino 8 (master's thesis, evaluated in a user study with 8 participants), an AI-powered spice dispenser I designed and built (CAD, 3D printing, ESP32, local LLM), and several team web projects (React, Next.js, D3). The pages are written in German — I'm happy to walk through any of them in English.
+> **🇬🇧 English summary:** Project portfolio of Peter Trenkle (M.Sc. Media Informatics, LMU Munich, 2026) — ten projects across AI tools, web apps, VR, and hardware prototyping, each documented with images, my part, and the tech stack, plus an overview of 143 parts I designed in Fusion 360 for 3D printing. Highlights: an AI assistant for the CAD software Rhino 8 (master's thesis, evaluated in a user study with 8 participants), an AI-powered spice dispenser (CAD, 3D printing, ESP32, local LLM), and several team web projects (React, Next.js, D3). The pages are written in German — I'm happy to walk through any of them in English.
 
 ## Projekte
 
 <table>
 <tr>
 <td align="center" width="33%"><a href="projekte/ki-cad-assistent/"><img src="projekte/ki-cad-assistent/bilder/vorschau.jpg" alt="KI-CAD-Assistent: Chat-Panel neben einem im Dialog modellierten Beistelltisch" width="260"></a><br><b><a href="projekte/ki-cad-assistent/">KI-CAD-Assistent</a></b><br><sub>Masterarbeit · KI-Werkzeug für Rhino 8</sub></td>
-<td align="center" width="33%"><a href="projekte/spice-dispenser/"><img src="projekte/spice-dispenser/bilder/vorschau.jpg" alt="SpAice: Gewürzautomat mit fünf Behältern auf einer Linearachse" width="260"></a><br><b><a href="projekte/spice-dispenser/">SpAice</a></b><br><sub>KI-Gewürzautomat · selbst gebaut</sub></td>
+<td align="center" width="33%"><a href="projekte/spice-dispenser/"><img src="projekte/spice-dispenser/bilder/vorschau.jpg" alt="SpAice: Gewürzautomat mit fünf Behältern auf einer Linearachse" width="260"></a><br><b><a href="projekte/spice-dispenser/">SpAice</a></b><br><sub>KI-Gewürzautomat · Hardware-Prototyp</sub></td>
 <td align="center" width="33%"><a href="projekte/konstruktionen/"><img src="projekte/konstruktionen/bilder/vorschau.jpg" alt="Konstruktionen: blaue Linienzeichnung selbst konstruierter Teile von oben" width="260"></a><br><b><a href="projekte/konstruktionen/">Konstruktionen</a></b><br><sub>143 Teile aus Fusion 360 · 3D-Druck</sub></td>
 </tr>
 <tr>
@@ -33,10 +33,10 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reiche
 
 | Projekt | Worum es geht | Mein Teil |
 |---|---|---|
-| [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: KI-Assistent, mit dem man Möbel in Rhino per Chat, Klick, Regler und Skizze modelliert; Nutzerstudie (n = 8) | alles: Konzept, Entwicklung, Studie |
-| [SpAice](projekte/spice-dispenser/) | Gewürzautomat: Gericht nennen, ein lokales Sprachmodell wählt Gewürze und Mengen, die Maschine dosiert ([Video](https://youtu.be/Efl0KOGhpKA)) | alles: Konstruktion, Elektronik, Firmware, Software |
-| [Konstruktionen](projekte/konstruktionen/) | 143 Teile nach Maß, konstruiert in Fusion 360 für den 3D-Druck | alles |
-| [VR-Interaktion im virtuellen Fahrzeug](projekte/bachelorarbeit-vr-fahrzeug/) | Bachelorarbeit: Controller oder eigene Hände — wie bedient man ein virtuelles Auto besser? Nutzerstudie (n = 17) | alles: Prototyp, Studie, Auswertung |
+| [KI-CAD-Assistent für Rhino 8](projekte/ki-cad-assistent/) | Masterarbeit: KI-Assistent, mit dem man Möbel in Rhino per Chat, Klick, Regler und Skizze modelliert; Nutzerstudie (n = 8) | Konzept, Entwicklung, Studie |
+| [SpAice](projekte/spice-dispenser/) | Gewürzautomat: Gericht nennen, ein lokales Sprachmodell wählt Gewürze und Mengen, die Maschine dosiert ([Video](https://youtu.be/Efl0KOGhpKA)) | Konstruktion, Elektronik, Firmware, Software |
+| [Konstruktionen](projekte/konstruktionen/) | 143 Teile nach Maß, konstruiert in Fusion 360 für den 3D-Druck | Konstruktion und Druck |
+| [VR-Interaktion im virtuellen Fahrzeug](projekte/bachelorarbeit-vr-fahrzeug/) | Bachelorarbeit: Controller oder eigene Hände — wie bedient man ein virtuelles Auto besser? Nutzerstudie (n = 17) | Prototyp, Studie, Auswertung |
 | [E-Mission Z](projekte/e-mission-z/) | Dashboard zu Verkehr und CO₂-Emissionen der Bundesländer mit verknüpften Ansichten ([live](https://www.cip.ifi.lmu.de/~wildva/infovis/)) | Zeitreihe, Zeitraum-Slider und die Kopplung der Ansichten |
 | [Nüslify](projekte/nueslify/) | KI-Radio: News zu den eigenen Interessen, gemischt mit der eigenen Spotify-Musik | Interessen-Feature von der Oberfläche bis zur Datenbank |
 | [kemptAInability](projekte/kemptainability/) | Verkehrssimulation für Kempten: Straßen sperren und die Folgen für Stau, Lärm und CO₂ sehen | Datenpipeline OSM → SUMO → GeoJSON |

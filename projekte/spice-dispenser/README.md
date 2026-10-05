@@ -10,7 +10,7 @@
 
 | | |
 |---|---|
-| Kontext | Kurs Sketching with Hardware, LMU München, 2025 · allein |
+| Kontext | Kurs Sketching with Hardware, LMU München, 2025 |
 | Rolle | Konstruktion (CAD, 3D-Druck, Getriebe), Firmware, Host-Software, Hardware-Ansteuerung |
 | Code | [Piibo/SpiceDispenser](https://github.com/Piibo/SpiceDispenser) |
 
