@@ -1,4 +1,4 @@
-# KI-CAD-Assistent für Rhino 8 (Masterarbeit)
+# KI-CAD-Assistent für Rhino 8
 
 **KI-Assistent für die CAD-Software Rhino 8: Designer:innen erstellen und bearbeiten damit 3D-Möbelmodelle per Chat, Klick, Regler und Skizze.**
 
@@ -17,15 +17,9 @@
 | Code | [Piibo/rhino-ai-cad-assistant](https://github.com/Piibo/rhino-ai-cad-assistant): kuratierte Code-Basis (MCP-Server + Studien-Plugin), MIT-lizenziert. Das Arbeits-Repository bleibt privat, weil es Studiendaten enthält. |
 | Arbeit | Auf Anfrage |
 
-## Die Fragestellung
+## Was das Plugin kann
 
-Reine Prompt-Werkzeuge degradieren Designer:innen zu bloßen Zuschauenden: Räumliche Absichten lassen sich sprachlich nur schwer präzise vermitteln („das linke hintere Bein, etwas geschwungener …“). Metrische Angaben funktionieren im Chat robust; lokale, zeigende und richtungsbezogene Bezüge brauchen dagegen sichtbare Selektion, Markierung, Vorschau und Parameter. Die Arbeit untersucht, welche Interaktionswerkzeuge ein chatbasierter KI-CAD-Assistent braucht, damit aus passivem Prompten aktive Modellinteraktion wird.
-
-## Der Prototyp
-
-Ein Rhino-8-Plugin aus zwei Teilen: ein **Python-Backend (FastAPI), das direkt in Rhino läuft**, und eine **Chat-Oberfläche in React**, verbunden über WebSocket. Das Backend lässt das Sprachmodell (Anthropic API) in einer Schleife arbeiten: Das Modell wählt aus **108 Werkzeugen** (etwa einen Regler anlegen oder Varianten zeigen), das Plugin führt sie in Rhino aus und meldet das Ergebnis zurück, bis die Anfrage erledigt ist.
-
-Die Human-in-the-Loop-Werkzeuge, um die es in der Studie ging:
+Neben dem Chat bietet das Plugin Werkzeuge, mit denen man direkt am Modell arbeitet:
 
 - **Referenzen per Klick:** Geometrie anklicken statt beschreiben
 - **Live-Regler:** Maße direkt am Modell verändern; eine Reglerbewegung lässt sich in einem Schritt rückgängig machen
@@ -40,20 +34,6 @@ Die Human-in-the-Loop-Werkzeuge, um die es in der Studie ging:
 <img src="bilder/abb-varianten-galerie.png" alt="Variantengalerie: Original, gerade, konische und gespreizte Beinform als anklickbare Viewport-Kacheln" width="440">
 
 *Die Variantengalerie: drei Beinform-Alternativen (gerade, konisch, gespreizt) als Viewport-Aufnahmen zum Durchschalten. Die gewählte Variante wird im Modell aktiv.*
-
-Die Studie steckt im Plugin selbst: Eine einzige Stelle im Code schaltet zwischen den beiden Bedingungen um (nur Chat oder Chat mit Werkzeugen), jede Aktion wird in einer Datenbank protokolliert, und eine Prüfsumme stellt sicher, dass sich Anweisungen und Werkzeuge des Assistenten während der Studie nicht unbemerkt ändern.
-
-In der Anfangsphase entstand außerdem ein **MCP-Server**, über den das Sprachmodell Claude Rhino und Grasshopper direkt bedienen konnte. Er baut auf zwei MIT-lizenzierten Open-Source-Projekten auf; die Werkzeugmodule sind neu implementiert und um eine eigene SubD-Schicht ergänzt.
-
-## Die Studie
-
-<img src="bilder/abb-ui-basis.png" alt="Das Chat-Panel in der Basis-Bedingung: Textdialog mit Bildanhang, ohne Interaktionswerkzeuge" width="330">
-
-*Zum Vergleich die `basis`-Bedingung der Studie: gleiche CAD-Kompetenz des Assistenten, aber nur Chat mit Text und Bildanhang, ohne Klick, Regler und Skizze. Der Kontrast zwischen beiden Bedienformen ist der Kern des Studiendesigns.*
-
-Studie mit **8 Teilnehmenden in 16 Sitzungen**: Jede Person löste Möbelentwurfsaufgaben in beiden Bedingungen. Ausgewertet habe ich die Sitzungen mit einer thematischen Analyse. Daraus entstand ein Modell dafür, wann ein chatbasierter KI-CAD-Assistent welche Werkzeuge braucht. Dieses Modell ist der wissenschaftliche Beitrag der Arbeit.
-
-Einwilligung und Fragebögen waren ins Plugin eingebaut; die Gespräche wurden lokal und offline transkribiert.
 
 ## Mit dem Assistenten modelliert
 
@@ -70,6 +50,33 @@ Vier Möbel aus den Research-through-Design-Sessions, jeweils im Dialog mit dem 
 </p>
 
 *Freischwinger nach Thonet-Vorbild, Hocker nach dem Vorbild des Artek Stool 60, Sideboard mit Schiebetüren.*
+
+## Wie es gebaut ist
+
+Ein Rhino-8-Plugin aus zwei Teilen: ein **Python-Backend (FastAPI), das direkt in Rhino läuft**, und eine **Chat-Oberfläche in React**, verbunden über WebSocket. Das Backend lässt das Sprachmodell (Anthropic API) in einer Schleife arbeiten: Das Modell wählt aus **108 Werkzeugen** (etwa einen Regler anlegen oder Varianten zeigen), das Plugin führt sie in Rhino aus und meldet das Ergebnis zurück, bis die Anfrage erledigt ist.
+
+Die Studie steckt im Plugin selbst: Eine einzige Stelle im Code schaltet zwischen den beiden Bedingungen um (nur Chat oder Chat mit Werkzeugen), jede Aktion wird in einer Datenbank protokolliert, und eine Prüfsumme stellt sicher, dass sich Anweisungen und Werkzeuge des Assistenten während der Studie nicht unbemerkt ändern.
+
+In der Anfangsphase entstand außerdem ein **MCP-Server**, über den das Sprachmodell Claude Rhino und Grasshopper direkt bedienen konnte. Er baut auf zwei MIT-lizenzierten Open-Source-Projekten auf; die Werkzeugmodule sind neu implementiert und um eine eigene SubD-Schicht ergänzt.
+
+## Die Studie
+
+Räumliche Absichten lassen sich sprachlich nur schwer präzise vermitteln („das linke hintere Bein, etwas geschwungener …“). Die Arbeit untersucht deshalb, welche Werkzeuge ein chatbasierter KI-CAD-Assistent neben dem Chat braucht.
+
+Studie mit **8 Teilnehmenden in 16 Sitzungen**: Jede Person löste Möbelentwurfsaufgaben einmal nur mit Chat und einmal mit den Werkzeugen. Ausgewertet habe ich die Sitzungen mit einer thematischen Analyse. Einwilligung und Fragebögen waren ins Plugin eingebaut; die Gespräche wurden lokal und offline transkribiert.
+
+<img src="bilder/abb-ui-basis.png" alt="Das Chat-Panel in der Basis-Bedingung: Textdialog mit Bildanhang, ohne Interaktionswerkzeuge" width="330">
+
+*Zum Vergleich die `basis`-Bedingung der Studie: gleiche CAD-Kompetenz des Assistenten, aber nur Chat mit Text und Bildanhang, ohne Klick, Regler und Skizze.*
+
+**Zentrale Befunde:**
+
+- **Chat für Maße, Zeigen für Ort und Form:** Maße und Änderungen am ganzen Modell ließen sich im Chat gut beschreiben. Ging es darum, an welcher Stelle, in welche Richtung oder in welcher Form sich etwas ändern sollte, reichte Sprache in mehreren Fällen nicht aus. Dann halfen Skizze und Klick, die Regler dienten der Feinjustage.
+- **Wechseln ist ein Arbeitsprinzip:** Die Teilnehmenden wechselten je nach Entwurfsschritt zwischen Sprache, Zeigen und Reglern, teils vorausschauend, teils nach einem Fehlversuch.
+- **Kontrolle braucht sichtbare Eingriffspunkte:** Wie viel Kontrolle die Teilnehmenden nach eigener Aussage erlebten, hing mit verständlichen Eingriffspunkten, nachvollziehbaren Modellzuständen und umkehrbaren Änderungen zusammen.
+- **Präferenz:** Am Ende wählten alle acht Teilnehmenden die Variante mit Werkzeugen. Das zeigt eine Vorliebe, keinen nachgewiesenen Leistungsvorteil.
+
+Daraus entstand ein Modell aus vier Schritten, die sich wiederholen: die Absicht am sichtbaren Modell festmachen, die Anweisung mit dem Assistenten aushandeln, die Ausführung an Eingriffspunkten steuern und das Ergebnis prüfen, überarbeiten und weiterentwerfen. Dieses Modell ist der wissenschaftliche Beitrag der Arbeit.
 
 ## Technologien
 
