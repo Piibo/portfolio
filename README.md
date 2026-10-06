@@ -17,7 +17,7 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reiche
 <tr>
 <td align="center" colspan="2"><a href="projekte/bachelorarbeit-vr-fahrzeug/"><img src="projekte/bachelorarbeit-vr-fahrzeug/bilder/vorschau.jpg" alt="VR-Fahrzeug: virtuelle Hände am Lenkrad eines Autocockpits" width="260"></a><br><b><a href="projekte/bachelorarbeit-vr-fahrzeug/">VR-Interaktion</a></b><br><sub>Bachelorarbeit · Nutzerstudie (n = 17)</sub></td>
 <td align="center" colspan="2"><a href="projekte/e-mission-z/"><img src="projekte/e-mission-z/bilder/vorschau.jpg" alt="E-Mission Z: Dashboard mit Deutschlandkarte, Zeitreihe und Tortendiagrammen" width="260"></a><br><b><a href="projekte/e-mission-z/">E-Mission Z</a></b><br><sub>Datenvisualisierung · React, D3</sub></td>
-<td align="center" colspan="2"><a href="projekte/nueslify/"><img src="projekte/nueslify/bilder/vorschau.jpg" alt="Nüslify: Startseite mit Logo" width="260"></a><br><b><a href="projekte/nueslify/">Nüslify</a></b><br><sub>KI-Radio als PWA · Next.js</sub></td>
+<td align="center" colspan="2"><a href="projekte/nueslify/"><img src="projekte/nueslify/bilder/vorschau.jpg" alt="Nüslify: Dashboard im Browser mit dem Musik-Player" width="260"></a><br><b><a href="projekte/nueslify/">Nüslify</a></b><br><sub>KI-Radio als PWA · Next.js</sub></td>
 </tr>
 <tr>
 <td align="center" colspan="2"><a href="projekte/kemptainability/"><img src="projekte/kemptainability/bilder/vorschau.jpg" alt="kemptAInability: Verkehrsfluss-Simulation auf der Karte von Kempten" width="260"></a><br><b><a href="projekte/kemptainability/">kemptAInability</a></b><br><sub>Verkehrssimulation · SUMO-Pipeline</sub></td>
