@@ -6,6 +6,8 @@
 
 *Die Station als begehbare 3D-Umgebung. Oben rechts steht die aktuelle Aufgabe, unten rechts das Smartphone, über das die Aufgaben kommen.*
 
+<a href="https://youtu.be/RlHncoayMY8"><img src="https://img.youtube.com/vi/RlHncoayMY8/maxresdefault.jpg" alt="Vorschaubild des Gameplay-Videos: rot beleuchtetes Ziffern-Keypad, oben rechts die Aufgabe „Stoppe die Rolltreppe“" width="420"></a>
+
 ▶️ **[Gameplay-Video auf YouTube](https://youtu.be/RlHncoayMY8)**
 
 | | |
@@ -26,12 +28,9 @@ Die Spieler:innen wachen in einem U-Bahn-Zug auf und müssen aus der Station Sen
 - **Die 3D-Modelle des Projekts:** Stationsmodell und Spielobjekte so aufbereitet und bereinigt, dass sie in der Unreal Engine sauber nutzbar waren.
 - **Das erste Rätsel:** Konzeption und Umsetzung des Einstiegsrätsels, das die Spieler:innen ins Spiel führt — eine Schaltertafel, deren richtige Stellung sich aus einer Notiz voller verschachtelter Logik-Hinweise ergibt.
 
-<p>
-<img src="bilder/einstiegsraetsel.jpg" alt="Das Einstiegsrätsel: Schaltertafel mit Logik-Notiz auf einem Bildschirm" width="400">
-<img src="bilder/keypad.jpg" alt="Späteres Rätsel: rot beleuchtetes Ziffern-Keypad" width="400">
-</p>
+<img src="bilder/einstiegsraetsel.jpg" alt="Das Einstiegsrätsel: Schaltertafel mit Logik-Notiz auf einem Bildschirm" width="560">
 
-*Links: das Einstiegsrätsel — Schalter nach den Logik-Hinweisen der Notiz stellen, um aus dem Zug zu kommen. Rechts: ein späteres Rätsel der Kette (Code-Eingabe am Keypad).*
+*Das Einstiegsrätsel: Wer die Schalter nach den Logik-Hinweisen der Notiz stellt, kommt aus dem Zug.*
 
 ## Technologien
 
