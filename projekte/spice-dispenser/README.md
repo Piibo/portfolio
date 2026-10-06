@@ -6,6 +6,8 @@
 
 *Die Maschine: fünf 3D-gedruckte Gewürzbehälter auf einer Linearachse, darunter der Trichter-Auslauf, rechts die Bedienbox mit OLED-Display und Drehknopf.*
 
+<a href="https://youtu.be/kATW5-pVZzE"><img src="https://img.youtube.com/vi/kATW5-pVZzE/maxresdefault.jpg" alt="Vorschaubild des Demo-Videos: Titel „SpAice – Gericht sagen. Die AI wählt die Gewürze.“ neben dem OLED-Display mit dem Ergebnis für Chili con carne" width="420"></a>
+
 ▶️ **[Demo-Video auf YouTube](https://youtu.be/kATW5-pVZzE)**
 
 | | |
@@ -43,7 +45,7 @@ Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse habe
 
 <img src="bilder/linearachse.gif" alt="Animation: Die fünf weißen Gewürzbehälter fahren auf der schwarzen Linearachse seitlich an der Antriebseinheit vorbei" width="440">
 
-*Ausschnitt aus dem Demo-Video: Der Schrittmotor verschiebt die Behälterreihe auf der Linearachse zum nächsten Gewürz.*
+*Aus den Videoaufnahmen: Der Schrittmotor verschiebt die Behälterreihe auf der Linearachse zum nächsten Gewürz.*
 
 <p>
 <img src="bilder/getriebe-cad.png" alt="CAD-Render der Kraftübertragung in der Antriebseinheit" width="400">
