@@ -6,7 +6,7 @@
 
 *Die Maschine: fünf 3D-gedruckte Gewürzbehälter auf einer Linearachse, darunter der Trichter-Auslauf, rechts die Bedienbox mit OLED-Display und Drehknopf.*
 
-▶️ **[Demo-Video auf YouTube](https://youtu.be/Efl0KOGhpKA)**
+▶️ **[Demo-Video auf YouTube](https://youtu.be/kATW5-pVZzE)**
 
 | | |
 |---|---|
