@@ -2,7 +2,7 @@
 
 **Seit November 2024 konstruiere ich in Fusion 360 Teile nach Maß und drucke sie selbst: Halter, Leuchtenteile, Beschläge, Ersatzteile.** Das Bild zeigt 129 davon von oben, alle im selben Maßstab.
 
-<img src="bilder/konstruktionen.png" alt="Linienzeichnung in Blau auf Weiß: 129 selbst konstruierte Teile von oben gesehen, frei über die Fläche verteilt und unterschiedlich gedreht — Lampenschirme, Halter, Rahmen, Zahnräder, Gridfinity-Einsätze, ein Geländerelief; einige Teile sind blau gefüllt" width="720">
+<img src="bilder/konstruktionen.png" alt="Linienzeichnung in Blau auf Weiß: 129 selbst konstruierte Teile von oben gesehen, frei über die Fläche verteilt und unterschiedlich gedreht — Lampenschirme, Halter, Rahmen, Zahnräder, Gridfinity-Einsätze, ein Reliefmodell; einige Teile sind blau gefüllt" width="720">
 
 *Alle 129 Teile im richtigen Größenverhältnis zueinander, von oben gesehen. Gerendert aus den STEP-Exporten der Fusion-Designs.*
 
@@ -19,7 +19,7 @@
 - **Wand und Möbel:** ein French-Cleat-Wandsystem, eine Halterung für einen Balkontisch (26 Versionen), Möbelgriffe, eine Bohrlehre für Griffe, ein Kabelhalter fürs Vitsoe-Regal, Rahmen für Jalousie- und Lichtschalter
 - **Ordnung:** Gridfinity-Einsätze, zum Beispiel für einen Messschieber (10 Versionen)
 - **Uni-Prototypen:** Getriebe, Achsen und Trichter von [SpAice](../spice-dispenser/) (das Verbindungsstück allein in 29 Versionen), der Lampenkopf von [Bloomie](../bloomie/)
-- **Sonstiges:** ein Geländerelief vom Hochgrat, eine Wanduhr, eine Pflanzenanzucht
+- **Sonstiges:** ein Reliefmodell des Hochgrats, eine Wanduhr, eine Pflanzenanzucht
 
 Einige wenige Teile sind Remixe fremder Modelle, die ich angepasst habe.
 
@@ -32,4 +32,4 @@ Die Designs lagen als STEP-Exporte vor. Ein Python-Skript wandelt sie in Meshes 
 | Ebene | Eingesetzt |
 |---|---|
 | Konstruktion | Fusion 360 · Add-ins Gridfinity Generator und Helical Gear Generator |
-| Druck | Bambu Studio · Bambu Lab A1 mit AMS · PLA, PETG, ASA |
+| Druck | Bambu Studio · Bambu Lab A1 mit AMS lite · PLA, PETG, ASA |
