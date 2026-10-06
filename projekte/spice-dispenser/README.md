@@ -74,5 +74,5 @@ Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse habe
 | Ebene | Eingesetzt |
 |---|---|
 | Konstruktion | CAD in Fusion 360 · 3D-Druck · Zahnrad-Getriebe · Aluminium-Profilschiene · Schrittmotor + Servo |
-| Firmware (~840 Zeilen C/C++) | ESP32-C6 · Arduino-Framework · PlatformIO · ESP32Servo · ArduinoJson · U8g2 |
-| Host (~570 Zeilen Python) | Python · Ollama (Mistral, lokal) · faster-whisper · webrtcvad · Wikipedia-API · FastAPI (Verbindung zum ESP32 per WLAN) · pyserial (alternativ per USB) |
+| Firmware (~1.800 Zeilen C/C++) | ESP32-C6 · Arduino-Framework · PlatformIO · ESP32Servo · ArduinoJson · U8g2 |
+| Host (~630 Zeilen Python) | Python · Ollama (Mistral, lokal) · faster-whisper · webrtcvad · Wikipedia-API · FastAPI (Verbindung zum ESP32 per WLAN) |
