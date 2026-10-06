@@ -1,6 +1,8 @@
 # Portfolio — Peter Trenkle
 
-M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reichen von KI-Werkzeugen und Web-Anwendungen über VR bis zu Hardware-Prototypen und 3D-Konstruktionen. Jede Seite zeigt die Idee, die Umsetzung, meinen Beitrag und die eingesetzten Technologien; bei Teamprojekten ist er getrennt ausgewiesen und, wo Repo oder Bericht zugänglich sind, darüber belegt.
+M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reichen von KI-Werkzeugen und Web-Anwendungen über VR bis zu Hardware-Prototypen und 3D-Konstruktionen. Jede Seite zeigt die Idee, die Umsetzung, meinen Beitrag und die eingesetzten Technologien.
+
+**Kontakt:** [p.trenkle@web.de](mailto:p.trenkle@web.de) · [LinkedIn](https://www.linkedin.com/in/peter-trenkle)
 
 > **English summary:** Project portfolio of Peter Trenkle (M.Sc. Media Informatics, LMU Munich, 2026) — eleven projects across AI tools, web apps, VR, hardware prototyping, and 3D design, each with my contribution and the tech stack. Highlights: an AI assistant for the CAD software Rhino 8 (master's thesis, evaluated in a user study with eight participants), an AI-powered spice dispenser (CAD, 3D printing, ESP32, local LLM), 143 parts I designed in Fusion 360 for 3D printing, and several team web projects (React, Next.js, D3). The pages are written in German — I'm happy to walk you through any of them in English.
 
@@ -24,7 +26,7 @@ M.Sc. Medieninformatik an der LMU München (Abschluss 2026). Die Projekte reiche
 </tr>
 <tr>
 <td align="center" colspan="3"><a href="projekte/grab-e/"><img src="projekte/grab-e/bilder/vorschau.jpg" alt="GRAB-E: Trajektorien-Auswertung des Greifarms" width="260"></a><br><b><a href="projekte/grab-e/">GRAB-E</a></b><br><sub>Reinforcement Learning · PyTorch</sub></td>
-<td align="center" colspan="3"><a href="projekte/sendlingers-escape/"><img src="projekte/sendlingers-escape/bilder/vorschau.jpg" alt="Sendlingers Escape: U-Bahn-Station Sendlinger Tor im Spiel" width="260"></a><br><b><a href="projekte/sendlingers-escape/">Sendlingers Escape</a></b><br><sub>Escape-Game · Unreal Engine</sub></td>
+<td align="center" colspan="3"><a href="projekte/sendlingers-escape/"><img src="projekte/sendlingers-escape/bilder/vorschau.jpg" alt="Sendlingers Escape: Schaltertafel und Logik-Notiz des Einstiegsrätsels" width="260"></a><br><b><a href="projekte/sendlingers-escape/">Sendlingers Escape</a></b><br><sub>Escape-Game · Unreal Engine</sub></td>
 </tr>
 </table>
 
