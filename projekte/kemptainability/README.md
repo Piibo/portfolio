@@ -1,6 +1,6 @@
-# kemptAInability — interaktive Verkehrsfluss-Simulation für Kempten
+# kemptAInability: interaktive Verkehrsfluss-Simulation für Kempten
 
-**Was passiert mit dem Verkehr einer Stadt, wenn eine zentrale Brücke gesperrt wird?** kemptAInability macht das erlebbar: eine interaktive Verkehrssimulation für Kempten, in der Bürger:innen und Stadtplaner:innen Straßen per Fingertipp sperren und sofort sehen, wie sich Verkehrsfluss, Stau, Lärm und CO₂-Emissionen verändern — entwickelt rund um die real geplante Sperrung der St.-Mang-Brücke.
+**Was passiert mit dem Verkehr einer Stadt, wenn eine zentrale Brücke gesperrt wird?** kemptAInability macht das erlebbar: eine interaktive Verkehrssimulation für Kempten, in der Bürger:innen und Stadtplaner:innen Straßen per Fingertipp sperren und sofort sehen, wie sich Verkehrsfluss, Stau, Lärm und CO₂-Emissionen verändern. Anlass war die real geplante Sperrung der St.-Mang-Brücke.
 
 <img src="bilder/verkehrsfluss.png" alt="Die App mit animierter Verkehrssimulation auf dem Straßennetz von Kempten, links die Steuerung für Simulation und Kartenebenen" width="720">
 
@@ -17,17 +17,17 @@
 
 Im sustAInability-Seminar haben wir im Team ein Projekt zum Thema nachhaltige Mobilität entwickelt und wissenschaftlich dokumentiert. Unser Aufhänger war konkret und real: die geplante Sperrung der St.-Mang-Brücke in Kempten und die Frage, wie man ihre Folgen für Bürger:innen greifbar macht.
 
-Professionelle Verkehrssimulationen (SUMO, Vissim) sind für Laien kaum bedienbar. kemptAInability macht daraus ein Werkzeug für alle: eine Karte der Stadt, auf der man Szenarien wie die Brückensperrung durchspielt und die Auswirkungen als Heatmaps (Stau, Lärm, CO₂) direkt sieht — mit Gamification-Elementen, die nachhaltige Verkehrskonfigurationen belohnen. Eingebettet in den UN-Nachhaltigkeitsrahmen (SDG 11: Nachhaltige Städte und Gemeinden).
+Professionelle Verkehrssimulationen (SUMO, Vissim) sind für Laien kaum bedienbar. kemptAInability macht daraus ein Werkzeug für alle: eine Karte der Stadt, auf der man Szenarien wie die Brückensperrung durchspielt und die Auswirkungen als Heatmaps (Stau, Lärm, CO₂) direkt sieht. Gamification-Elemente belohnen nachhaltige Verkehrskonfigurationen. Eingebettet in den UN-Nachhaltigkeitsrahmen (SDG 11: Nachhaltige Städte und Gemeinden).
 
 ## Wie es funktioniert
 
 1. **Daten:** OpenStreetMap-Straßennetz von Kempten via Overpass-Turbo-Queries, bereinigt mit JOSM und eigenen Python-Skripten (osmnx, geopandas, pyproj)
 2. **Simulation:** Konvertierung in ein SUMO-Netz (netconvert/netedit) für die Verkehrsmodellierung
-3. **Frontend:** SUMO-Daten als GeoJSON in einer React/Vite-App — animierte Verkehrssimulation mit Zeitsteuerung, interaktiver Barrieren-Platzierung, Heatmap-Overlays und Echtzeit-Metriken
+3. **Frontend:** SUMO-Daten als GeoJSON in einer React/Vite-App mit animierter Verkehrssimulation, Zeitsteuerung, interaktiver Barrieren-Platzierung, Heatmap-Overlays und Echtzeit-Metriken
 
 <img src="bilder/barrieren.png" alt="Barrieren-Platzierung: gesperrte Straßenabschnitte im Straßennetz von Kempten" width="720">
 
-*Barrieren-Platzierung: gesperrte Straßenabschnitte im Netz — die Simulation leitet den Verkehr um und zeigt die Folgen direkt.*
+*Barrieren-Platzierung: Die Simulation leitet den Verkehr um die gesperrten Straßenabschnitte herum und zeigt die Folgen direkt.*
 
 ## Mein Beitrag
 

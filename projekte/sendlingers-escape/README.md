@@ -1,4 +1,4 @@
-# Sendlingers Escape — Escape-Game in der Unreal Engine
+# Sendlingers Escape: Escape-Game in der Unreal Engine
 
 **Ein Escape-Game in der U-Bahn-Station Sendlinger Tor in München, entwickelt im Praktikum Game Development der LMU.**
 
@@ -17,16 +17,16 @@
 
 ## Die Idee
 
-Im Praktikum Game Development haben wir über das Semester ein vollständiges, spielbares Spiel entwickelt — vom Konzept über Level- und Rätseldesign bis zum fertigen Build samt Gameplay-Video. Unsere Wahl: ein Escape-Game an einem realen Münchner Ort.
+Im Praktikum Game Development haben wir über das Semester ein vollständiges, spielbares Spiel entwickelt, vom Konzept über Level- und Rätseldesign bis zum fertigen Build samt Gameplay-Video. Unsere Wahl: ein Escape-Game an einem realen Münchner Ort.
 
 ## Das Spiel
 
-Die Spieler:innen wachen in einem U-Bahn-Zug auf und müssen aus der Station Sendlinger Tor entkommen — die Münchner U-Bahn-Umgebung ist als begehbare 3D-Welt nachgebaut, vom Zuginneren über Bahnsteige und Rolltreppen bis zu den Technikräumen, mit den typischen gelben Säulen und blauen Wandkacheln der echten Station. Die Aufgaben erscheinen auf einem Smartphone im Interface; der Weg nach oben führt über eine Kette von Rätseln: aus dem Zug herausfinden, die Rolltreppe stoppen, in den Technikräumen das Passwort für die Schalträume aufspüren, Codes am Keypad eingeben — bis am Ende die Netzverbindung wiederhergestellt ist und ein Anruf das offene Ende einläutet.
+Die Spieler:innen wachen in einem U-Bahn-Zug auf und müssen aus der Station Sendlinger Tor entkommen. Die Münchner U-Bahn-Umgebung ist als begehbare 3D-Welt nachgebaut, vom Zuginneren über Bahnsteige und Rolltreppen bis zu den Technikräumen, mit den typischen gelben Säulen und blauen Wandkacheln der echten Station. Die Aufgaben erscheinen auf einem Smartphone im Interface; der Weg nach oben führt über eine Kette von Rätseln: aus dem Zug herausfinden, die Rolltreppe stoppen, in den Technikräumen das Passwort für die Schalträume aufspüren, Codes am Keypad eingeben, bis am Ende die Netzverbindung wiederhergestellt ist und ein Anruf das offene Ende einläutet.
 
 ## Mein Beitrag
 
 - **Die 3D-Modelle des Projekts:** Stationsmodell und Spielobjekte so aufbereitet und bereinigt, dass sie in der Unreal Engine sauber nutzbar waren.
-- **Das erste Rätsel:** Konzeption und Umsetzung des Einstiegsrätsels, das die Spieler:innen ins Spiel führt — eine Schaltertafel, deren richtige Stellung sich aus einer Notiz voller verschachtelter Logik-Hinweise ergibt.
+- **Das erste Rätsel:** Konzeption und Umsetzung des Einstiegsrätsels, das die Spieler:innen ins Spiel führt. Dazu gehört eine Schaltertafel, deren richtige Stellung sich aus einer Notiz voller verschachtelter Logik-Hinweise ergibt.
 
 <img src="bilder/einstiegsraetsel.jpg" alt="Das Einstiegsrätsel: Schaltertafel mit Logik-Notiz auf einem Bildschirm" width="560">
 

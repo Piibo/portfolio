@@ -1,8 +1,8 @@
-# Konstruktionen — 143 Teile aus Fusion 360
+# Konstruktionen: 143 Teile aus Fusion 360
 
 **Seit November 2024 konstruiere ich in Fusion 360 Teile nach Maß und drucke sie selbst: Halter, Leuchtenteile, Beschläge, Ersatzteile.** Das Bild zeigt 129 davon von oben, alle im selben Maßstab.
 
-<img src="bilder/konstruktionen.png" alt="Linienzeichnung in Blau auf Weiß: 129 selbst konstruierte Teile von oben gesehen, frei über die Fläche verteilt und unterschiedlich gedreht — Lampenschirme, Halter, Rahmen, Zahnräder, Gridfinity-Einsätze, ein Reliefmodell; einige Teile sind blau gefüllt" width="720">
+<img src="bilder/konstruktionen.png" alt="Linienzeichnung in Blau auf Weiß: 129 selbst konstruierte Teile von oben gesehen, frei über die Fläche verteilt und unterschiedlich gedreht, darunter Lampenschirme, Halter, Rahmen, Zahnräder, Gridfinity-Einsätze, ein Reliefmodell; einige Teile sind blau gefüllt" width="720">
 
 *Alle 129 Teile im richtigen Größenverhältnis zueinander, von oben gesehen. Gerendert aus den STEP-Exporten der Fusion-Designs.*
 

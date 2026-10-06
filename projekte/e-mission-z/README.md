@@ -1,4 +1,4 @@
-# E-Mission Z — interaktive Visualisierung von Verkehr und CO₂-Emissionen
+# E-Mission Z: interaktive Visualisierung von Verkehr und CO₂-Emissionen
 
 **Hängen die Verkehrsmittel, die ein Bundesland nutzt, mit seinen Pro-Kopf-CO₂-Emissionen zusammen?** E-Mission Z macht diese Frage explorierbar: eine Dashboard-Anwendung, in der man Bundesländer auswählt, den Zeitraum von 2011 bis 2021 aufzieht und Karte, Zeitreihe und Verkehrsmittel-Aufteilung als verknüpfte Ansichten nebeneinander liest.
 
@@ -11,13 +11,13 @@
 | Kontext | Kurs Information Visualization, LMU München, WiSe 2023/24 · 5-köpfiges Team |
 | Rolle | Zeitreihen-Diagramm, Zeitraum-Slider, Bundesland-Auswahlliste und deren Verknüpfung mit der Karte |
 | Live | [www.cip.ifi.lmu.de/~wildva/infovis/](https://www.cip.ifi.lmu.de/~wildva/infovis/) |
-| Code | LRZ-GitLab der LMU (nicht öffentlich einsehbar) — Einblick auf Anfrage |
+| Code | LRZ-GitLab der LMU (nicht öffentlich einsehbar), Einblick auf Anfrage |
 
 ## Die Fragestellung
 
-Im Kurs Information Visualization haben wir im Team eine interaktive Visualisierung zu einer selbst gewählten Forschungsfrage entwickelt — von der Datenbeschaffung über mehrere Prototyp-Stufen bis zum Live-Deployment. Unsere Frage: **Hat die Nutzung verschiedener Verkehrsmittel einen Einfluss auf die Pro-Kopf-CO₂-Emissionen in Deutschland?**
+Im Kurs Information Visualization haben wir im Team eine interaktive Visualisierung zu einer selbst gewählten Forschungsfrage entwickelt, von der Datenbeschaffung über mehrere Prototyp-Stufen bis zum Live-Deployment. Unsere Frage: **Hat die Nutzung verschiedener Verkehrsmittel einen Einfluss auf die Pro-Kopf-CO₂-Emissionen in Deutschland?**
 
-Verkehr ist einer der größten CO₂-Verursacher, aber die Daten dazu liegen verstreut: Emissionen pro Bundesland, Fahrgastzahlen im ÖPNV, Personenkilometer im Individualverkehr. E-Mission Z bringt sie für die Jahre 2011–2021 in ein gemeinsames Dashboard und lässt Nutzer:innen selbst nach Mustern suchen — etwa nach dem Corona-Einbruch ab 2020.
+Verkehr ist einer der größten CO₂-Verursacher, aber die Daten dazu liegen verstreut: Emissionen pro Bundesland, Fahrgastzahlen im ÖPNV, Personenkilometer im Individualverkehr. E-Mission Z bringt sie für die Jahre 2011–2021 in ein gemeinsames Dashboard und lässt Nutzer:innen selbst nach Mustern suchen, etwa nach dem Corona-Einbruch ab 2020.
 
 ## Wie es funktioniert
 
@@ -32,13 +32,13 @@ Der Kern ist das Prinzip verknüpfter Ansichten: Wer ein Bundesland in der Liste
 Mit **77 von 295 Commits** hatte ich den größten Einzelanteil im Team. Mein Schwerpunkt lag auf der Zeitreihen-Seite des Dashboards und den Bedienelementen, die die Ansichten miteinander koppeln:
 
 - **Das Zeitreihen-Diagramm:** Aufbau der Komponente, Achsen und Skalierung auf die Emissionsdaten, Farbgebung synchron zur Karte, Hervorhebung der Linie beim Hovern über ein Bundesland, Umgang mit dem Wechsel der Datengrundlage.
-- **Der Zeitraum-Slider** mit zwei Griffen für Start- und Endjahr, plus der Umschalter zwischen absoluten und Pro-Kopf-Werten — beides Elemente, die auf alle Ansichten gleichzeitig wirken.
+- **Der Zeitraum-Slider** mit zwei Griffen für Start- und Endjahr, plus der Umschalter zwischen absoluten und Pro-Kopf-Werten. Beide wirken auf alle Ansichten gleichzeitig.
 - **Die Bundesland-Auswahlliste:** Auswahl- und Hover-Zustände sowie die Verdrahtung, über die eine Auswahl gleichzeitig Karte und Diagramm erreicht.
 - **Zusammenführung der Komponenten** in der App-Struktur und Anbindung der Kartenkomponente an den geteilten Auswahlzustand.
 
 <img src="bilder/interaktion.gif" alt="Animation im Live-Dashboard: Der rechte Griff des Zeitraum-Sliders wird bis 2021 gezogen, die Zeitreihe wächst mit; dann werden Bayern, Berlin und Nordrhein-Westfalen in der Liste gewählt und auf Karte und Zeitreihe hervorgehoben; zum Schluss schaltet ein Reiterwechsel alle Ansichten auf ÖPNV um" width="720">
 
-*Das Zusammenspiel im Live-Dashboard: Zeitraum aufziehen, Bundesländer in der Liste wählen — Zeitreihe und Karte folgen sofort. Slider, Auswahlliste und Zeitreihe sind meine Komponenten. Am Ende schaltet ein Reiterwechsel alle Ansichten gemeinsam auf ÖPNV um.*
+*Das Zusammenspiel im Live-Dashboard: Sobald man den Zeitraum aufzieht oder Bundesländer in der Liste wählt, folgen Zeitreihe und Karte. Slider, Auswahlliste und Zeitreihe sind meine Komponenten. Am Ende schaltet ein Reiterwechsel alle Ansichten gemeinsam auf ÖPNV um.*
 
 ## Technologien
 

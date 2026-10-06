@@ -1,4 +1,4 @@
-# Bloomie — gestengesteuerte Schreibtischlampe an einem Roboterarm
+# Bloomie: gestengesteuerte Schreibtischlampe an einem Roboterarm
 
 **Bloomie ist eine Schreibtischlampe an einem Roboterarm, die sich berührungslos über Handgesten steuern lässt.**
 
@@ -14,15 +14,15 @@
 
 ## Die Idee
 
-Im Kurs haben wir im Team ein eigenes Mensch-Roboter-Interaktionssystem konzipiert, gebaut und als Paper im ACM-Format dokumentiert. Unser Ausgangspunkt: Klassische Schreibtischlampen sind unflexibel — für jede Änderung muss man hinlangen und nachjustieren. Bloomie ist eine Lampe, die sich berührungslos bedienen lässt: Sie folgt auf Wunsch der Hand, fährt voreingestellte Posen an und steuert das Licht per Geste.
+Im Kurs haben wir im Team ein eigenes Mensch-Roboter-Interaktionssystem konzipiert, gebaut und als Paper im ACM-Format dokumentiert. Unser Ausgangspunkt: Klassische Schreibtischlampen sind unflexibel. Für jede Änderung muss man hinlangen und nachjustieren. Bloomie ist eine Lampe, die sich berührungslos bedienen lässt: Sie folgt auf Wunsch der Hand, fährt voreingestellte Posen an und steuert das Licht per Geste.
 
 ## Wie es funktioniert
 
-Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Landmarken, und ein ROS-System aus drei Nodes (Kamera, Roboter, Licht) übersetzt die Gesten in Bewegungen eines MyCobot-280-Roboterarms. Vier Modi: Gestensteuerung (Richtungsgesten bewegen die Lampe), Follow-Modus (die Lampe folgt der Hand), Licht-Modus und Haltungs-Modus (voreingestellte Posen). Da die GPIO-Pins des Roboterarms nicht zugänglich waren, steuert ein externer ESP8266-Mikrocontroller die LED-Ringe. Unsere Tests bestätigten eine zuverlässige Gestenerkennung; Grenzen zeigten sich bei den Winkelberechnungen einzelner Armposen — beides ist im Paper offen dokumentiert.
+Eine Webcam erfasst die Hand, Googles MediaPipe erkennt in Echtzeit 21 Hand-Landmarken, und ein ROS-System aus drei Nodes (Kamera, Roboter, Licht) übersetzt die Gesten in Bewegungen eines MyCobot-280-Roboterarms. Vier Modi: Gestensteuerung (Richtungsgesten bewegen die Lampe), Follow-Modus (die Lampe folgt der Hand), Licht-Modus und Haltungs-Modus (voreingestellte Posen). Da die GPIO-Pins des Roboterarms nicht zugänglich waren, steuert ein externer ESP8266-Mikrocontroller die LED-Ringe. Unsere Tests bestätigten eine zuverlässige Gestenerkennung; Grenzen zeigten sich bei den Winkelberechnungen einzelner Armposen. Beides ist im Paper offen dokumentiert.
 
 <img src="bilder/gestensteuerung.jpg" alt="Gestensteuerung im Betrieb: eine Hand schwebt über dem Lampenkopf, die LED-Matrix leuchtet grün, darunter das warme Arbeitslicht" width="360">
 
-*Gestensteuerung im Betrieb: Die Hand schwebt über dem Lampenkopf — oben leuchtet die grüne LED-Matrix, unten das warme Arbeitslicht. Standbild aus dem Projektvideo.*
+*Gestensteuerung im Betrieb: Die Hand schwebt über dem Lampenkopf, oben leuchtet die grüne LED-Matrix, unten das warme Arbeitslicht. Standbild aus dem Projektvideo.*
 
 ## Mein Beitrag
 
@@ -37,7 +37,7 @@ Den Lampenkopf mit dem verstellbaren Lichtkegel habe ich konstruiert und gebaut.
 
 *Links mein CAD-Entwurf des Lampenkopfs (Fusion 360, gerendert) mit den schräg verlaufenden Führungsnuten. Rechts der gedruckte Lampenkopf am Arm: In der Schrägnut läuft der Führungsstift, der beim Rotieren der Rohre die Linse hebt und senkt. Oben das ESP8266-Board (D1 Mini), unten der LED-Ring.*
 
-- **Linsenmechanik nach dem Zoom-Objektiv-Prinzip:** Vor den LEDs sitzt eine bewegliche Linse, die den Lichtkegel stufenlos von breitem Ambient-Licht bis zum eng gebündelten Arbeits-Spot verändert. Umgesetzt über einen Schrägnut-Mechanismus wie in einem Kamera-Zoom: Außen- und Innenrohr tragen gegenläufige Führungsnuten, ein Führungsstift am Linsenhalter greift in beide — rotieren die Rohre gegeneinander, fährt die Linse präzise hoch oder runter.
+- **Linsenmechanik nach dem Zoom-Objektiv-Prinzip:** Vor den LEDs sitzt eine bewegliche Linse, die den Lichtkegel stufenlos von breitem Ambient-Licht bis zum eng gebündelten Arbeits-Spot verändert. Umgesetzt über einen Schrägnut-Mechanismus wie in einem Kamera-Zoom: Außen- und Innenrohr tragen gegenläufige Führungsnuten, ein Führungsstift am Linsenhalter greift in beide. Rotieren die Rohre gegeneinander, fährt die Linse präzise hoch oder runter.
 - **Ohne eigenen Motor:** Die Rotation kommt vom obersten Drehgelenk des Roboterarms selbst.
 - **Konstruktion:** Lampenkopf in Fusion 360 konstruiert und im 3D-Druck gefertigt, Befestigung am Arm über LEGO-kompatible Pins (Plug-and-Play).
 - **LED-Hardware:** Einbau der LED-Ringe samt Ansteuerung im Lampenkopf.

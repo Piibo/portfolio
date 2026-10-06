@@ -1,12 +1,12 @@
-# SpAice — KI-gesteuerter Gewürzautomat
+# SpAice: KI-gesteuerter Gewürzautomat
 
-**Gericht nennen (per Sprache oder Text) → ein lokales LLM bestimmt die typischen Gewürze samt Grammmengen → die Maschine dosiert sie automatisch.** „SpAice – AI powered Spice Dispenser“ verbindet Konstruktion, KI-Anbindung, Spracherkennung und Hardware-Steuerung in einem Gerät.
+**Gericht nennen (per Sprache oder Text) → ein lokales LLM bestimmt die typischen Gewürze samt Grammmengen → die Maschine dosiert sie automatisch.** Der englische Projekttitel lautet „AI powered Spice Dispenser“. Das Gerät verbindet Konstruktion, KI-Anbindung, Spracherkennung und Hardware-Steuerung.
 
 <img src="bilder/spaice-gesamt.jpg" alt="SpAice komplett: fünf 3D-gedruckte Gewürzbehälter auf der Linearachse, rechts die Bedienbox mit OLED-Display und Drehknopf" width="720">
 
 *Die Maschine: fünf 3D-gedruckte Gewürzbehälter auf einer Linearachse, darunter der Trichter-Auslauf, rechts die Bedienbox mit OLED-Display und Drehknopf.*
 
-<a href="https://youtu.be/kATW5-pVZzE"><img src="https://img.youtube.com/vi/kATW5-pVZzE/maxresdefault.jpg" alt="Vorschaubild des Demo-Videos: Titel „SpAice – Gericht sagen. Die AI wählt die Gewürze.“ neben dem OLED-Display mit dem Ergebnis für Chili con carne" width="420"></a>
+<a href="https://youtu.be/kATW5-pVZzE"><img src="https://img.youtube.com/vi/kATW5-pVZzE/maxresdefault.jpg" alt="Vorschaubild des Demo-Videos: Titel „SpAice“ und „Gericht sagen. Die AI wählt die Gewürze.“ neben dem OLED-Display mit dem Ergebnis für Chili con carne" width="420"></a>
 
 ▶️ **[Demo-Video auf YouTube](https://youtu.be/kATW5-pVZzE)**
 
@@ -18,7 +18,7 @@
 
 ## Die Idee
 
-Im Kurs Sketching with Hardware habe ich in einem Semester aus einer eigenen Idee einen funktionsfähigen physischen Prototyp gebaut — Elektronik, Mechanik, Software und Demo-Video inklusive. Die Idee: Beim Kochen weiß man oft nicht, *welche* Gewürze in welcher Menge zu einem Gericht passen — also soll eine Maschine das wissen und gleich selbst dosieren.
+Im Kurs Sketching with Hardware habe ich in einem Semester aus einer eigenen Idee einen funktionsfähigen physischen Prototyp gebaut, mit Elektronik, Mechanik, Software und Demo-Video. Die Idee: Beim Kochen weiß man oft nicht, *welche* Gewürze in welcher Menge zu einem Gericht passen. Also soll eine Maschine das wissen und gleich selbst dosieren.
 
 ## Wie es funktioniert
 
@@ -28,10 +28,10 @@ Im Kurs Sketching with Hardware habe ich in einem Semester aus einer eigenen Ide
 
 <p>
 <img src="bilder/display-sprechen.jpg" alt="OLED-Display der Bedienbox: Mikrofon-Symbol und „Jetzt Sprechen“" width="400">
-<img src="bilder/display-ai-gericht.jpg" alt="OLED-Display: LLM-Ergebnis für „Chili con carne“ — Cayennepfeffer, Chili, Ingwer mit Mengen" width="400">
+<img src="bilder/display-ai-gericht.jpg" alt="OLED-Display: LLM-Ergebnis für „Chili con carne“ mit Cayennepfeffer, Chili, Ingwer und Mengen" width="400">
 </p>
 
-*Links: Spracheingabe am Gerät („Jetzt Sprechen“). Rechts: das LLM-Ergebnis für „Chili con carne“ — Cayennepfeffer, Chili und Ingwer samt Mengen, direkt auf dem OLED zum Bestätigen.*
+*Links: Spracheingabe am Gerät („Jetzt Sprechen“). Rechts: das LLM-Ergebnis für „Chili con carne“ mit Cayennepfeffer, Chili und Ingwer samt Mengen, direkt auf dem OLED zum Bestätigen.*
 
 Ohne KI geht es auch: Im Modus **„Einzel-Auswahl“** stellt man die Menge jedes Gewürzes selbst per Drehknopf ein, in 0,5-Gramm-Schritten. Die Behälter lassen sich per Sprache neu belegen; der Gewürzname wird dabei gegen eine feste Liste geprüft.
 
@@ -52,7 +52,7 @@ Gewürzbehälter mit Dosiermechanik, Antriebseinheit, Trichter und Gehäuse habe
 <img src="bilder/antriebseinheit.jpg" alt="Die gedruckte Antriebseinheit offen: Zahnräder, Servo und Schrittmotor" width="400">
 </p>
 
-*Die Kraftübertragung der Antriebseinheit — links der CAD-Entwurf, rechts das gedruckte Ergebnis mit Zahnrädern, Servo und Schrittmotor.*
+*Die Kraftübertragung der Antriebseinheit: links der CAD-Entwurf, rechts das gedruckte Ergebnis mit Zahnrädern, Servo und Schrittmotor.*
 
 ## Herausforderungen und Lösungen
 
