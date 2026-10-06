@@ -1,6 +1,6 @@
 # KI-CAD-Assistent für Rhino 8 — Masterarbeit
 
-**Chatbasierter KI-Assistent, der in Rhino 8 eingebettet ist und Designer:innen 3D-Möbelmodelle über Konversation, visuelle Selektion, Live-Parameter-Slider und Skizzen-Anmerkungen erstellen und bearbeiten lässt.**
+**KI-Assistent für die CAD-Software Rhino 8: Designer:innen erstellen und bearbeiten damit 3D-Möbelmodelle per Chat, Klick, Regler und Skizze.**
 
 <img src="bilder/abb-ui-werkzeug.png" alt="Chat-Panel des Plugins mit Skizze auf Viewport-Aufnahme, KI-Rückfrage mit Auswahldialog und Objekt-Referenz-Chip" width="420">
 
@@ -15,6 +15,7 @@
 | Kontext | Masterarbeit „Entwerfen mit Künstlicher Intelligenz: Ein KI-gestützter Workflow für den iterativen Möbelentwurf“, M.Sc. Medieninformatik, LMU München, März bis August 2026 (Kooperation TUM Architekturinformatik) |
 | Rolle | Konzeption, Entwicklung, Studie und Auswertung |
 | Code | [Piibo/rhino-ai-cad-assistant](https://github.com/Piibo/rhino-ai-cad-assistant) — kuratierte Code-Basis (MCP-Server + Studien-Plugin), MIT-lizenziert. Das Arbeits-Repository bleibt privat, weil es Studiendaten enthält. |
+| Arbeit | Auf Anfrage |
 
 ## Die Fragestellung
 
